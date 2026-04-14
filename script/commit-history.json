@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Marco Vargas",
+    "commit": {
+      "date": "2026-04-14T01:29:32.000Z",
+      "message": "first commit",
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 5,
+      "deletions": 13,
+      "date": "2026-04-14"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
