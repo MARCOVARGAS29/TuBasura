@@ -114,12 +114,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "4c7a4551bc72313d2e443456dc885f28f0a1371b",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:25:22.000Z",
       "message": "feat(green): devolver null si no hay horario",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/4c7a4551bc72313d2e443456dc885f28f0a1371b"
     },
     "stats": {
       "total": 2,
@@ -131,5 +131,24 @@
     "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:26:38.000Z",
+      "message": "test(red): definir horarios para 15 distritos",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

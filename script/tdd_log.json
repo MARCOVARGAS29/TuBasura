@@ -36,9 +36,15 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4c7a4551bc72313d2e443456dc885f28f0a1371b",
     "commitName": "feat(green): devolver null si no hay horario",
     "commitTimestamp": 1776371123318,
     "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): definir horarios para 15 distritos",
+    "commitTimestamp": 1776371199034,
+    "testId": 7
   }
 ]

@@ -1,4 +1,7 @@
-import CollectionScheduleModel, { createDistrictOptions } from './model.js';
+import CollectionScheduleModel, {
+  createDistrictOptions,
+  schedulesByDistrict,
+} from './model.js';
 
 describe('CollectionScheduleModel', () => {
   it('deberia crear 15 opciones de distrito', () => {
@@ -23,5 +26,9 @@ describe('CollectionScheduleModel', () => {
     const model = new CollectionScheduleModel();
 
     expect(model.getScheduleByDistrict('20')).toBeNull();
+  });
+
+  it('deberia tener horarios definidos para todos los distritos', () => {
+    expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
 });
