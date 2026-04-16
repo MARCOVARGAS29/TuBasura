@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c547a72bae8d63ae39031efcef9527d44e0d6253",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:28:18.000Z",
       "message": "feat(green): inicializar presenter con opciones",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c547a72bae8d63ae39031efcef9527d44e0d6253"
     },
     "stats": {
       "total": 28,
@@ -207,5 +207,24 @@
     "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:28:47.000Z",
+      "message": "test(red): mostrar horario existente desde presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

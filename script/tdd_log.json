@@ -60,9 +60,15 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c547a72bae8d63ae39031efcef9527d44e0d6253",
     "commitName": "feat(green): inicializar presenter con opciones",
     "commitTimestamp": 1776371299285,
     "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): mostrar horario existente desde presenter",
+    "commitTimestamp": 1776371328718,
+    "testId": 11
   }
 ]
