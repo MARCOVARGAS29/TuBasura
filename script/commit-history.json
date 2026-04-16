@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c8e00e2523172e7cba24406238250d9566f896d3",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:25:02.000Z",
       "message": "test(red): devolver null si el distrito no existe",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c8e00e2523172e7cba24406238250d9566f896d3"
     },
     "stats": {
       "total": 6,
@@ -112,5 +112,24 @@
     "test_count": 3,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:25:22.000Z",
+      "message": "feat(green): devolver null si no hay horario",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

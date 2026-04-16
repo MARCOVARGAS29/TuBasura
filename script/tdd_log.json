@@ -30,9 +30,15 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c8e00e2523172e7cba24406238250d9566f896d3",
     "commitName": "test(red): devolver null si el distrito no existe",
     "commitTimestamp": 1776371103430,
     "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): devolver null si no hay horario",
+    "commitTimestamp": 1776371123318,
+    "testId": 6
   }
 ]
