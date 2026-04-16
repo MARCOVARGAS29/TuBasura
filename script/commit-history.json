@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "9e05ba44ee2f0d70bee0d2cf6b715c0a99ceac75",
     "author": "Marco Vargas",
     "commit": {
       "date": "2026-04-14T01:29:32.000Z",
       "message": "first commit",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/9e05ba44ee2f0d70bee0d2cf6b715c0a99ceac75"
     },
     "stats": {
       "total": 18,
@@ -17,5 +17,24 @@
     "test_count": 1,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:23:03.000Z",
+      "message": "test(red): crear opciones de distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 8,
+      "deletions": 6,
+      "date": "2026-04-16"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
   }
 ]

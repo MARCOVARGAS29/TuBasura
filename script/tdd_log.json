@@ -1,8 +1,14 @@
 [
   {
-    "commitId": "HEAD",
+    "commitId": "9e05ba44ee2f0d70bee0d2cf6b715c0a99ceac75",
     "commitName": "first commit",
     "commitTimestamp": 1776130175792,
     "testId": 0
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): crear opciones de distrito",
+    "commitTimestamp": 1776370984603,
+    "testId": 1
   }
 ]
