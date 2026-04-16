@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e77dd93e19a9db2d7a81496ec82f2ac5afc13a16",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:29:44.000Z",
       "message": "test(red): mostrar mensaje inicial sin distrito",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/e77dd93e19a9db2d7a81496ec82f2ac5afc13a16"
     },
     "stats": {
       "total": 17,
@@ -264,5 +264,24 @@
     "test_count": 7,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:30:16.000Z",
+      "message": "feat(green): restaurar mensaje inicial sin distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

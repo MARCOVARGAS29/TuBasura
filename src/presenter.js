@@ -12,6 +12,11 @@ export default class CollectionSchedulePresenter {
   }
 
   showScheduleForDistrict(districtId) {
+    if (!districtId) {
+      this.view.showInitialMessage();
+      return;
+    }
+
     const schedule = this.model.getScheduleByDistrict(districtId);
     this.view.showSchedule(schedule);
   }

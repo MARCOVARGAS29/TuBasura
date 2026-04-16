@@ -78,9 +78,15 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e77dd93e19a9db2d7a81496ec82f2ac5afc13a16",
     "commitName": "test(red): mostrar mensaje inicial sin distrito",
     "commitTimestamp": 1776371385066,
     "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): restaurar mensaje inicial sin distrito",
+    "commitTimestamp": 1776371417250,
+    "testId": 14
   }
 ]
