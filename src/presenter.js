@@ -1,15 +1,31 @@
-import sumar from "./sumador";
+export default class CollectionSchedulePresenter {
+  constructor({ model, view }) {
+    this.model = model;
+    this.view = view;
+  }
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+  initialize() {
+    const options = this.model.getDistrictOptions();
+    this.view.renderDistrictOptions(options);
+    this.view.showInitialMessage();
+    this.view.bindDistrictSelection((districtId) => {
+      this.showScheduleForDistrict(districtId);
+    });
+  }
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+  showScheduleForDistrict(districtId) {
+    if (!districtId) {
+      this.view.showInitialMessage();
+      return;
+    }
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+    const schedule = this.model.getScheduleByDistrict(districtId);
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
-});
+    if (!schedule) {
+      this.view.showScheduleNotFound();
+      return;
+    }
+
+    this.view.showSchedule(schedule);
+  }
+}

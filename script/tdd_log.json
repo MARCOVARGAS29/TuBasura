@@ -1,8 +1,128 @@
 [
   {
-    "commitId": "HEAD",
+    "commitId": "9e05ba44ee2f0d70bee0d2cf6b715c0a99ceac75",
     "commitName": "first commit",
     "commitTimestamp": 1776130175792,
     "testId": 0
+  },
+  {
+    "commitId": "5a7b3c83722b40fa8ff965f3c64f14aafdf44447",
+    "commitName": "test(red): crear opciones de distrito",
+    "commitTimestamp": 1776370984603,
+    "testId": 1
+  },
+  {
+    "commitId": "4eec48429b94a70a138f896ab0b20f6df24723e7",
+    "commitName": "feat(green): generar opciones de distrito",
+    "commitTimestamp": 1776371023779,
+    "testId": 2
+  },
+  {
+    "commitId": "d672ba24de46a2a8505198c23f01bcb226c1d020",
+    "commitName": "test(red): consultar horario por distrito",
+    "commitTimestamp": 1776371057289,
+    "testId": 3
+  },
+  {
+    "commitId": "e18c229fc3c48b99a88f5a17777ac55939333ead",
+    "commitName": "feat(green): consultar horario por distrito",
+    "commitTimestamp": 1776371077686,
+    "testId": 4
+  },
+  {
+    "commitId": "c8e00e2523172e7cba24406238250d9566f896d3",
+    "commitName": "test(red): devolver null si el distrito no existe",
+    "commitTimestamp": 1776371103430,
+    "testId": 5
+  },
+  {
+    "commitId": "4c7a4551bc72313d2e443456dc885f28f0a1371b",
+    "commitName": "feat(green): devolver null si no hay horario",
+    "commitTimestamp": 1776371123318,
+    "testId": 6
+  },
+  {
+    "commitId": "72e15e686241d24398ed378e105a2fb308ef0e70",
+    "commitName": "test(red): definir horarios para 15 distritos",
+    "commitTimestamp": 1776371199034,
+    "testId": 7
+  },
+  {
+    "commitId": "c12be67b0d3602cc7f2eb3f35a70a36d8cac59fa",
+    "commitName": "feat(green): completar horarios de 15 distritos",
+    "commitTimestamp": 1776371229367,
+    "testId": 8
+  },
+  {
+    "commitId": "e983f4b09df2c9d69cd9b644a07f13d0c744f420",
+    "commitName": "test(red): inicializar presenter con opciones",
+    "commitTimestamp": 1776371273416,
+    "testId": 9
+  },
+  {
+    "commitId": "c547a72bae8d63ae39031efcef9527d44e0d6253",
+    "commitName": "feat(green): inicializar presenter con opciones",
+    "commitTimestamp": 1776371299285,
+    "testId": 10
+  },
+  {
+    "commitId": "2c7a05bf30f0d75626a0e597b1529ff64bf8ff36",
+    "commitName": "test(red): mostrar horario existente desde presenter",
+    "commitTimestamp": 1776371328718,
+    "testId": 11
+  },
+  {
+    "commitId": "228242af5f53749fc3378934cdc21aa71651de19",
+    "commitName": "feat(green): mostrar horario existente desde presenter",
+    "commitTimestamp": 1776371352103,
+    "testId": 12
+  },
+  {
+    "commitId": "e77dd93e19a9db2d7a81496ec82f2ac5afc13a16",
+    "commitName": "test(red): mostrar mensaje inicial sin distrito",
+    "commitTimestamp": 1776371385066,
+    "testId": 13
+  },
+  {
+    "commitId": "445493e9514456dc2258b7461b01b488ad6ccb41",
+    "commitName": "feat(green): restaurar mensaje inicial sin distrito",
+    "commitTimestamp": 1776371417250,
+    "testId": 14
+  },
+  {
+    "commitId": "5dfea87d5d69d98f9295d558a3fbcef9a206990c",
+    "commitName": "test(red): mostrar mensaje si no hay horario",
+    "commitTimestamp": 1776371448710,
+    "testId": 15
+  },
+  {
+    "commitId": "a18c49cb4b8f63f7ffa6396410e03b859b379d48",
+    "commitName": "feat(green): mostrar mensaje si no hay horario",
+    "commitTimestamp": 1776371481898,
+    "testId": 16
+  },
+  {
+    "commitId": "9d387fa625cc8e9a7097ea74cac9cb782102dd70",
+    "commitName": "test(red): renderizar opciones en la vista",
+    "commitTimestamp": 1776371511663,
+    "testId": 17
+  },
+  {
+    "commitId": "c280a4056d223dbd060808eb29c4c5e817267c5f",
+    "commitName": "feat(green): renderizar opciones en la vista",
+    "commitTimestamp": 1776371547063,
+    "testId": 18
+  },
+  {
+    "commitId": "311f33e50d71e9d9d7f8036ff18ab89ef260dd19",
+    "commitName": "test(red): mostrar horario seleccionado en la vista",
+    "commitTimestamp": 1776371582812,
+    "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): completar vista y pagina de horarios",
+    "commitTimestamp": 1776371692966,
+    "testId": 20
   }
 ]
