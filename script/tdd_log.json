@@ -84,9 +84,15 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "445493e9514456dc2258b7461b01b488ad6ccb41",
     "commitName": "feat(green): restaurar mensaje inicial sin distrito",
     "commitTimestamp": 1776371417250,
     "testId": 14
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): mostrar mensaje si no hay horario",
+    "commitTimestamp": 1776371448710,
+    "testId": 15
   }
 ]

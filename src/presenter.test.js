@@ -58,4 +58,20 @@ describe('CollectionSchedulePresenter', () => {
     expect(model.getScheduleByDistrict).not.toHaveBeenCalled();
     expect(view.showInitialMessage).toHaveBeenCalled();
   });
+
+  it('deberia mostrar un mensaje de no encontrado cuando no hay horario', () => {
+    const model = {
+      getScheduleByDistrict: jest.fn(() => null),
+    };
+    const view = {
+      showSchedule: jest.fn(),
+      showInitialMessage: jest.fn(),
+      showScheduleNotFound: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+    presenter.showScheduleForDistrict('99');
+
+    expect(view.showScheduleNotFound).toHaveBeenCalled();
+  });
 });
