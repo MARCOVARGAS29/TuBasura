@@ -108,9 +108,15 @@
     "testId": 17
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c280a4056d223dbd060808eb29c4c5e817267c5f",
     "commitName": "feat(green): renderizar opciones en la vista",
     "commitTimestamp": 1776371547063,
     "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): mostrar horario seleccionado en la vista",
+    "commitTimestamp": 1776371582812,
+    "testId": 19
   }
 ]

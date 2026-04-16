@@ -21,4 +21,23 @@ describe('CollectionScheduleView', () => {
 
     global.document = originalDocument;
   });
+
+  it('deberia mostrar el horario seleccionado', () => {
+    const districtSelect = {
+      addEventListener: jest.fn(),
+    };
+    const resultContainer = {
+      innerHTML: '',
+    };
+
+    const view = new CollectionScheduleView({ districtSelect, resultContainer });
+    view.showSchedule({
+      district: 'Distrito 3',
+      days: 'Lunes, jueves y sabado',
+      time: '09:00',
+    });
+
+    expect(resultContainer.innerHTML).toContain('Distrito 3');
+    expect(resultContainer.innerHTML).toContain('09:00');
+  });
 });

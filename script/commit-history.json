@@ -342,12 +342,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c280a4056d223dbd060808eb29c4c5e817267c5f",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:32:26.000Z",
       "message": "feat(green): renderizar opciones en la vista",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c280a4056d223dbd060808eb29c4c5e817267c5f"
     },
     "stats": {
       "total": 15,
@@ -359,5 +359,24 @@
     "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:33:01.000Z",
+      "message": "test(red): mostrar horario seleccionado en la vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 10,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
