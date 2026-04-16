@@ -102,9 +102,15 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9d387fa625cc8e9a7097ea74cac9cb782102dd70",
     "commitName": "test(red): renderizar opciones en la vista",
     "commitTimestamp": 1776371511663,
     "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): renderizar opciones en la vista",
+    "commitTimestamp": 1776371547063,
+    "testId": 18
   }
 ]

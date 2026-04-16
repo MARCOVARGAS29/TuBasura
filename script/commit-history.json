@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9d387fa625cc8e9a7097ea74cac9cb782102dd70",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:31:50.000Z",
       "message": "test(red): renderizar opciones en la vista",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/9d387fa625cc8e9a7097ea74cac9cb782102dd70"
     },
     "stats": {
       "total": 24,
@@ -338,6 +338,25 @@
     },
     "coverage": 100,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:32:26.000Z",
+      "message": "feat(green): renderizar opciones en la vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }
