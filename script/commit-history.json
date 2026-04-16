@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5a7b3c83722b40fa8ff965f3c64f14aafdf44447",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:23:03.000Z",
       "message": "test(red): crear opciones de distrito",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/5a7b3c83722b40fa8ff965f3c64f14aafdf44447"
     },
     "stats": {
       "total": 14,
@@ -36,5 +36,24 @@
     "test_count": 0,
     "failed_tests": 0,
     "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:23:42.000Z",
+      "message": "feat(green): generar opciones de distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

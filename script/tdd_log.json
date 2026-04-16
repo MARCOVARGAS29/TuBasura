@@ -6,9 +6,15 @@
     "testId": 0
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5a7b3c83722b40fa8ff965f3c64f14aafdf44447",
     "commitName": "test(red): crear opciones de distrito",
     "commitTimestamp": 1776370984603,
     "testId": 1
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): generar opciones de distrito",
+    "commitTimestamp": 1776371023779,
+    "testId": 2
   }
 ]
