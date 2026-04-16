@@ -1,17 +1,24 @@
 export default [
   {
+    ignores: ['cypress/**', 'dist/**', 'script/**', 'semantic-commits.js', 'cypress.config.js'],
+  },
+  {
     files: ['**/*.js'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
+        console: 'readonly',
         require: 'readonly',
         module: 'readonly',
         describe: 'readonly',
         it: 'readonly',
         cy: 'readonly',
         expect: 'readonly',
+        jest: 'readonly',
         document: 'readonly',
+        global: 'readonly',
+        process: 'readonly',
         window: 'readonly',
       },
     },
