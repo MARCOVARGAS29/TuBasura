@@ -54,9 +54,15 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e983f4b09df2c9d69cd9b644a07f13d0c744f420",
     "commitName": "test(red): inicializar presenter con opciones",
     "commitTimestamp": 1776371273416,
     "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): inicializar presenter con opciones",
+    "commitTimestamp": 1776371299285,
+    "testId": 10
   }
 ]

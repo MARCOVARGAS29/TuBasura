@@ -1,15 +1,13 @@
-import sumar from "./sumador";
+export default class CollectionSchedulePresenter {
+  constructor({ model, view }) {
+    this.model = model;
+    this.view = view;
+  }
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
-});
+  initialize() {
+    const options = this.model.getDistrictOptions();
+    this.view.renderDistrictOptions(options);
+    this.view.showInitialMessage();
+    this.view.bindDistrictSelection(() => {});
+  }
+}
