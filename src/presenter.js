@@ -18,6 +18,12 @@ export default class CollectionSchedulePresenter {
     }
 
     const schedule = this.model.getScheduleByDistrict(districtId);
+
+    if (!schedule) {
+      this.view.showScheduleNotFound();
+      return;
+    }
+
     this.view.showSchedule(schedule);
   }
 }

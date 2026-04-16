@@ -90,9 +90,15 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5dfea87d5d69d98f9295d558a3fbcef9a206990c",
     "commitName": "test(red): mostrar mensaje si no hay horario",
     "commitTimestamp": 1776371448710,
     "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): mostrar mensaje si no hay horario",
+    "commitTimestamp": 1776371481898,
+    "testId": 16
   }
 ]
