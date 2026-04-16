@@ -41,4 +41,21 @@ describe('CollectionSchedulePresenter', () => {
     expect(model.getScheduleByDistrict).toHaveBeenCalledWith('2');
     expect(view.showSchedule).toHaveBeenCalledWith(schedule);
   });
+
+  it('deberia mostrar el mensaje inicial cuando no se selecciona distrito', () => {
+    const model = {
+      getScheduleByDistrict: jest.fn(),
+    };
+    const view = {
+      showSchedule: jest.fn(),
+      showInitialMessage: jest.fn(),
+      showScheduleNotFound: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+    presenter.showScheduleForDistrict('');
+
+    expect(model.getScheduleByDistrict).not.toHaveBeenCalled();
+    expect(view.showInitialMessage).toHaveBeenCalled();
+  });
 });

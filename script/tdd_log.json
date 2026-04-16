@@ -72,9 +72,15 @@
     "testId": 11
   },
   {
-    "commitId": "HEAD",
+    "commitId": "228242af5f53749fc3378934cdc21aa71651de19",
     "commitName": "feat(green): mostrar horario existente desde presenter",
     "commitTimestamp": 1776371352103,
     "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): mostrar mensaje inicial sin distrito",
+    "commitTimestamp": 1776371385066,
+    "testId": 13
   }
 ]
