@@ -96,9 +96,15 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a18c49cb4b8f63f7ffa6396410e03b859b379d48",
     "commitName": "feat(green): mostrar mensaje si no hay horario",
     "commitTimestamp": 1776371481898,
     "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): renderizar opciones en la vista",
+    "commitTimestamp": 1776371511663,
+    "testId": 17
   }
 ]

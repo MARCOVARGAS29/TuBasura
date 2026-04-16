@@ -304,16 +304,35 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a18c49cb4b8f63f7ffa6396410e03b859b379d48",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:31:21.000Z",
       "message": "feat(green): mostrar mensaje si no hay horario",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/a18c49cb4b8f63f7ffa6396410e03b859b379d48"
     },
     "stats": {
       "total": 6,
       "additions": 6,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:31:50.000Z",
+      "message": "test(red): renderizar opciones en la vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 24,
       "deletions": 0,
       "date": "2026-04-16"
     },
