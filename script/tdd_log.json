@@ -24,9 +24,15 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e18c229fc3c48b99a88f5a17777ac55939333ead",
     "commitName": "feat(green): consultar horario por distrito",
     "commitTimestamp": 1776371077686,
     "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): devolver null si el distrito no existe",
+    "commitTimestamp": 1776371103430,
+    "testId": 5
   }
 ]

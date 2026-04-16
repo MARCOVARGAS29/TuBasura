@@ -18,4 +18,10 @@ describe('CollectionScheduleModel', () => {
       time: '10:00',
     });
   });
+
+  it('deberia devolver null cuando el distrito no existe', () => {
+    const model = new CollectionScheduleModel();
+
+    expect(model.getScheduleByDistrict('20')).toBeNull();
+  });
 });
