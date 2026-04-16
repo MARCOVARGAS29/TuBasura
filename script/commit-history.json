@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "311f33e50d71e9d9d7f8036ff18ab89ef260dd19",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:33:01.000Z",
       "message": "test(red): mostrar horario seleccionado en la vista",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/311f33e50d71e9d9d7f8036ff18ab89ef260dd19"
     },
     "stats": {
       "total": 19,
@@ -378,5 +378,24 @@
     "test_count": 10,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:34:52.000Z",
+      "message": "feat(green): completar vista y pagina de horarios",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 221,
+      "additions": 195,
+      "deletions": 26,
+      "date": "2026-04-16"
+    },
+    "coverage": 83.87,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

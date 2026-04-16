@@ -8,7 +8,9 @@ export default class CollectionSchedulePresenter {
     const options = this.model.getDistrictOptions();
     this.view.renderDistrictOptions(options);
     this.view.showInitialMessage();
-    this.view.bindDistrictSelection(() => {});
+    this.view.bindDistrictSelection((districtId) => {
+      this.showScheduleForDistrict(districtId);
+    });
   }
 
   showScheduleForDistrict(districtId) {

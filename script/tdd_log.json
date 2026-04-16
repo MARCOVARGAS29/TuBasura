@@ -114,9 +114,15 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "311f33e50d71e9d9d7f8036ff18ab89ef260dd19",
     "commitName": "test(red): mostrar horario seleccionado en la vista",
     "commitTimestamp": 1776371582812,
     "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): completar vista y pagina de horarios",
+    "commitTimestamp": 1776371692966,
+    "testId": 20
   }
 ]
