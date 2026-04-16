@@ -12,9 +12,15 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4eec48429b94a70a138f896ab0b20f6df24723e7",
     "commitName": "feat(green): generar opciones de distrito",
     "commitTimestamp": 1776371023779,
     "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): consultar horario por distrito",
+    "commitTimestamp": 1776371057289,
+    "testId": 3
   }
 ]
