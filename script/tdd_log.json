@@ -66,9 +66,15 @@
     "testId": 10
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2c7a05bf30f0d75626a0e597b1529ff64bf8ff36",
     "commitName": "test(red): mostrar horario existente desde presenter",
     "commitTimestamp": 1776371328718,
     "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): mostrar horario existente desde presenter",
+    "commitTimestamp": 1776371352103,
+    "testId": 12
   }
 ]

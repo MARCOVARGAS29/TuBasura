@@ -10,4 +10,9 @@ export default class CollectionSchedulePresenter {
     this.view.showInitialMessage();
     this.view.bindDistrictSelection(() => {});
   }
+
+  showScheduleForDistrict(districtId) {
+    const schedule = this.model.getScheduleByDistrict(districtId);
+    this.view.showSchedule(schedule);
+  }
 }
