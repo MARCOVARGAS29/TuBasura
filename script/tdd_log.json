@@ -120,9 +120,15 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "caec0170e8aff2f0fe4f80ac219956ed5a1d86a9",
     "commitName": "feat(green): completar vista y pagina de horarios",
     "commitTimestamp": 1776371692966,
     "testId": 20
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Fix model.getDistrictOptions so districts load in select",
+    "commitTimestamp": 1776372229453,
+    "testId": 21
   }
 ]

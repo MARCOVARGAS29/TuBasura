@@ -84,6 +84,10 @@ function createDistrictOptions() {
 }
 
 export default class CollectionScheduleModel {
+  getDistrictOptions() {
+    return createDistrictOptions();
+  }
+
   getScheduleByDistrict(districtId) {
     return schedulesByDistrict[districtId] || null;
   }

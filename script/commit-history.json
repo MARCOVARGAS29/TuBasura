@@ -380,12 +380,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "caec0170e8aff2f0fe4f80ac219956ed5a1d86a9",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:34:52.000Z",
       "message": "feat(green): completar vista y pagina de horarios",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/caec0170e8aff2f0fe4f80ac219956ed5a1d86a9"
     },
     "stats": {
       "total": 221,
@@ -394,6 +394,25 @@
       "date": "2026-04-16"
     },
     "coverage": 83.87,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:43:48.000Z",
+      "message": "Fix model.getDistrictOptions so districts load in select",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 81.25,
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
