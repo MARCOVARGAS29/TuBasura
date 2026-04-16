@@ -152,17 +152,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "c12be67b0d3602cc7f2eb3f35a70a36d8cac59fa",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:27:08.000Z",
       "message": "feat(green): completar horarios de 15 distritos",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c12be67b0d3602cc7f2eb3f35a70a36d8cac59fa"
     },
     "stats": {
       "total": 72,
       "additions": 71,
       "deletions": 1,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:27:52.000Z",
+      "message": "test(red): inicializar presenter con opciones",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
       "date": "2026-04-16"
     },
     "coverage": 100,

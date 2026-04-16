@@ -48,9 +48,15 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c12be67b0d3602cc7f2eb3f35a70a36d8cac59fa",
     "commitName": "feat(green): completar horarios de 15 distritos",
     "commitTimestamp": 1776371229367,
     "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): inicializar presenter con opciones",
+    "commitTimestamp": 1776371273416,
+    "testId": 9
   }
 ]
