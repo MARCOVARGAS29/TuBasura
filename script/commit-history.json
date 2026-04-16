@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d672ba24de46a2a8505198c23f01bcb226c1d020",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:24:16.000Z",
       "message": "test(red): consultar horario por distrito",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/d672ba24de46a2a8505198c23f01bcb226c1d020"
     },
     "stats": {
       "total": 12,
@@ -74,5 +74,24 @@
     "test_count": 2,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:24:36.000Z",
+      "message": "feat(green): consultar horario por distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
