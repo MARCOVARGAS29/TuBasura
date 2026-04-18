@@ -456,12 +456,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fc8bd40ab3dd78f992d7c413186848672927fc3b",
     "author": "Marco",
     "commit": {
       "date": "2026-04-18T17:20:47.000Z",
       "message": "test(red): permitir entrar como invitado",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/fc8bd40ab3dd78f992d7c413186848672927fc3b"
     },
     "stats": {
       "total": 9,
@@ -473,5 +473,24 @@
     "test_count": 12,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:22:06.000Z",
+      "message": "feat(green): permitir entrar como invitado",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2026-04-18"
+    },
+    "coverage": 82.05,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

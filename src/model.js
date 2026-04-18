@@ -109,6 +109,13 @@ export default class CollectionScheduleModel {
     };
   }
 
+  loginAsGuest() {
+    return {
+      name: 'Invitado',
+      accessType: 'guest',
+    };
+  }
+
   getDistrictOptions() {
     return createDistrictOptions();
   }
