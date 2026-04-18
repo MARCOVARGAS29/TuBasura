@@ -162,9 +162,15 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a65f85f1c3e29b7f995b04bc2ba3c9bab2b1b3a7",
     "commitName": "feat(green): iniciar en login y enlazar accesos",
     "commitTimestamp": 1776533091227,
     "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): mostrar home despues de ingresar",
+    "commitTimestamp": 1776533151553,
+    "testId": 28
   }
 ]

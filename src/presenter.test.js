@@ -24,6 +24,41 @@ describe('CollectionSchedulePresenter', () => {
     expect(view.bindDistrictSelection).toHaveBeenCalledWith(expect.any(Function));
   });
 
+  it('deberia mostrar el home al iniciar sesion', () => {
+    const session = {
+      name: 'admin',
+      accessType: 'registered',
+    };
+    const options = [{ value: '1', label: 'Distrito 1' }];
+    const model = {
+      login: jest.fn(() => session),
+      getDistrictOptions: jest.fn(() => options),
+    };
+    const view = {
+      showLogin: jest.fn(),
+      bindLogin: jest.fn(),
+      bindGuestAccess: jest.fn(),
+      bindDistrictSelection: jest.fn(),
+      showHome: jest.fn(),
+      renderDistrictOptions: jest.fn(),
+      showInitialMessage: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+    presenter.initialize();
+
+    const loginHandler = view.bindLogin.mock.calls[0][0];
+    loginHandler({ username: 'admin', password: '123456' });
+
+    expect(model.login).toHaveBeenCalledWith({
+      username: 'admin',
+      password: '123456',
+    });
+    expect(view.showHome).toHaveBeenCalledWith(session);
+    expect(view.renderDistrictOptions).toHaveBeenCalledWith(options);
+    expect(view.showInitialMessage).toHaveBeenCalled();
+  });
+
   it('deberia mostrar el horario cuando existe el distrito', () => {
     const schedule = {
       district: 'Distrito 2',
