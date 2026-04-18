@@ -1,15 +1,61 @@
 export default class CollectionScheduleView {
-  constructor({ districtSelect, resultContainer }) {
+  constructor({
+    loginSection,
+    homeSection,
+    welcomeMessage,
+    districtSelect,
+    resultContainer,
+    loginForm,
+    guestButton,
+    usernameInput,
+    passwordInput,
+  }) {
+    this.loginSection = loginSection;
+    this.homeSection = homeSection;
+    this.welcomeMessage = welcomeMessage;
     this.districtSelect = districtSelect;
     this.resultContainer = resultContainer;
+    this.loginForm = loginForm;
+    this.guestButton = guestButton;
+    this.usernameInput = usernameInput;
+    this.passwordInput = passwordInput;
+  }
+
+  showLogin() {
+    this.loginSection.hidden = false;
+    this.homeSection.hidden = true;
+  }
+
+  showHome(session) {
+    this.loginSection.hidden = true;
+    this.homeSection.hidden = false;
+    this.welcomeMessage.textContent = `Bienvenido, ${session.name}`;
   }
 
   renderDistrictOptions(options) {
+    this.districtSelect.innerHTML = '<option value="">Selecciona un distrito</option>';
+
     options.forEach((option) => {
       const optionElement = document.createElement('option');
       optionElement.value = option.value;
       optionElement.textContent = option.label;
       this.districtSelect.append(optionElement);
+    });
+  }
+
+  bindLogin(handler) {
+    this.loginForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      handler({
+        username: this.usernameInput.value,
+        password: this.passwordInput.value,
+      });
+    });
+  }
+
+  bindGuestAccess(handler) {
+    this.guestButton.addEventListener('click', () => {
+      handler();
     });
   }
 
@@ -21,8 +67,8 @@ export default class CollectionScheduleView {
 
   showInitialMessage() {
     this.resultContainer.innerHTML = `
-      <h2>Horario de recoleccion</h2>
-      <p>Selecciona un distrito para ver su horario.</p>
+      <h2>Horarios de recoleccion</h2>
+      <p>Selecciona un distrito para ver su horario disponible.</p>
     `;
   }
 

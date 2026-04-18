@@ -4,6 +4,29 @@ import CollectionScheduleModel, {
 } from './model.js';
 
 describe('CollectionScheduleModel', () => {
+  it('deberia iniciar sesion con credenciales validas', () => {
+    const model = new CollectionScheduleModel();
+
+    expect(
+      model.login({
+        username: 'admin',
+        password: '123456',
+      }),
+    ).toEqual({
+      name: 'admin',
+      accessType: 'registered',
+    });
+  });
+
+  it('deberia permitir entrar como invitado', () => {
+    const model = new CollectionScheduleModel();
+
+    expect(model.loginAsGuest()).toEqual({
+      name: 'Invitado',
+      accessType: 'guest',
+    });
+  });
+
   it('deberia crear 15 opciones de distrito', () => {
     const options = createDistrictOptions();
 

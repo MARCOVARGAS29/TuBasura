@@ -76,6 +76,14 @@ const schedulesByDistrict = {
   },
 };
 
+const users = [
+  {
+    username: 'admin',
+    password: '123456',
+    name: 'admin',
+  },
+];
+
 function createDistrictOptions() {
   return Array.from({ length: 15 }, (_, index) => ({
     value: String(index + 1),
@@ -84,6 +92,30 @@ function createDistrictOptions() {
 }
 
 export default class CollectionScheduleModel {
+  login({ username, password }) {
+    const user = users.find(
+      (registeredUser) =>
+        registeredUser.username === username
+        && registeredUser.password === password,
+    );
+
+    if (!user) {
+      return null;
+    }
+
+    return {
+      name: user.name,
+      accessType: 'registered',
+    };
+  }
+
+  loginAsGuest() {
+    return {
+      name: 'Invitado',
+      accessType: 'guest',
+    };
+  }
+
   getDistrictOptions() {
     return createDistrictOptions();
   }

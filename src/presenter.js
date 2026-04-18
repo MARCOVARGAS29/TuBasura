@@ -5,12 +5,42 @@ export default class CollectionSchedulePresenter {
   }
 
   initialize() {
-    const options = this.model.getDistrictOptions();
-    this.view.renderDistrictOptions(options);
-    this.view.showInitialMessage();
+    this.view.showLogin();
+    this.view.bindLogin((credentials) => {
+      this.login(credentials);
+    });
+    this.view.bindGuestAccess(() => {
+      this.enterAsGuest();
+    });
     this.view.bindDistrictSelection((districtId) => {
       this.showScheduleForDistrict(districtId);
     });
+  }
+
+  login(credentials) {
+    const session = this.model.login(credentials);
+
+    if (!session) {
+      return null;
+    }
+
+    this.showHome(session);
+    return session;
+  }
+
+  enterAsGuest() {
+    const session = this.model.loginAsGuest();
+    this.showHome(session);
+
+    return session;
+  }
+
+  showHome(session) {
+    const options = this.model.getDistrictOptions();
+
+    this.view.showHome(session);
+    this.view.renderDistrictOptions(options);
+    this.view.showInitialMessage();
   }
 
   showScheduleForDistrict(districtId) {

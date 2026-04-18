@@ -126,9 +126,87 @@
     "testId": 20
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7e5e4ae3c1940a2973883ac506cd4a9bcf787e5f",
     "commitName": "Fix model.getDistrictOptions so districts load in select",
     "commitTimestamp": 1776372229453,
     "testId": 21
+  },
+  {
+    "commitId": "da99fbd3600422ccce0817a3ef6885112cf6d951",
+    "commitName": "test(red): iniciar sesion con credenciales validas",
+    "commitTimestamp": 1776532677336,
+    "testId": 22
+  },
+  {
+    "commitId": "23235cc72217f8e4221f6c580c74aec6d49f9ff1",
+    "commitName": "feat(green): iniciar sesion con credenciales validas",
+    "commitTimestamp": 1776532797531,
+    "testId": 23
+  },
+  {
+    "commitId": "fc8bd40ab3dd78f992d7c413186848672927fc3b",
+    "commitName": "test(red): permitir entrar como invitado",
+    "commitTimestamp": 1776532849320,
+    "testId": 24
+  },
+  {
+    "commitId": "d8783f20fff504445cb2d99aa246dd5da4b4a7f9",
+    "commitName": "feat(green): permitir entrar como invitado",
+    "commitTimestamp": 1776532929899,
+    "testId": 25
+  },
+  {
+    "commitId": "27184bcfa41a320ffa9c2b8db6a45a914404216a",
+    "commitName": "test(red): iniciar en login y enlazar accesos",
+    "commitTimestamp": 1776533038931,
+    "testId": 26
+  },
+  {
+    "commitId": "a65f85f1c3e29b7f995b04bc2ba3c9bab2b1b3a7",
+    "commitName": "feat(green): iniciar en login y enlazar accesos",
+    "commitTimestamp": 1776533091227,
+    "testId": 27
+  },
+  {
+    "commitId": "bf31564361e082918b97cfde58380346594b377f",
+    "commitName": "test(red): mostrar home despues de ingresar",
+    "commitTimestamp": 1776533151553,
+    "testId": 28
+  },
+  {
+    "commitId": "8c8c7b80d29399549422f25149e924000a4bb771",
+    "commitName": "feat(green): mostrar home despues de ingresar",
+    "commitTimestamp": 1776533205599,
+    "testId": 29
+  },
+  {
+    "commitId": "cd48544d67cc076e181a439895fd6400601f9fca",
+    "commitName": "test(red): mostrar login y home en la vista",
+    "commitTimestamp": 1776533338808,
+    "testId": 30
+  },
+  {
+    "commitId": "f79385f833fc98b7ef28b949c25ee85fdadb2fed",
+    "commitName": "feat(green): mostrar login y home en la vista",
+    "commitTimestamp": 1776533446228,
+    "testId": 31
+  },
+  {
+    "commitId": "8769997c92b5a8e87a1e7db615310fd1b841a200",
+    "commitName": "test: cubrir acceso invitado en presenter",
+    "commitTimestamp": 1776533481320,
+    "testId": 32
+  },
+  {
+    "commitId": "2dcb8f4ff60ea4e8b00e16bee5fe038f7b869871",
+    "commitName": "fix: esperar al DOM antes de iniciar la app",
+    "commitTimestamp": 1776533777277,
+    "testId": 33
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir visibilidad del login y autocompletado",
+    "commitTimestamp": 1776534230103,
+    "testId": 34
   }
 ]

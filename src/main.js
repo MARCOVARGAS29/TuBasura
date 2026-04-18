@@ -3,11 +3,26 @@ import CollectionSchedulePresenter from './presenter.js';
 import CollectionScheduleView from './view.js';
 import './styles.css';
 
-const districtSelect = document.querySelector('#district-select');
-const resultContainer = document.querySelector('#schedule-result');
+function initializeApp() {
+  const model = new CollectionScheduleModel();
+  const view = new CollectionScheduleView({
+    loginSection: document.querySelector('#login-screen'),
+    homeSection: document.querySelector('#home-screen'),
+    welcomeMessage: document.querySelector('#welcome-message'),
+    districtSelect: document.querySelector('#district-select'),
+    resultContainer: document.querySelector('#schedule-result'),
+    loginForm: document.querySelector('#login-form'),
+    guestButton: document.querySelector('#guest-access-button'),
+    usernameInput: document.querySelector('#username'),
+    passwordInput: document.querySelector('#password'),
+  });
+  const presenter = new CollectionSchedulePresenter({ model, view });
 
-const model = new CollectionScheduleModel();
-const view = new CollectionScheduleView({ districtSelect, resultContainer });
-const presenter = new CollectionSchedulePresenter({ model, view });
+  presenter.initialize();
+}
 
-presenter.initialize();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeApp);
+} else {
+  initializeApp();
+}
