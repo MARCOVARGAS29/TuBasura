@@ -192,9 +192,15 @@
     "testId": 31
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8769997c92b5a8e87a1e7db615310fd1b841a200",
     "commitName": "test: cubrir acceso invitado en presenter",
     "commitTimestamp": 1776533481320,
     "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: esperar al DOM antes de iniciar la app",
+    "commitTimestamp": 1776533777277,
+    "testId": 33
   }
 ]

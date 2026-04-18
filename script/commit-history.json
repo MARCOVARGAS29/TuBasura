@@ -608,17 +608,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8769997c92b5a8e87a1e7db615310fd1b841a200",
     "author": "Marco",
     "commit": {
       "date": "2026-04-18T17:31:20.000Z",
       "message": "test: cubrir acceso invitado en presenter",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/8769997c92b5a8e87a1e7db615310fd1b841a200"
     },
     "stats": {
       "total": 32,
       "additions": 32,
       "deletions": 0,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.69,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:36:16.000Z",
+      "message": "fix: esperar al DOM antes de iniciar la app",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 22,
+      "deletions": 14,
       "date": "2026-04-18"
     },
     "coverage": 81.69,
