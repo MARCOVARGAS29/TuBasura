@@ -174,9 +174,15 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8c8c7b80d29399549422f25149e924000a4bb771",
     "commitName": "feat(green): mostrar home despues de ingresar",
     "commitTimestamp": 1776533205599,
     "testId": 29
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): mostrar login y home en la vista",
+    "commitTimestamp": 1776533338808,
+    "testId": 30
   }
 ]
