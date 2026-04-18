@@ -627,17 +627,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2dcb8f4ff60ea4e8b00e16bee5fe038f7b869871",
     "author": "Marco",
     "commit": {
       "date": "2026-04-18T17:36:16.000Z",
       "message": "fix: esperar al DOM antes de iniciar la app",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/2dcb8f4ff60ea4e8b00e16bee5fe038f7b869871"
     },
     "stats": {
       "total": 36,
       "additions": 22,
       "deletions": 14,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.69,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:43:48.000Z",
+      "message": "fix: corregir visibilidad del login y autocompletado",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
       "date": "2026-04-18"
     },
     "coverage": 81.69,

@@ -21,7 +21,13 @@
           <h2>Acceso</h2>
           <form id="login-form" class="login-form">
             <label for="username">Usuario</label>
-            <input id="username" name="username" type="text" value="admin" />
+            <input
+              id="username"
+              name="username"
+              type="text"
+              value="admin"
+              autocomplete="username"
+            />
 
             <label for="password">Contrasena</label>
             <input
@@ -29,6 +35,7 @@
               name="password"
               type="password"
               value="123456"
+              autocomplete="current-password"
             />
 
             <button type="submit" class="primary-action">Ingresar</button>

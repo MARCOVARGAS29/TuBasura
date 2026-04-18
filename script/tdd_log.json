@@ -198,9 +198,15 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2dcb8f4ff60ea4e8b00e16bee5fe038f7b869871",
     "commitName": "fix: esperar al DOM antes de iniciar la app",
     "commitTimestamp": 1776533777277,
     "testId": 33
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir visibilidad del login y autocompletado",
+    "commitTimestamp": 1776534230103,
+    "testId": 34
   }
 ]
