@@ -3,28 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horarios de Recoleccion</title>
+    <title>TuBasura | Ingreso</title>
   </head>
   <body>
-    <main class="app">
-      <section class="panel">
-        <p class="eyebrow">TuBasura</p>
-        <h1>Consulta el horario de recoleccion</h1>
-        <p class="description">
-          Selecciona tu distrito para conocer los dias y la hora aproximada en
-          la que pasa el camion recolector.
-        </p>
-
-        <div class="field">
-          <label for="district-select">Distrito</label>
-          <select id="district-select" name="district">
-            <option value="">Selecciona un distrito</option>
-          </select>
+    <main class="app-shell">
+      <section id="login-screen" class="screen screen-login">
+        <div class="brand-panel">
+          <p class="eyebrow">TuBasura</p>
+          <h1>Ingresa para revisar los horarios de recoleccion</h1>
+          <p class="description">
+            Accede con tu cuenta o entra como invitado para consultar la
+            informacion disponible de tu distrito.
+          </p>
         </div>
 
-        <section id="schedule-result" class="schedule-card" aria-live="polite">
-          <h2>Horario de recoleccion</h2>
-          <p>Selecciona un distrito para ver su horario.</p>
+        <section class="login-card">
+          <h2>Acceso</h2>
+          <form id="login-form" class="login-form">
+            <label for="username">Usuario</label>
+            <input id="username" name="username" type="text" value="admin" />
+
+            <label for="password">Contrasena</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              value="123456"
+            />
+
+            <button type="submit" class="primary-action">Ingresar</button>
+          </form>
+
+          <button id="guest-access-button" type="button" class="secondary-action">
+            Entrar como invitado
+          </button>
+        </section>
+      </section>
+
+      <section id="home-screen" class="screen screen-home" hidden>
+        <nav class="navbar">
+          <div>
+            <p class="eyebrow">TuBasura</p>
+            <h2 id="welcome-message">Bienvenido</h2>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#schedule-panel">Horarios de recoleccion</a></li>
+          </ul>
+        </nav>
+
+        <section id="schedule-panel" class="home-panel">
+          <header class="home-header">
+            <h1>Horarios de recoleccion</h1>
+            <p>
+              Consulta los dias y la hora aproximada en la que pasa el camion
+              recolector por tu zona.
+            </p>
+          </header>
+
+          <div class="field">
+            <label for="district-select">Distrito</label>
+            <select id="district-select" name="district">
+              <option value="">Selecciona un distrito</option>
+            </select>
+          </div>
+
+          <section id="schedule-result" class="schedule-card" aria-live="polite">
+            <h2>Horarios de recoleccion</h2>
+            <p>Selecciona un distrito para ver su horario disponible.</p>
+          </section>
         </section>
       </section>
     </main>

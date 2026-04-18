@@ -180,9 +180,15 @@
     "testId": 29
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cd48544d67cc076e181a439895fd6400601f9fca",
     "commitName": "test(red): mostrar login y home en la vista",
     "commitTimestamp": 1776533338808,
     "testId": 30
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): mostrar login y home en la vista",
+    "commitTimestamp": 1776533446228,
+    "testId": 31
   }
 ]

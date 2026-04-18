@@ -570,12 +570,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cd48544d67cc076e181a439895fd6400601f9fca",
     "author": "Marco",
     "commit": {
       "date": "2026-04-18T17:28:57.000Z",
       "message": "test(red): mostrar login y home en la vista",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/cd48544d67cc076e181a439895fd6400601f9fca"
     },
     "stats": {
       "total": 91,
@@ -587,5 +587,24 @@
     "test_count": 16,
     "failed_tests": 2,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:30:45.000Z",
+      "message": "feat(green): mostrar login y home en la vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 351,
+      "additions": 286,
+      "deletions": 65,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.69,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
