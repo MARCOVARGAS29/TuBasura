@@ -532,12 +532,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bf31564361e082918b97cfde58380346594b377f",
     "author": "Marco",
     "commit": {
       "date": "2026-04-18T17:25:49.000Z",
       "message": "test(red): mostrar home despues de ingresar",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/bf31564361e082918b97cfde58380346594b377f"
     },
     "stats": {
       "total": 35,
@@ -549,5 +549,24 @@
     "test_count": 13,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:26:43.000Z",
+      "message": "feat(green): mostrar home despues de ingresar",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 20,
+      "deletions": 2,
+      "date": "2026-04-18"
+    },
+    "coverage": 80.49,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

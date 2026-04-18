@@ -18,11 +18,29 @@ export default class CollectionSchedulePresenter {
   }
 
   login(credentials) {
-    return this.model.login(credentials);
+    const session = this.model.login(credentials);
+
+    if (!session) {
+      return null;
+    }
+
+    this.showHome(session);
+    return session;
   }
 
   enterAsGuest() {
-    return this.model.loginAsGuest();
+    const session = this.model.loginAsGuest();
+    this.showHome(session);
+
+    return session;
+  }
+
+  showHome(session) {
+    const options = this.model.getDistrictOptions();
+
+    this.view.showHome(session);
+    this.view.renderDistrictOptions(options);
+    this.view.showInitialMessage();
   }
 
   showScheduleForDistrict(districtId) {
