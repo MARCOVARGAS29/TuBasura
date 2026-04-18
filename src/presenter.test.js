@@ -59,6 +59,38 @@ describe('CollectionSchedulePresenter', () => {
     expect(view.showInitialMessage).toHaveBeenCalled();
   });
 
+  it('deberia mostrar el home al entrar como invitado', () => {
+    const session = {
+      name: 'Invitado',
+      accessType: 'guest',
+    };
+    const options = [{ value: '1', label: 'Distrito 1' }];
+    const model = {
+      loginAsGuest: jest.fn(() => session),
+      getDistrictOptions: jest.fn(() => options),
+    };
+    const view = {
+      showLogin: jest.fn(),
+      bindLogin: jest.fn(),
+      bindGuestAccess: jest.fn(),
+      bindDistrictSelection: jest.fn(),
+      showHome: jest.fn(),
+      renderDistrictOptions: jest.fn(),
+      showInitialMessage: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+    presenter.initialize();
+
+    const guestHandler = view.bindGuestAccess.mock.calls[0][0];
+    guestHandler();
+
+    expect(model.loginAsGuest).toHaveBeenCalled();
+    expect(view.showHome).toHaveBeenCalledWith(session);
+    expect(view.renderDistrictOptions).toHaveBeenCalledWith(options);
+    expect(view.showInitialMessage).toHaveBeenCalled();
+  });
+
   it('deberia mostrar el horario cuando existe el distrito', () => {
     const schedule = {
       district: 'Distrito 2',

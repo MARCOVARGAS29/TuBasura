@@ -186,9 +186,15 @@
     "testId": 30
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f79385f833fc98b7ef28b949c25ee85fdadb2fed",
     "commitName": "feat(green): mostrar login y home en la vista",
     "commitTimestamp": 1776533446228,
     "testId": 31
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: cubrir acceso invitado en presenter",
+    "commitTimestamp": 1776533481320,
+    "testId": 32
   }
 ]

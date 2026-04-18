@@ -589,17 +589,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "f79385f833fc98b7ef28b949c25ee85fdadb2fed",
     "author": "Marco",
     "commit": {
       "date": "2026-04-18T17:30:45.000Z",
       "message": "feat(green): mostrar login y home en la vista",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/f79385f833fc98b7ef28b949c25ee85fdadb2fed"
     },
     "stats": {
       "total": 351,
       "additions": 286,
       "deletions": 65,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.69,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:31:20.000Z",
+      "message": "test: cubrir acceso invitado en presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
       "date": "2026-04-18"
     },
     "coverage": 81.69,
