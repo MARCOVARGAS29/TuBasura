@@ -156,9 +156,15 @@
     "testId": 25
   },
   {
-    "commitId": "HEAD",
+    "commitId": "27184bcfa41a320ffa9c2b8db6a45a914404216a",
     "commitName": "test(red): iniciar en login y enlazar accesos",
     "commitTimestamp": 1776533038931,
     "testId": 26
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(green): iniciar en login y enlazar accesos",
+    "commitTimestamp": 1776533091227,
+    "testId": 27
   }
 ]

@@ -5,12 +5,24 @@ export default class CollectionSchedulePresenter {
   }
 
   initialize() {
-    const options = this.model.getDistrictOptions();
-    this.view.renderDistrictOptions(options);
-    this.view.showInitialMessage();
+    this.view.showLogin();
+    this.view.bindLogin((credentials) => {
+      this.login(credentials);
+    });
+    this.view.bindGuestAccess(() => {
+      this.enterAsGuest();
+    });
     this.view.bindDistrictSelection((districtId) => {
       this.showScheduleForDistrict(districtId);
     });
+  }
+
+  login(credentials) {
+    return this.model.login(credentials);
+  }
+
+  enterAsGuest() {
+    return this.model.loginAsGuest();
   }
 
   showScheduleForDistrict(districtId) {

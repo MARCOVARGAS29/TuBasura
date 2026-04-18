@@ -494,12 +494,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "27184bcfa41a320ffa9c2b8db6a45a914404216a",
     "author": "Marco",
     "commit": {
       "date": "2026-04-18T17:23:54.000Z",
       "message": "test(red): iniciar en login y enlazar accesos",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/27184bcfa41a320ffa9c2b8db6a45a914404216a"
     },
     "stats": {
       "total": 14,
@@ -511,5 +511,24 @@
     "test_count": 12,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:24:49.000Z",
+      "message": "feat(green): iniciar en login y enlazar accesos",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 15,
+      "deletions": 3,
+      "date": "2026-04-18"
+    },
+    "coverage": 74.42,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
