@@ -150,9 +150,15 @@
     "testId": 24
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d8783f20fff504445cb2d99aa246dd5da4b4a7f9",
     "commitName": "feat(green): permitir entrar como invitado",
     "commitTimestamp": 1776532929899,
     "testId": 25
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): iniciar en login y enlazar accesos",
+    "commitTimestamp": 1776533038931,
+    "testId": 26
   }
 ]
