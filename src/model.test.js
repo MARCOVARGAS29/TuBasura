@@ -18,6 +18,15 @@ describe('CollectionScheduleModel', () => {
     });
   });
 
+  it('deberia permitir entrar como invitado', () => {
+    const model = new CollectionScheduleModel();
+
+    expect(model.loginAsGuest()).toEqual({
+      name: 'Invitado',
+      accessType: 'guest',
+    });
+  });
+
   it('deberia crear 15 opciones de distrito', () => {
     const options = createDistrictOptions();
 

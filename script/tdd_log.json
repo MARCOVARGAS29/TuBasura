@@ -138,9 +138,15 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "23235cc72217f8e4221f6c580c74aec6d49f9ff1",
     "commitName": "feat(green): iniciar sesion con credenciales validas",
     "commitTimestamp": 1776532797531,
     "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): permitir entrar como invitado",
+    "commitTimestamp": 1776532849320,
+    "testId": 24
   }
 ]
