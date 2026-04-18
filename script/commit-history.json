@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7e5e4ae3c1940a2973883ac506cd4a9bcf787e5f",
     "author": "Marco",
     "commit": {
       "date": "2026-04-16T20:43:48.000Z",
       "message": "Fix model.getDistrictOptions so districts load in select",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7e5e4ae3c1940a2973883ac506cd4a9bcf787e5f"
     },
     "stats": {
       "total": 4,
@@ -416,5 +416,24 @@
     "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:17:53.000Z",
+      "message": "test(red): iniciar sesion con credenciales validas",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.25,
+    "test_count": 11,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

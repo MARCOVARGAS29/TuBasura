@@ -126,9 +126,15 @@
     "testId": 20
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7e5e4ae3c1940a2973883ac506cd4a9bcf787e5f",
     "commitName": "Fix model.getDistrictOptions so districts load in select",
     "commitTimestamp": 1776372229453,
     "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(red): iniciar sesion con credenciales validas",
+    "commitTimestamp": 1776532677336,
+    "testId": 22
   }
 ]
