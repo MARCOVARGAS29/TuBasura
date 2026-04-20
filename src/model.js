@@ -62,7 +62,7 @@ export default class CollectionScheduleModel {
   }
 
   constructor() {
-  this.reports = [];
+    this.reports = JSON.parse(localStorage.getItem('reports')) || [];
   }
 
   getReports() {
@@ -78,6 +78,7 @@ export default class CollectionScheduleModel {
     };
 
     this.reports.push(newReport);
+    localStorage.setItem('reports', JSON.stringify(this.reports));
 
     return newReport;
   }
@@ -87,6 +88,7 @@ export default class CollectionScheduleModel {
     if (!report) return null;
 
     report.likes += 1;
+    localStorage.setItem('reports', JSON.stringify(this.reports));
     return report;
   }
 }

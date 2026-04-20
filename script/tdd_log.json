@@ -358,9 +358,39 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d489c855c660d8d7c12a6ba21f4ebf4f8f65eb27",
     "commitName": "feat: incrementacion de likes",
     "commitTimestamp": 1776662214116,
     "testId": 37
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 7,
+    "numTotalTests": 19,
+    "timestamp": 1776662499513,
+    "success": false,
+    "testId": 38
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1776662537164,
+    "success": false,
+    "testId": 38
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1776662643020,
+    "success": true,
+    "testId": 38
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: reportes usando localstorage",
+    "commitTimestamp": 1776662685106,
+    "testId": 38
   }
 ]
