@@ -34,7 +34,10 @@ const schedulesByDistrict = {
   district: 'Distrito 5',
   days: 'Lunes, miercoles y viernes',
   time: '10:00',
-  zones: ['Zona La Maica (SubDistrito 14)'],
+  zones: [
+    'Zona La Maica (SubDistrito 14)',
+    'Zona Jaihuayco (SubDistrito 15)',
+  ],
 },
   6: { district: 'Distrito 6', days: 'Martes y jueves', time: '11:00' },
   7: { district: 'Distrito 7', days: 'Lunes, miercoles y sabado', time: '06:30' },

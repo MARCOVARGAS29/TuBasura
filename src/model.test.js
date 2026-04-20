@@ -147,6 +147,14 @@ it('deberia devolver la primera zona del distrito 5', () => {
   );
 });
 
+it('deberia devolver la segunda zona del distrito 5', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('5').zones).toContain(
+    'Zona Jaihuayco (SubDistrito 15)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
