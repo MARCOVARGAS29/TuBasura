@@ -36,14 +36,14 @@ describe('CollectionScheduleModel', () => {
   });
 
   it('deberia devolver el horario del distrito seleccionado', () => {
-    const model = new CollectionScheduleModel();
+  const model = new CollectionScheduleModel();
 
-    expect(model.getScheduleByDistrict('5')).toEqual({
-      district: 'Distrito 5',
-      days: 'Lunes, miercoles y viernes',
-      time: '10:00',
-    });
+  expect(model.getScheduleByDistrict('5')).toMatchObject({
+    district: 'Distrito 5',
+    days: 'Lunes, miercoles y viernes',
+    time: '10:00',
   });
+});
 
   it('deberia devolver las zonas del distrito 1', () => {
     const model = new CollectionScheduleModel();
@@ -138,6 +138,14 @@ it('deberia devolver la tercera zona del distrito 4', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 5', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('5').district).toBe('Distrito 5');
+  expect(model.getScheduleByDistrict('5').zones).toContain(
+    'Zona La Maica (SubDistrito 14)',
+  );
+});
 
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);

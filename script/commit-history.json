@@ -950,12 +950,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dc27935125ec63bc30d5bff026489ab72da7fc3d",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T18:50:45.000Z",
       "message": "feat: distrito 4 zona Coña coña",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/dc27935125ec63bc30d5bff026489ab72da7fc3d"
     },
     "stats": {
       "total": 9,
@@ -965,6 +965,25 @@
     },
     "coverage": 68.38,
     "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T19:13:25.000Z",
+      "message": "feat: distrito 5 zona La Maica",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 20,
+      "deletions": 7,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 32,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -30,7 +30,12 @@ const schedulesByDistrict = {
     'Zona Coña coña (SubDistrito 28)',
   ],
 },
-  5: { district: 'Distrito 5', days: 'Lunes, miercoles y viernes', time: '10:00' },
+5: {
+  district: 'Distrito 5',
+  days: 'Lunes, miercoles y viernes',
+  time: '10:00',
+  zones: ['Zona La Maica (SubDistrito 14)'],
+},
   6: { district: 'Distrito 6', days: 'Martes y jueves', time: '11:00' },
   7: { district: 'Distrito 7', days: 'Lunes, miercoles y sabado', time: '06:30' },
   8: { district: 'Distrito 8', days: 'Martes, jueves y domingo', time: '12:00' },
