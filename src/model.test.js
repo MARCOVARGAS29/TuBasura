@@ -56,21 +56,30 @@ describe('CollectionScheduleModel', () => {
       ],
     });
   });
+  
 
   it('deberia devolver null cuando el distrito no existe', () => {
     const model = new CollectionScheduleModel();
 
     expect(model.getScheduleByDistrict('20')).toBeNull();
   });
-  
   it('deberia devolver la primera zona del distrito 2', () => {
   const model = new CollectionScheduleModel();
 
-  expect(model.getScheduleByDistrict('2')).toMatchObject({
-    district: 'Distrito 2',
-    zones: ['Zona Mayorazgo (SubDistrito 01)'],
-  });
+  expect(model.getScheduleByDistrict('2').district).toBe('Distrito 2');
+  expect(model.getScheduleByDistrict('2').zones).toContain(
+    'Zona Mayorazgo (SubDistrito 01)',
+  );
 });
+
+it('deberia devolver la segunda zona del distrito 2', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('2').zones).toContain(
+    'Zona Condebamba (SubDistrito 22)',
+  );
+});
+
 
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);

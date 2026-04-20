@@ -4,7 +4,10 @@ const schedulesByDistrict = {
   district: 'Distrito 2',
   days: 'Martes, jueves y sabado',
   time: '08:00',
-  zones: ['Zona Mayorazgo (SubDistrito 01)'],
+  zones: [
+    'Zona Mayorazgo (SubDistrito 01)',
+    'Zona Condebamba (SubDistrito 22)',
+  ],
 },
   3: { district: 'Distrito 3', days: 'Lunes, jueves y sabado', time: '09:00' },
   4: { district: 'Distrito 4', days: 'Martes, viernes y domingo', time: '07:30' },

@@ -798,12 +798,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f7199238ae6e9256445f084dd1b02a4ed6b7dc26",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T16:29:39.000Z",
       "message": "feat: distrito 2 zona Mayorazgo",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/f7199238ae6e9256445f084dd1b02a4ed6b7dc26"
     },
     "stats": {
       "total": 20,
@@ -813,6 +813,25 @@
     },
     "coverage": 68.38,
     "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T16:40:56.000Z",
+      "message": "feat: distrito 2 zona Condebamba",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 18,
+      "deletions": 6,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 24,
     "failed_tests": 0,
     "conclusion": "success"
   }
