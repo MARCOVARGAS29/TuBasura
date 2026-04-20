@@ -988,12 +988,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "76a10b77e5d6e7830d87eec90e6aced6704be6aa",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T19:17:33.000Z",
       "message": "feat: distrito 5 zona Jaihuayco",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/76a10b77e5d6e7830d87eec90e6aced6704be6aa"
     },
     "stats": {
       "total": 13,
@@ -1003,6 +1003,25 @@
     },
     "coverage": 68.38,
     "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T19:20:44.000Z",
+      "message": "feat: distrito 5 zona Lacma",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
   }
