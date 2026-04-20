@@ -204,9 +204,253 @@
     "testId": 33
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ba71712772f62cde21c4d3d1bb89ffcaeb29dc91",
     "commitName": "fix: corregir visibilidad del login y autocompletado",
     "commitTimestamp": 1776534230103,
     "testId": 34
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1776536130948,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 3,
+    "numTotalTests": 10,
+    "timestamp": 1776543055962,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 5,
+    "numTotalTests": 18,
+    "timestamp": 1776543707208,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 4,
+    "numTotalTests": 18,
+    "timestamp": 1776544175809,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 3,
+    "numTotalTests": 18,
+    "timestamp": 1776544221152,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776544398686,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1776544484330,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1776545793704,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1776545941803,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1776659499960,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1776659623573,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1776659659693,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1776659817389,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "commitId": "bd6cd3384a89e326427e1ca18b7850c4cce33542",
+    "commitName": "feat: crea reportes con 0 likes",
+    "commitTimestamp": 1776660142294,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1776661637963,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1776661794639,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "commitId": "7e7e647a495547ff9cd1741ed32caadc360a0a97",
+    "commitName": "feat: guarda reportes en memoria",
+    "commitTimestamp": 1776661853026,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1776661931834,
+    "success": false,
+    "testId": 37
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1776661966156,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "commitId": "d489c855c660d8d7c12a6ba21f4ebf4f8f65eb27",
+    "commitName": "feat: incrementacion de likes",
+    "commitTimestamp": 1776662214116,
+    "testId": 37
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 7,
+    "numTotalTests": 19,
+    "timestamp": 1776662499513,
+    "success": false,
+    "testId": 38
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1776662537164,
+    "success": false,
+    "testId": 38
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1776662643020,
+    "success": true,
+    "testId": 38
+  },
+  {
+    "commitId": "7773db6d7442b5edd2016a9b72af5c10b7545881",
+    "commitName": "refactor: reportes usando localstorage",
+    "commitTimestamp": 1776662685106,
+    "testId": 38
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1776662932988,
+    "success": false,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1776663233139,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "7c24c90be8e27da210c960587c6423eabdf3f562",
+    "commitName": "feat: conectar presenter con creacion de reportes",
+    "commitTimestamp": 1776663323966,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 2,
+    "numTotalTests": 20,
+    "timestamp": 1776665826213,
+    "success": false,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 2,
+    "numTotalTests": 20,
+    "timestamp": 1776665945145,
+    "success": false,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 2,
+    "numTotalTests": 20,
+    "timestamp": 1776666099401,
+    "success": false,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1776666804507,
+    "success": true,
+    "testId": 40
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: correccion de errores en presenter",
+    "commitTimestamp": 1776667075725,
+    "testId": 40
   }
 ]

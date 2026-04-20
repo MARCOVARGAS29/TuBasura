@@ -55,3 +55,55 @@ describe('CollectionScheduleModel', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
 });
+
+describe('reportes', () => {
+    it('deberia crear un reporte con likes en 0', () => {
+      const model = new CollectionScheduleModel();
+
+      const report = model.createReport({
+        description: 'Basura en la calle',
+        image: '',
+      });
+
+      expect(report.description).toBe('Basura en la calle');
+      expect(report.likes).toBe(0);
+    });
+
+    it('deberia guardar el reporte en memoria', () => {
+      const model = new CollectionScheduleModel();
+
+      model.createReport({
+        description: 'Basura',
+        image: '',
+      });
+
+      const reports = model.getReports();
+
+      expect(reports.length).toBe(1);
+    });
+
+    it('deberia incrementar likes', () => {
+      const model = new CollectionScheduleModel();
+
+      const report = model.createReport({
+        description: 'Basura',
+        image: '',
+      });
+
+      const updated = model.likeReport(report.id);
+
+      expect(updated.likes).toBe(1);
+    });
+});
+
+beforeEach(() => {
+  global.localStorage = {
+    store: {},
+    getItem(key) {
+      return this.store[key] || null;
+    },
+    setItem(key, value) {
+      this.store[key] = value;
+    },
+  };
+});

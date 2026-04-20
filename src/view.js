@@ -9,6 +9,10 @@ export default class CollectionScheduleView {
     guestButton,
     usernameInput,
     passwordInput,
+    reportForm,
+    reportDescription,
+    reportImage,
+    reportsList,
   }) {
     this.loginSection = loginSection;
     this.homeSection = homeSection;
@@ -19,6 +23,10 @@ export default class CollectionScheduleView {
     this.guestButton = guestButton;
     this.usernameInput = usernameInput;
     this.passwordInput = passwordInput;
+    this.reportForm = reportForm;
+    this.reportDescription = reportDescription;
+    this.reportImage = reportImage;
+    this.reportsList = reportsList;
   }
 
   showLogin() {
@@ -86,4 +94,40 @@ export default class CollectionScheduleView {
       <p>No existe un horario registrado para el distrito seleccionado.</p>
     `;
   }
+
+  bindCreateReport(handler) {
+    this.reportForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      handler({
+        description: this.reportDescription.value,
+        image: this.reportImage.value,
+      });
+
+      this.reportForm.reset();
+    });
+  }
+
+  renderReports(reports, likeHandler) {
+    this.reportsList.innerHTML = '';
+
+    reports.forEach((report) => {
+      const div = document.createElement('div');
+      div.className = 'report-item';
+
+      div.innerHTML = `
+        <p>${report.description}</p>
+        ${report.image ? `<img src="${report.image}" width="100" />` : ''}
+        <p><strong>Likes:</strong> ${report.likes}</p>
+        <button data-id="${report.id}">👍 Like</button>
+      `;
+
+      div.querySelector('button').addEventListener('click', () => {
+        likeHandler(String(report.id));
+      });
+
+      this.reportsList.append(div);
+    });
+  }
+
 }

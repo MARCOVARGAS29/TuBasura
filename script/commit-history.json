@@ -646,12 +646,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ba71712772f62cde21c4d3d1bb89ffcaeb29dc91",
     "author": "Marco",
     "commit": {
       "date": "2026-04-18T17:43:48.000Z",
       "message": "fix: corregir visibilidad del login y autocompletado",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/ba71712772f62cde21c4d3d1bb89ffcaeb29dc91"
     },
     "stats": {
       "total": 13,
@@ -661,6 +661,120 @@
     },
     "coverage": 81.69,
     "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bd6cd3384a89e326427e1ca18b7850c4cce33542",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T04:42:20.000Z",
+      "message": "feat: crea reportes con 0 likes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/bd6cd3384a89e326427e1ca18b7850c4cce33542"
+    },
+    "stats": {
+      "total": 955,
+      "additions": 910,
+      "deletions": 45,
+      "date": "2026-04-20"
+    },
+    "coverage": 81.94,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7e7e647a495547ff9cd1741ed32caadc360a0a97",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T05:10:51.000Z",
+      "message": "feat: guarda reportes en memoria",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7e7e647a495547ff9cd1741ed32caadc360a0a97"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 33,
+      "deletions": 7,
+      "date": "2026-04-20"
+    },
+    "coverage": 82.89,
+    "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d489c855c660d8d7c12a6ba21f4ebf4f8f65eb27",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T05:16:53.000Z",
+      "message": "feat: incrementacion de likes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/d489c855c660d8d7c12a6ba21f4ebf4f8f65eb27"
+    },
+    "stats": {
+      "total": 360,
+      "additions": 191,
+      "deletions": 169,
+      "date": "2026-04-20"
+    },
+    "coverage": 82.93,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7773db6d7442b5edd2016a9b72af5c10b7545881",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T05:24:43.000Z",
+      "message": "refactor: reportes usando localstorage",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7773db6d7442b5edd2016a9b72af5c10b7545881"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 15,
+      "deletions": 2,
+      "date": "2026-04-20"
+    },
+    "coverage": 83.33,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7c24c90be8e27da210c960587c6423eabdf3f562",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T05:35:22.000Z",
+      "message": "feat: conectar presenter con creacion de reportes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7c24c90be8e27da210c960587c6423eabdf3f562"
+    },
+    "stats": {
+      "total": 465,
+      "additions": 250,
+      "deletions": 215,
+      "date": "2026-04-20"
+    },
+    "coverage": 83.91,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T06:37:53.000Z",
+      "message": "refactor: correccion de errores en presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 765,
+      "additions": 427,
+      "deletions": 338,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.1,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

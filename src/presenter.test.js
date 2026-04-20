@@ -11,8 +11,9 @@ describe('CollectionSchedulePresenter', () => {
       showLogin: jest.fn(),
       bindLogin: jest.fn(),
       bindGuestAccess: jest.fn(),
-      renderDistrictOptions: jest.fn(),
       bindDistrictSelection: jest.fn(),
+      bindCreateReport: jest.fn(),
+      bindLikeReport: jest.fn(),
     };
 
     const presenter = new CollectionSchedulePresenter({ model, view });
@@ -33,12 +34,17 @@ describe('CollectionSchedulePresenter', () => {
     const model = {
       login: jest.fn(() => session),
       getDistrictOptions: jest.fn(() => options),
+      getReports: jest.fn(() => []),
+      createReport: jest.fn(),
+      likeReport: jest.fn(),
     };
     const view = {
       showLogin: jest.fn(),
       bindLogin: jest.fn(),
       bindGuestAccess: jest.fn(),
       bindDistrictSelection: jest.fn(),
+      bindCreateReport: jest.fn(),
+      bindLikeReport: jest.fn(),
       showHome: jest.fn(),
       renderDistrictOptions: jest.fn(),
       showInitialMessage: jest.fn(),
@@ -68,16 +74,19 @@ describe('CollectionSchedulePresenter', () => {
     const model = {
       loginAsGuest: jest.fn(() => session),
       getDistrictOptions: jest.fn(() => options),
+      getReports: jest.fn(() => []),
     };
     const view = {
       showLogin: jest.fn(),
       bindLogin: jest.fn(),
       bindGuestAccess: jest.fn(),
       bindDistrictSelection: jest.fn(),
+      bindCreateReport: jest.fn(),
+      bindLikeReport: jest.fn(),
       showHome: jest.fn(),
       renderDistrictOptions: jest.fn(),
       showInitialMessage: jest.fn(),
-    };
+};
 
     const presenter = new CollectionSchedulePresenter({ model, view });
     presenter.initialize();
@@ -145,4 +154,34 @@ describe('CollectionSchedulePresenter', () => {
 
     expect(view.showScheduleNotFound).toHaveBeenCalled();
   });
+
+  it('deberia crear reporte desde presenter', () => {
+  const model = {
+    createReport: jest.fn(),
+    getReports: jest.fn(() => []),
+  };
+
+  const view = {
+    showLogin: jest.fn(),
+    bindLogin: jest.fn(),
+    bindGuestAccess: jest.fn(),
+    bindDistrictSelection: jest.fn(),
+    bindCreateReport: jest.fn(),
+
+    showHome: jest.fn(),
+    renderDistrictOptions: jest.fn(),
+    showInitialMessage: jest.fn(),
+  };
+
+  const presenter = new CollectionSchedulePresenter({ model, view });
+
+  presenter.initialize();
+
+  const handler = view.bindCreateReport.mock.calls[0][0];
+
+  handler({ description: 'Basura', image: '' });
+
+  expect(model.createReport).toHaveBeenCalled();
+  });
+
 });
