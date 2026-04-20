@@ -11,7 +11,12 @@ const schedulesByDistrict = {
     'Zona Queru Queru Alto (SubDistrito 24)',
   ],
 },
-  3: { district: 'Distrito 3', days: 'Lunes, jueves y sabado', time: '09:00' },
+3: {
+  district: 'Distrito 3',
+  days: 'Lunes, jueves y sabado',
+  time: '09:00',
+  zones: ['Zona Sarcobamba (SubDistrito 21)'],
+},
   4: { district: 'Distrito 4', days: 'Martes, viernes y domingo', time: '07:30' },
   5: { district: 'Distrito 5', days: 'Lunes, miercoles y viernes', time: '10:00' },
   6: { district: 'Distrito 6', days: 'Martes y jueves', time: '11:00' },

@@ -96,6 +96,15 @@ it('deberia devolver la cuarta zona del distrito 2', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 3', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('3').district).toBe('Distrito 3');
+  expect(model.getScheduleByDistrict('3').zones).toContain(
+    'Zona Sarcobamba (SubDistrito 21)',
+  );
+});
+
 
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);

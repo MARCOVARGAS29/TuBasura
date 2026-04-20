@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "034f6b47908ddf3f2e5de3b62ba857ac083e3140",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T16:47:32.000Z",
       "message": "feat: distrito 2 zona Queru Queru Alto",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/034f6b47908ddf3f2e5de3b62ba857ac083e3140"
     },
     "stats": {
       "total": 9,
@@ -870,6 +870,25 @@
     },
     "coverage": 68.38,
     "test_count": 26,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T18:36:44.000Z",
+      "message": "feat: distrito 3 zona Sarcobamba",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 15,
+      "deletions": 1,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 27,
     "failed_tests": 0,
     "conclusion": "success"
   }
