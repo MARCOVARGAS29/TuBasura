@@ -61,13 +61,26 @@ export default class CollectionScheduleModel {
     return schedulesByDistrict[districtId] || null;
   }
 
+  constructor() {
+  this.reports = [];
+  }
+
+  getReports() {
+    return this.reports;
+  }
+
   createReport({ description, image }) {
-  return {
-    description,
-    image,
-    likes: 0,
-  };
-}
+    const newReport = {
+      id: Date.now().toString(),
+      description,
+      image,
+      likes: 0,
+    };
+
+    this.reports.push(newReport);
+
+    return newReport;
+  }
 }
 
 

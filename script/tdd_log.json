@@ -314,9 +314,31 @@
     "testId": 35
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bd6cd3384a89e326427e1ca18b7850c4cce33542",
     "commitName": "feat: crea reportes con 0 likes",
     "commitTimestamp": 1776660142294,
     "testId": 35
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1776661637963,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1776661794639,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: guarda reportes en memoria",
+    "commitTimestamp": 1776661853026,
+    "testId": 36
   }
 ]

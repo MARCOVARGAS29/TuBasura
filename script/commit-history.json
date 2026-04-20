@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bd6cd3384a89e326427e1ca18b7850c4cce33542",
     "author": "ArielFlowers",
     "commit": {
       "date": "2026-04-20T04:42:20.000Z",
       "message": "feat: crea reportes con 0 likes",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/bd6cd3384a89e326427e1ca18b7850c4cce33542"
     },
     "stats": {
       "total": 955,
@@ -680,6 +680,25 @@
     },
     "coverage": 81.94,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T05:10:51.000Z",
+      "message": "feat: guarda reportes en memoria",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 33,
+      "deletions": 7,
+      "date": "2026-04-20"
+    },
+    "coverage": 82.89,
+    "test_count": 18,
     "failed_tests": 0,
     "conclusion": "success"
   }

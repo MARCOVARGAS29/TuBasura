@@ -68,4 +68,17 @@ describe('reportes', () => {
       expect(report.description).toBe('Basura en la calle');
       expect(report.likes).toBe(0);
     });
-  });
+
+    it('deberia guardar el reporte en memoria', () => {
+      const model = new CollectionScheduleModel();
+
+      model.createReport({
+        description: 'Basura',
+        image: '',
+      });
+
+      const reports = model.getReports();
+
+      expect(reports.length).toBe(1);
+    });
+});
