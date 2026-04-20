@@ -760,12 +760,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "634052c441bbd8a7659d5d684269c9e8614c3129",
     "author": "ArielFlowers",
     "commit": {
       "date": "2026-04-20T06:37:53.000Z",
       "message": "refactor: correccion de errores en presenter",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/634052c441bbd8a7659d5d684269c9e8614c3129"
     },
     "stats": {
       "total": 765,
@@ -775,6 +775,25 @@
     },
     "coverage": 68.1,
     "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T15:19:47.000Z",
+      "message": "feat: implementar zonas en distritos siguiendo el ciclo TDD",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 33,
+      "deletions": 1,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 22,
     "failed_tests": 0,
     "conclusion": "success"
   }

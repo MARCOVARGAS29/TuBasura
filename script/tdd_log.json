@@ -448,9 +448,23 @@
     "testId": 40
   },
   {
-    "commitId": "HEAD",
+    "commitId": "634052c441bbd8a7659d5d684269c9e8614c3129",
     "commitName": "refactor: correccion de errores en presenter",
     "commitTimestamp": 1776667075725,
     "testId": 40
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1776693388619,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar zonas en distritos siguiendo el ciclo TDD",
+    "commitTimestamp": 1776698389836,
+    "testId": 41
   }
 ]

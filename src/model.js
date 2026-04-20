@@ -1,5 +1,5 @@
 const schedulesByDistrict = {
-  1: { district: 'Distrito 1', days: 'Lunes, miercoles y viernes', time: '07:00' },
+  1: { district: 'Distrito 1', days: 'Lunes, miercoles y viernes', time: '07:00', zones: ['Zona Aranjuez Alto (SubDistrito 25)', 'Zona Mesadilla (SubDistrito 26)'] },
   2: { district: 'Distrito 2', days: 'Martes, jueves y sabado', time: '08:00' },
   3: { district: 'Distrito 3', days: 'Lunes, jueves y sabado', time: '09:00' },
   4: { district: 'Distrito 4', days: 'Martes, viernes y domingo', time: '07:30' },

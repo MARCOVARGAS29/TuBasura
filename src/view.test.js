@@ -103,4 +103,18 @@ describe('CollectionScheduleView', () => {
     expect(resultContainer.innerHTML).toContain('Distrito 3');
     expect(resultContainer.innerHTML).toContain('09:00');
   });
+
+  it('deberia mostrar las zonas si el distrito las tiene', () => {
+    const { view, resultContainer } = createView();
+
+    view.showSchedule({
+      district: 'Distrito 1',
+      days: 'Lunes, miercoles y viernes',
+      time: '07:00',
+      zones: ['Zona A', 'Zona B'],
+    });
+
+    expect(resultContainer.innerHTML).toContain('Zona A');
+    expect(resultContainer.innerHTML).toContain('Zona B');
+  });
 });

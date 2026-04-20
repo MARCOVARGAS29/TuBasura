@@ -44,6 +44,18 @@ describe('CollectionScheduleModel', () => {
       time: '10:00',
     });
   });
+  
+  it('deberia devolver las zonas del distrito 1', () => {
+    const model = new CollectionScheduleModel();
+
+    expect(model.getScheduleByDistrict('1')).toMatchObject({
+      district: 'Distrito 1',
+      zones: [
+        'Zona Aranjuez Alto (SubDistrito 25)',
+        'Zona Mesadilla (SubDistrito 26)',
+      ],
+    });
+  });
 
   it('deberia devolver null cuando el distrito no existe', () => {
     const model = new CollectionScheduleModel();

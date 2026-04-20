@@ -85,6 +85,12 @@ export default class CollectionScheduleView {
       <h2>${schedule.district}</h2>
       <p><strong>Dias:</strong> ${schedule.days}</p>
       <p><strong>Hora:</strong> ${schedule.time}</p>
+      ${schedule.zones ? `
+        <p><strong>Zonas:</strong></p>
+        <ul>
+          ${schedule.zones.map(zone => `<li>${zone}</li>`).join('')}
+        </ul>
+      ` : ''}
     `;
   }
 
