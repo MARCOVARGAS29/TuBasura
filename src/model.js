@@ -15,7 +15,10 @@ const schedulesByDistrict = {
   district: 'Distrito 3',
   days: 'Lunes, jueves y sabado',
   time: '09:00',
-  zones: ['Zona Sarcobamba (SubDistrito 21)'],
+  zones: [
+    'Zona Sarcobamba (SubDistrito 21)',
+    'Zona Chiquicollo (SubDistrito 37)',
+  ],
 },
   4: { district: 'Distrito 4', days: 'Martes, viernes y domingo', time: '07:30' },
   5: { district: 'Distrito 5', days: 'Lunes, miercoles y viernes', time: '10:00' },

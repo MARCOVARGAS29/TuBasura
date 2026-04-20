@@ -874,12 +874,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "58fe25c8dcbded67618ab9ae179117587756296d",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T18:36:44.000Z",
       "message": "feat: distrito 3 zona Sarcobamba",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/58fe25c8dcbded67618ab9ae179117587756296d"
     },
     "stats": {
       "total": 16,
@@ -889,6 +889,25 @@
     },
     "coverage": 68.38,
     "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T18:40:14.000Z",
+      "message": "feat: distrito 3 zona Chiquicollo",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 28,
     "failed_tests": 0,
     "conclusion": "success"
   }

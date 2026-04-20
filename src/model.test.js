@@ -105,6 +105,14 @@ it('deberia devolver la primera zona del distrito 3', () => {
   );
 });
 
+it('deberia devolver la segunda zona del distrito 3', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('3').zones).toContain(
+    'Zona Chiquicollo (SubDistrito 37)',
+  );
+});
+
 
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
