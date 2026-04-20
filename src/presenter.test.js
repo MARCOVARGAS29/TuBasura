@@ -34,6 +34,9 @@ describe('CollectionSchedulePresenter', () => {
     const model = {
       login: jest.fn(() => session),
       getDistrictOptions: jest.fn(() => options),
+      getReports: jest.fn(() => []),
+      createReport: jest.fn(),
+      likeReport: jest.fn(),
     };
     const view = {
       showLogin: jest.fn(),
@@ -71,6 +74,7 @@ describe('CollectionSchedulePresenter', () => {
     const model = {
       loginAsGuest: jest.fn(() => session),
       getDistrictOptions: jest.fn(() => options),
+      getReports: jest.fn(() => []),
     };
     const view = {
       showLogin: jest.fn(),

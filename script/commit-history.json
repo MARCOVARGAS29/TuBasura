@@ -741,12 +741,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7c24c90be8e27da210c960587c6423eabdf3f562",
     "author": "ArielFlowers",
     "commit": {
       "date": "2026-04-20T05:35:22.000Z",
       "message": "feat: conectar presenter con creacion de reportes",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7c24c90be8e27da210c960587c6423eabdf3f562"
     },
     "stats": {
       "total": 465,
@@ -755,6 +755,25 @@
       "date": "2026-04-20"
     },
     "coverage": 83.91,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T06:37:53.000Z",
+      "message": "refactor: correccion de errores en presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 765,
+      "additions": 427,
+      "deletions": 338,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.1,
     "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"

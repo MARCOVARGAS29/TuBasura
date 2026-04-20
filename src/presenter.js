@@ -42,6 +42,11 @@ export default class CollectionSchedulePresenter {
     this.view.showHome(session);
     this.view.renderDistrictOptions(options);
     this.view.showInitialMessage();
+
+    if (this.model.getReports && this.view.renderReports) {
+      const reports = this.model.getReports();
+      this.view.renderReports(reports, (id) => this.likeReport(id));
+    }
   }
 
   showScheduleForDistrict(districtId) {
@@ -62,6 +67,20 @@ export default class CollectionSchedulePresenter {
 
   createReport(data) {
     this.model.createReport(data);
+
+    if (this.model.getReports && this.view.renderReports) {
+      const reports = this.model.getReports();
+      this.view.renderReports(reports, (id) => this.likeReport(id));
+    }
+  }
+
+  likeReport(id) {
+  this.model.likeReport(id);
+
+    if (this.model.getReports && this.view.renderReports) {
+      const reports = this.model.getReports();
+      this.view.renderReports(reports, (id) => this.likeReport(id));
+    }
   }
 
 }

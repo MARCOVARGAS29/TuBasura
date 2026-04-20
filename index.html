@@ -78,6 +78,25 @@
             <h2>Horarios de recoleccion</h2>
             <p>Selecciona un distrito para ver su horario disponible.</p>
           </section>
+          <section id="reports-panel" class="home-panel">
+            <header class="home-header">
+              <h1>Reportes de basura</h1>
+              <p>Reporta acumulación de basura en tu zona.</p>
+            </header>
+
+            <form id="report-form" class="login-form">
+              <label>Descripción</label>
+              <input type="text" id="report-description" required />
+
+              <label>Imagen (URL opcional)</label>
+              <input type="text" id="report-image" />
+
+              <button type="submit" class="primary-action">
+                Crear reporte
+              </button>
+            </form>
+            <div id="reports-list"></div>
+          </section>
         </section>
       </section>
     </main>

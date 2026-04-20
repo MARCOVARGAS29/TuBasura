@@ -410,9 +410,47 @@
     "testId": 39
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7c24c90be8e27da210c960587c6423eabdf3f562",
     "commitName": "feat: conectar presenter con creacion de reportes",
     "commitTimestamp": 1776663323966,
     "testId": 39
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 2,
+    "numTotalTests": 20,
+    "timestamp": 1776665826213,
+    "success": false,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 2,
+    "numTotalTests": 20,
+    "timestamp": 1776665945145,
+    "success": false,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 2,
+    "numTotalTests": 20,
+    "timestamp": 1776666099401,
+    "success": false,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1776666804507,
+    "success": true,
+    "testId": 40
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: correccion de errores en presenter",
+    "commitTimestamp": 1776667075725,
+    "testId": 40
   }
 ]
