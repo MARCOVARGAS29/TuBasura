@@ -81,6 +81,14 @@ export default class CollectionScheduleModel {
 
     return newReport;
   }
+
+  likeReport(id) {
+    const report = this.reports.find(r => r.id === id);
+    if (!report) return null;
+
+    report.likes += 1;
+    return report;
+  }
 }
 
 

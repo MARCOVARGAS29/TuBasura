@@ -336,9 +336,31 @@
     "testId": 36
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7e7e647a495547ff9cd1741ed32caadc360a0a97",
     "commitName": "feat: guarda reportes en memoria",
     "commitTimestamp": 1776661853026,
     "testId": 36
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1776661931834,
+    "success": false,
+    "testId": 37
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1776661966156,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: incrementacion de likes",
+    "commitTimestamp": 1776662214116,
+    "testId": 37
   }
 ]

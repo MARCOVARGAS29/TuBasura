@@ -81,4 +81,18 @@ describe('reportes', () => {
 
       expect(reports.length).toBe(1);
     });
+
+    it('deberia incrementar likes', () => {
+      const model = new CollectionScheduleModel();
+
+      const report = model.createReport({
+        description: 'Basura',
+        image: '',
+      });
+
+      const updated = model.likeReport(report.id);
+
+      expect(updated.likes).toBe(1);
+    });
+    
 });
