@@ -1007,12 +1007,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "69caad8dcd00b30c7024ec5b20a0d70398a2507d",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T19:20:44.000Z",
       "message": "feat: distrito 5 zona Lacma",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/69caad8dcd00b30c7024ec5b20a0d70398a2507d"
     },
     "stats": {
       "total": 9,
@@ -1022,6 +1022,25 @@
     },
     "coverage": 68.38,
     "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T19:27:17.000Z",
+      "message": "feat: distrito 5 zona Ticti",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"
   }
