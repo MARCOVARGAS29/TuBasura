@@ -27,6 +27,7 @@ const schedulesByDistrict = {
   zones: [
     'Zona Chimba (SubDistrito 10)',
     'Zona Villa Bush (SubDistrito 27)',
+    'Zona Coña coña (SubDistrito 28)',
   ],
 },
   5: { district: 'Distrito 5', days: 'Lunes, miercoles y viernes', time: '10:00' },
