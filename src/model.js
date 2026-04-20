@@ -42,7 +42,12 @@ const schedulesByDistrict = {
     'Zona Valle Hermoso (SubDistrito 20)',
   ],
 },
-  6: { district: 'Distrito 6', days: 'Martes y jueves', time: '11:00' },
+6: {
+  district: 'Distrito 6',
+  days: 'Martes y jueves',
+  time: '11:00',
+  zones: ['Zona Alalay Norte (SubDistrito 16)'],
+},
   7: { district: 'Distrito 7', days: 'Lunes, miercoles y sabado', time: '06:30' },
   8: { district: 'Distrito 8', days: 'Martes, jueves y domingo', time: '12:00' },
   9: { district: 'Distrito 9', days: 'Lunes, miercoles y viernes', time: '13:00' },

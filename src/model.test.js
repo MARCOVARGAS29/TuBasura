@@ -179,6 +179,15 @@ it('deberia devolver la quinta zona del distrito 5', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 6', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('6').district).toBe('Distrito 6');
+  expect(model.getScheduleByDistrict('6').zones).toContain(
+    'Zona Alalay Norte (SubDistrito 16)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
