@@ -836,12 +836,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6b5d2a2c0787c57369353b4c59cd079630c7325c",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T16:44:25.000Z",
       "message": "feat: distrito 2 zona Temporal Pampa",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/6b5d2a2c0787c57369353b4c59cd079630c7325c"
     },
     "stats": {
       "total": 9,
@@ -851,6 +851,25 @@
     },
     "coverage": 68.38,
     "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T16:47:32.000Z",
+      "message": "feat: distrito 2 zona Queru Queru Alto",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 26,
     "failed_tests": 0,
     "conclusion": "success"
   }

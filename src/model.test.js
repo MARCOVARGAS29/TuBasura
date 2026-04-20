@@ -88,6 +88,14 @@ it('deberia devolver la tercera zona del distrito 2', () => {
   );
 });
 
+it('deberia devolver la cuarta zona del distrito 2', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('2').zones).toContain(
+    'Zona Queru Queru Alto (SubDistrito 24)',
+  );
+});
+
 
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);

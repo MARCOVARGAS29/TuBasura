@@ -8,6 +8,7 @@ const schedulesByDistrict = {
     'Zona Mayorazgo (SubDistrito 01)',
     'Zona Condebamba (SubDistrito 22)',
     'Zona Temporal Pampa (SubDistrito 23)',
+    'Zona Queru Queru Alto (SubDistrito 24)',
   ],
 },
   3: { district: 'Distrito 3', days: 'Lunes, jueves y sabado', time: '09:00' },
