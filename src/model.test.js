@@ -44,7 +44,7 @@ describe('CollectionScheduleModel', () => {
       time: '10:00',
     });
   });
-  
+
   it('deberia devolver las zonas del distrito 1', () => {
     const model = new CollectionScheduleModel();
 
@@ -62,6 +62,15 @@ describe('CollectionScheduleModel', () => {
 
     expect(model.getScheduleByDistrict('20')).toBeNull();
   });
+  
+  it('deberia devolver la primera zona del distrito 2', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('2')).toMatchObject({
+    district: 'Distrito 2',
+    zones: ['Zona Mayorazgo (SubDistrito 01)'],
+  });
+});
 
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);

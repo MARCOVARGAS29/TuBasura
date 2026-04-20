@@ -779,12 +779,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e193bfa91bdb2fc29298953b3941ec93a2750e2c",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T15:19:47.000Z",
       "message": "feat: implementar zonas en distritos siguiendo el ciclo TDD",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/e193bfa91bdb2fc29298953b3941ec93a2750e2c"
     },
     "stats": {
       "total": 34,
@@ -794,6 +794,25 @@
     },
     "coverage": 68.38,
     "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T16:29:39.000Z",
+      "message": "feat: distrito 2 zona Mayorazgo",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 17,
+      "deletions": 3,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 23,
     "failed_tests": 0,
     "conclusion": "success"
   }
