@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "9e05ba44ee2f0d70bee0d2cf6b715c0a99ceac75",
     "author": "Marco Vargas",
     "commit": {
       "date": "2026-04-14T01:29:32.000Z",
       "message": "first commit",
-      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/HEAD"
+      "url": "https://github.com/UCB-TallerDeDesarrollo/TDDLabBaseProject/commit/9e05ba44ee2f0d70bee0d2cf6b715c0a99ceac75"
     },
     "stats": {
       "total": 18,
@@ -15,6 +15,671 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5a7b3c83722b40fa8ff965f3c64f14aafdf44447",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:23:03.000Z",
+      "message": "test(red): crear opciones de distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/5a7b3c83722b40fa8ff965f3c64f14aafdf44447"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 8,
+      "deletions": 6,
+      "date": "2026-04-16"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "4eec48429b94a70a138f896ab0b20f6df24723e7",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:23:42.000Z",
+      "message": "feat(green): generar opciones de distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/4eec48429b94a70a138f896ab0b20f6df24723e7"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d672ba24de46a2a8505198c23f01bcb226c1d020",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:24:16.000Z",
+      "message": "test(red): consultar horario por distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/d672ba24de46a2a8505198c23f01bcb226c1d020"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "e18c229fc3c48b99a88f5a17777ac55939333ead",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:24:36.000Z",
+      "message": "feat(green): consultar horario por distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/e18c229fc3c48b99a88f5a17777ac55939333ead"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c8e00e2523172e7cba24406238250d9566f896d3",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:25:02.000Z",
+      "message": "test(red): devolver null si el distrito no existe",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c8e00e2523172e7cba24406238250d9566f896d3"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "4c7a4551bc72313d2e443456dc885f28f0a1371b",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:25:22.000Z",
+      "message": "feat(green): devolver null si no hay horario",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/4c7a4551bc72313d2e443456dc885f28f0a1371b"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "72e15e686241d24398ed378e105a2fb308ef0e70",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:26:38.000Z",
+      "message": "test(red): definir horarios para 15 distritos",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/72e15e686241d24398ed378e105a2fb308ef0e70"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "c12be67b0d3602cc7f2eb3f35a70a36d8cac59fa",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:27:08.000Z",
+      "message": "feat(green): completar horarios de 15 distritos",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c12be67b0d3602cc7f2eb3f35a70a36d8cac59fa"
+    },
+    "stats": {
+      "total": 72,
+      "additions": 71,
+      "deletions": 1,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e983f4b09df2c9d69cd9b644a07f13d0c744f420",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:27:52.000Z",
+      "message": "test(red): inicializar presenter con opciones",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/e983f4b09df2c9d69cd9b644a07f13d0c744f420"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c547a72bae8d63ae39031efcef9527d44e0d6253",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:28:18.000Z",
+      "message": "feat(green): inicializar presenter con opciones",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c547a72bae8d63ae39031efcef9527d44e0d6253"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 13,
+      "deletions": 15,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2c7a05bf30f0d75626a0e597b1529ff64bf8ff36",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:28:47.000Z",
+      "message": "test(red): mostrar horario existente desde presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/2c7a05bf30f0d75626a0e597b1529ff64bf8ff36"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "228242af5f53749fc3378934cdc21aa71651de19",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:29:11.000Z",
+      "message": "feat(green): mostrar horario existente desde presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/228242af5f53749fc3378934cdc21aa71651de19"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e77dd93e19a9db2d7a81496ec82f2ac5afc13a16",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:29:44.000Z",
+      "message": "test(red): mostrar mensaje inicial sin distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/e77dd93e19a9db2d7a81496ec82f2ac5afc13a16"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 7,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "445493e9514456dc2258b7461b01b488ad6ccb41",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:30:16.000Z",
+      "message": "feat(green): restaurar mensaje inicial sin distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/445493e9514456dc2258b7461b01b488ad6ccb41"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5dfea87d5d69d98f9295d558a3fbcef9a206990c",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:30:47.000Z",
+      "message": "test(red): mostrar mensaje si no hay horario",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/5dfea87d5d69d98f9295d558a3fbcef9a206990c"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "a18c49cb4b8f63f7ffa6396410e03b859b379d48",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:31:21.000Z",
+      "message": "feat(green): mostrar mensaje si no hay horario",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/a18c49cb4b8f63f7ffa6396410e03b859b379d48"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9d387fa625cc8e9a7097ea74cac9cb782102dd70",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:31:50.000Z",
+      "message": "test(red): renderizar opciones en la vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/9d387fa625cc8e9a7097ea74cac9cb782102dd70"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 24,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c280a4056d223dbd060808eb29c4c5e817267c5f",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:32:26.000Z",
+      "message": "feat(green): renderizar opciones en la vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c280a4056d223dbd060808eb29c4c5e817267c5f"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "311f33e50d71e9d9d7f8036ff18ab89ef260dd19",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:33:01.000Z",
+      "message": "test(red): mostrar horario seleccionado en la vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/311f33e50d71e9d9d7f8036ff18ab89ef260dd19"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 100,
+    "test_count": 10,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "caec0170e8aff2f0fe4f80ac219956ed5a1d86a9",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:34:52.000Z",
+      "message": "feat(green): completar vista y pagina de horarios",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/caec0170e8aff2f0fe4f80ac219956ed5a1d86a9"
+    },
+    "stats": {
+      "total": 221,
+      "additions": 195,
+      "deletions": 26,
+      "date": "2026-04-16"
+    },
+    "coverage": 83.87,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7e5e4ae3c1940a2973883ac506cd4a9bcf787e5f",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-16T20:43:48.000Z",
+      "message": "Fix model.getDistrictOptions so districts load in select",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7e5e4ae3c1940a2973883ac506cd4a9bcf787e5f"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-04-16"
+    },
+    "coverage": 81.25,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "da99fbd3600422ccce0817a3ef6885112cf6d951",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:17:53.000Z",
+      "message": "test(red): iniciar sesion con credenciales validas",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/da99fbd3600422ccce0817a3ef6885112cf6d951"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.25,
+    "test_count": 11,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "23235cc72217f8e4221f6c580c74aec6d49f9ff1",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:19:54.000Z",
+      "message": "feat(green): iniciar sesion con credenciales validas",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/23235cc72217f8e4221f6c580c74aec6d49f9ff1"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.58,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fc8bd40ab3dd78f992d7c413186848672927fc3b",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:20:47.000Z",
+      "message": "test(red): permitir entrar como invitado",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/fc8bd40ab3dd78f992d7c413186848672927fc3b"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.58,
+    "test_count": 12,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "d8783f20fff504445cb2d99aa246dd5da4b4a7f9",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:22:06.000Z",
+      "message": "feat(green): permitir entrar como invitado",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/d8783f20fff504445cb2d99aa246dd5da4b4a7f9"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2026-04-18"
+    },
+    "coverage": 82.05,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "27184bcfa41a320ffa9c2b8db6a45a914404216a",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:23:54.000Z",
+      "message": "test(red): iniciar en login y enlazar accesos",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/27184bcfa41a320ffa9c2b8db6a45a914404216a"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 9,
+      "deletions": 5,
+      "date": "2026-04-18"
+    },
+    "coverage": 82.05,
+    "test_count": 12,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "a65f85f1c3e29b7f995b04bc2ba3c9bab2b1b3a7",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:24:49.000Z",
+      "message": "feat(green): iniciar en login y enlazar accesos",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/a65f85f1c3e29b7f995b04bc2ba3c9bab2b1b3a7"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 15,
+      "deletions": 3,
+      "date": "2026-04-18"
+    },
+    "coverage": 74.42,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bf31564361e082918b97cfde58380346594b377f",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:25:49.000Z",
+      "message": "test(red): mostrar home despues de ingresar",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/bf31564361e082918b97cfde58380346594b377f"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 35,
+      "deletions": 0,
+      "date": "2026-04-18"
+    },
+    "coverage": 79.07,
+    "test_count": 13,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "8c8c7b80d29399549422f25149e924000a4bb771",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:26:43.000Z",
+      "message": "feat(green): mostrar home despues de ingresar",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/8c8c7b80d29399549422f25149e924000a4bb771"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 20,
+      "deletions": 2,
+      "date": "2026-04-18"
+    },
+    "coverage": 80.49,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cd48544d67cc076e181a439895fd6400601f9fca",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:28:57.000Z",
+      "message": "test(red): mostrar login y home en la vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/cd48544d67cc076e181a439895fd6400601f9fca"
+    },
+    "stats": {
+      "total": 91,
+      "additions": 77,
+      "deletions": 14,
+      "date": "2026-04-18"
+    },
+    "coverage": 84.91,
+    "test_count": 16,
+    "failed_tests": 2,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "f79385f833fc98b7ef28b949c25ee85fdadb2fed",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:30:45.000Z",
+      "message": "feat(green): mostrar login y home en la vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/f79385f833fc98b7ef28b949c25ee85fdadb2fed"
+    },
+    "stats": {
+      "total": 351,
+      "additions": 286,
+      "deletions": 65,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.69,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8769997c92b5a8e87a1e7db615310fd1b841a200",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:31:20.000Z",
+      "message": "test: cubrir acceso invitado en presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/8769997c92b5a8e87a1e7db615310fd1b841a200"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.69,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2dcb8f4ff60ea4e8b00e16bee5fe038f7b869871",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:36:16.000Z",
+      "message": "fix: esperar al DOM antes de iniciar la app",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/2dcb8f4ff60ea4e8b00e16bee5fe038f7b869871"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 22,
+      "deletions": 14,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.69,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ba71712772f62cde21c4d3d1bb89ffcaeb29dc91",
+    "author": "Marco",
+    "commit": {
+      "date": "2026-04-18T17:43:48.000Z",
+      "message": "fix: corregir visibilidad del login y autocompletado",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/ba71712772f62cde21c4d3d1bb89ffcaeb29dc91"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-04-18"
+    },
+    "coverage": 81.69,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T04:42:20.000Z",
+      "message": "feat: crea reportes con 0 likes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 955,
+      "additions": 910,
+      "deletions": 45,
+      "date": "2026-04-20"
+    },
+    "coverage": 81.94,
+    "test_count": 17,
     "failed_tests": 0,
     "conclusion": "success"
   }

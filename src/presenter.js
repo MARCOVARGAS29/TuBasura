@@ -1,15 +1,62 @@
-import sumar from "./sumador";
+export default class CollectionSchedulePresenter {
+  constructor({ model, view }) {
+    this.model = model;
+    this.view = view;
+  }
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+  initialize() {
+    this.view.showLogin();
+    this.view.bindLogin((credentials) => {
+      this.login(credentials);
+    });
+    this.view.bindGuestAccess(() => {
+      this.enterAsGuest();
+    });
+    this.view.bindDistrictSelection((districtId) => {
+      this.showScheduleForDistrict(districtId);
+    });
+  }
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+  login(credentials) {
+    const session = this.model.login(credentials);
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+    if (!session) {
+      return null;
+    }
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
-});
+    this.showHome(session);
+    return session;
+  }
+
+  enterAsGuest() {
+    const session = this.model.loginAsGuest();
+    this.showHome(session);
+
+    return session;
+  }
+
+  showHome(session) {
+    const options = this.model.getDistrictOptions();
+
+    this.view.showHome(session);
+    this.view.renderDistrictOptions(options);
+    this.view.showInitialMessage();
+  }
+
+  showScheduleForDistrict(districtId) {
+    if (!districtId) {
+      this.view.showInitialMessage();
+      return;
+    }
+
+    const schedule = this.model.getScheduleByDistrict(districtId);
+
+    if (!schedule) {
+      this.view.showScheduleNotFound();
+      return;
+    }
+
+    this.view.showSchedule(schedule);
+  }
+
+}

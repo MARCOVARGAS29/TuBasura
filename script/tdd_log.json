@@ -1,8 +1,322 @@
 [
   {
-    "commitId": "HEAD",
+    "commitId": "9e05ba44ee2f0d70bee0d2cf6b715c0a99ceac75",
     "commitName": "first commit",
     "commitTimestamp": 1776130175792,
     "testId": 0
+  },
+  {
+    "commitId": "5a7b3c83722b40fa8ff965f3c64f14aafdf44447",
+    "commitName": "test(red): crear opciones de distrito",
+    "commitTimestamp": 1776370984603,
+    "testId": 1
+  },
+  {
+    "commitId": "4eec48429b94a70a138f896ab0b20f6df24723e7",
+    "commitName": "feat(green): generar opciones de distrito",
+    "commitTimestamp": 1776371023779,
+    "testId": 2
+  },
+  {
+    "commitId": "d672ba24de46a2a8505198c23f01bcb226c1d020",
+    "commitName": "test(red): consultar horario por distrito",
+    "commitTimestamp": 1776371057289,
+    "testId": 3
+  },
+  {
+    "commitId": "e18c229fc3c48b99a88f5a17777ac55939333ead",
+    "commitName": "feat(green): consultar horario por distrito",
+    "commitTimestamp": 1776371077686,
+    "testId": 4
+  },
+  {
+    "commitId": "c8e00e2523172e7cba24406238250d9566f896d3",
+    "commitName": "test(red): devolver null si el distrito no existe",
+    "commitTimestamp": 1776371103430,
+    "testId": 5
+  },
+  {
+    "commitId": "4c7a4551bc72313d2e443456dc885f28f0a1371b",
+    "commitName": "feat(green): devolver null si no hay horario",
+    "commitTimestamp": 1776371123318,
+    "testId": 6
+  },
+  {
+    "commitId": "72e15e686241d24398ed378e105a2fb308ef0e70",
+    "commitName": "test(red): definir horarios para 15 distritos",
+    "commitTimestamp": 1776371199034,
+    "testId": 7
+  },
+  {
+    "commitId": "c12be67b0d3602cc7f2eb3f35a70a36d8cac59fa",
+    "commitName": "feat(green): completar horarios de 15 distritos",
+    "commitTimestamp": 1776371229367,
+    "testId": 8
+  },
+  {
+    "commitId": "e983f4b09df2c9d69cd9b644a07f13d0c744f420",
+    "commitName": "test(red): inicializar presenter con opciones",
+    "commitTimestamp": 1776371273416,
+    "testId": 9
+  },
+  {
+    "commitId": "c547a72bae8d63ae39031efcef9527d44e0d6253",
+    "commitName": "feat(green): inicializar presenter con opciones",
+    "commitTimestamp": 1776371299285,
+    "testId": 10
+  },
+  {
+    "commitId": "2c7a05bf30f0d75626a0e597b1529ff64bf8ff36",
+    "commitName": "test(red): mostrar horario existente desde presenter",
+    "commitTimestamp": 1776371328718,
+    "testId": 11
+  },
+  {
+    "commitId": "228242af5f53749fc3378934cdc21aa71651de19",
+    "commitName": "feat(green): mostrar horario existente desde presenter",
+    "commitTimestamp": 1776371352103,
+    "testId": 12
+  },
+  {
+    "commitId": "e77dd93e19a9db2d7a81496ec82f2ac5afc13a16",
+    "commitName": "test(red): mostrar mensaje inicial sin distrito",
+    "commitTimestamp": 1776371385066,
+    "testId": 13
+  },
+  {
+    "commitId": "445493e9514456dc2258b7461b01b488ad6ccb41",
+    "commitName": "feat(green): restaurar mensaje inicial sin distrito",
+    "commitTimestamp": 1776371417250,
+    "testId": 14
+  },
+  {
+    "commitId": "5dfea87d5d69d98f9295d558a3fbcef9a206990c",
+    "commitName": "test(red): mostrar mensaje si no hay horario",
+    "commitTimestamp": 1776371448710,
+    "testId": 15
+  },
+  {
+    "commitId": "a18c49cb4b8f63f7ffa6396410e03b859b379d48",
+    "commitName": "feat(green): mostrar mensaje si no hay horario",
+    "commitTimestamp": 1776371481898,
+    "testId": 16
+  },
+  {
+    "commitId": "9d387fa625cc8e9a7097ea74cac9cb782102dd70",
+    "commitName": "test(red): renderizar opciones en la vista",
+    "commitTimestamp": 1776371511663,
+    "testId": 17
+  },
+  {
+    "commitId": "c280a4056d223dbd060808eb29c4c5e817267c5f",
+    "commitName": "feat(green): renderizar opciones en la vista",
+    "commitTimestamp": 1776371547063,
+    "testId": 18
+  },
+  {
+    "commitId": "311f33e50d71e9d9d7f8036ff18ab89ef260dd19",
+    "commitName": "test(red): mostrar horario seleccionado en la vista",
+    "commitTimestamp": 1776371582812,
+    "testId": 19
+  },
+  {
+    "commitId": "caec0170e8aff2f0fe4f80ac219956ed5a1d86a9",
+    "commitName": "feat(green): completar vista y pagina de horarios",
+    "commitTimestamp": 1776371692966,
+    "testId": 20
+  },
+  {
+    "commitId": "7e5e4ae3c1940a2973883ac506cd4a9bcf787e5f",
+    "commitName": "Fix model.getDistrictOptions so districts load in select",
+    "commitTimestamp": 1776372229453,
+    "testId": 21
+  },
+  {
+    "commitId": "da99fbd3600422ccce0817a3ef6885112cf6d951",
+    "commitName": "test(red): iniciar sesion con credenciales validas",
+    "commitTimestamp": 1776532677336,
+    "testId": 22
+  },
+  {
+    "commitId": "23235cc72217f8e4221f6c580c74aec6d49f9ff1",
+    "commitName": "feat(green): iniciar sesion con credenciales validas",
+    "commitTimestamp": 1776532797531,
+    "testId": 23
+  },
+  {
+    "commitId": "fc8bd40ab3dd78f992d7c413186848672927fc3b",
+    "commitName": "test(red): permitir entrar como invitado",
+    "commitTimestamp": 1776532849320,
+    "testId": 24
+  },
+  {
+    "commitId": "d8783f20fff504445cb2d99aa246dd5da4b4a7f9",
+    "commitName": "feat(green): permitir entrar como invitado",
+    "commitTimestamp": 1776532929899,
+    "testId": 25
+  },
+  {
+    "commitId": "27184bcfa41a320ffa9c2b8db6a45a914404216a",
+    "commitName": "test(red): iniciar en login y enlazar accesos",
+    "commitTimestamp": 1776533038931,
+    "testId": 26
+  },
+  {
+    "commitId": "a65f85f1c3e29b7f995b04bc2ba3c9bab2b1b3a7",
+    "commitName": "feat(green): iniciar en login y enlazar accesos",
+    "commitTimestamp": 1776533091227,
+    "testId": 27
+  },
+  {
+    "commitId": "bf31564361e082918b97cfde58380346594b377f",
+    "commitName": "test(red): mostrar home despues de ingresar",
+    "commitTimestamp": 1776533151553,
+    "testId": 28
+  },
+  {
+    "commitId": "8c8c7b80d29399549422f25149e924000a4bb771",
+    "commitName": "feat(green): mostrar home despues de ingresar",
+    "commitTimestamp": 1776533205599,
+    "testId": 29
+  },
+  {
+    "commitId": "cd48544d67cc076e181a439895fd6400601f9fca",
+    "commitName": "test(red): mostrar login y home en la vista",
+    "commitTimestamp": 1776533338808,
+    "testId": 30
+  },
+  {
+    "commitId": "f79385f833fc98b7ef28b949c25ee85fdadb2fed",
+    "commitName": "feat(green): mostrar login y home en la vista",
+    "commitTimestamp": 1776533446228,
+    "testId": 31
+  },
+  {
+    "commitId": "8769997c92b5a8e87a1e7db615310fd1b841a200",
+    "commitName": "test: cubrir acceso invitado en presenter",
+    "commitTimestamp": 1776533481320,
+    "testId": 32
+  },
+  {
+    "commitId": "2dcb8f4ff60ea4e8b00e16bee5fe038f7b869871",
+    "commitName": "fix: esperar al DOM antes de iniciar la app",
+    "commitTimestamp": 1776533777277,
+    "testId": 33
+  },
+  {
+    "commitId": "ba71712772f62cde21c4d3d1bb89ffcaeb29dc91",
+    "commitName": "fix: corregir visibilidad del login y autocompletado",
+    "commitTimestamp": 1776534230103,
+    "testId": 34
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1776536130948,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 3,
+    "numTotalTests": 10,
+    "timestamp": 1776543055962,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 5,
+    "numTotalTests": 18,
+    "timestamp": 1776543707208,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 4,
+    "numTotalTests": 18,
+    "timestamp": 1776544175809,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 3,
+    "numTotalTests": 18,
+    "timestamp": 1776544221152,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776544398686,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1776544484330,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1776545793704,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1776545941803,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1776659499960,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1776659623573,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1776659659693,
+    "success": false,
+    "testId": 35
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1776659817389,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: crea reportes con 0 likes",
+    "commitTimestamp": 1776660142294,
+    "testId": 35
   }
 ]
