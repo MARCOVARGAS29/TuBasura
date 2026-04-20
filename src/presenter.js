@@ -15,6 +15,7 @@ export default class CollectionSchedulePresenter {
     this.view.bindDistrictSelection((districtId) => {
       this.showScheduleForDistrict(districtId);
     });
+    this.view.bindCreateReport((data) => this.createReport(data));
   }
 
   login(credentials) {
@@ -57,6 +58,10 @@ export default class CollectionSchedulePresenter {
     }
 
     this.view.showSchedule(schedule);
+  }
+
+  createReport(data) {
+    this.model.createReport(data);
   }
 
 }

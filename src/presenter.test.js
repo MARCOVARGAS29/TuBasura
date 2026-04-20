@@ -150,4 +150,34 @@ describe('CollectionSchedulePresenter', () => {
 
     expect(view.showScheduleNotFound).toHaveBeenCalled();
   });
+
+  it('deberia crear reporte desde presenter', () => {
+  const model = {
+    createReport: jest.fn(),
+    getReports: jest.fn(() => []),
+  };
+
+  const view = {
+    showLogin: jest.fn(),
+    bindLogin: jest.fn(),
+    bindGuestAccess: jest.fn(),
+    bindDistrictSelection: jest.fn(),
+    bindCreateReport: jest.fn(),
+
+    showHome: jest.fn(),
+    renderDistrictOptions: jest.fn(),
+    showInitialMessage: jest.fn(),
+  };
+
+  const presenter = new CollectionSchedulePresenter({ model, view });
+
+  presenter.initialize();
+
+  const handler = view.bindCreateReport.mock.calls[0][0];
+
+  handler({ description: 'Basura', image: '' });
+
+  expect(model.createReport).toHaveBeenCalled();
+  });
+
 });

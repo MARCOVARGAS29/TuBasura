@@ -722,12 +722,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7773db6d7442b5edd2016a9b72af5c10b7545881",
     "author": "ArielFlowers",
     "commit": {
       "date": "2026-04-20T05:24:43.000Z",
       "message": "refactor: reportes usando localstorage",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7773db6d7442b5edd2016a9b72af5c10b7545881"
     },
     "stats": {
       "total": 17,
@@ -737,6 +737,25 @@
     },
     "coverage": 83.33,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ArielFlowers",
+    "commit": {
+      "date": "2026-04-20T05:35:22.000Z",
+      "message": "feat: conectar presenter con creacion de reportes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 465,
+      "additions": 250,
+      "deletions": 215,
+      "date": "2026-04-20"
+    },
+    "coverage": 83.91,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

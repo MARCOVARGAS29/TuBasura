@@ -388,9 +388,31 @@
     "testId": 38
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7773db6d7442b5edd2016a9b72af5c10b7545881",
     "commitName": "refactor: reportes usando localstorage",
     "commitTimestamp": 1776662685106,
     "testId": 38
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1776662932988,
+    "success": false,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1776663233139,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar presenter con creacion de reportes",
+    "commitTimestamp": 1776663323966,
+    "testId": 39
   }
 ]
