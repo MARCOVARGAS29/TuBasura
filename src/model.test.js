@@ -122,6 +122,14 @@ it('deberia devolver la primera zona del distrito 4', () => {
   );
 });
 
+it('deberia devolver la segunda zona del distrito 4', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('4').zones).toContain(
+    'Zona Villa Bush (SubDistrito 27)',
+  );
+});
+
 
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);

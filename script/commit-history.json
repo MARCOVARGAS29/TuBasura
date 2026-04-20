@@ -912,12 +912,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "01bdbb2386b5039a66faccfa8ddbfdccc6b2390e",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T18:43:29.000Z",
       "message": "feat: distrito 4 zona Chimba",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/01bdbb2386b5039a66faccfa8ddbfdccc6b2390e"
     },
     "stats": {
       "total": 16,
@@ -927,6 +927,25 @@
     },
     "coverage": 68.38,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T18:46:46.000Z",
+      "message": "feat: distrito 4 zona Villa Bush",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }
