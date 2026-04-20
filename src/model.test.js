@@ -188,6 +188,15 @@ it('deberia devolver la primera zona del distrito 6', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 7', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('7').district).toBe('Distrito 7');
+  expect(model.getScheduleByDistrict('7').zones).toContain(
+    'Zona Alalay Sud (SubDistrito 19)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
