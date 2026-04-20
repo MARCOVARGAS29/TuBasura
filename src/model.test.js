@@ -197,6 +197,15 @@ it('deberia devolver la primera zona del distrito 7', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 8', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('8').district).toBe('Distrito 8');
+  expect(model.getScheduleByDistrict('8').zones).toContain(
+    'Zona Uspha Uspha (SubDistrito 34)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

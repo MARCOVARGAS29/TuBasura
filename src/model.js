@@ -55,7 +55,12 @@ const schedulesByDistrict = {
   time: '06:30',
   zones: ['Zona Alalay Sud (SubDistrito 19)'],
 },
-  8: { district: 'Distrito 8', days: 'Martes, jueves y domingo', time: '12:00' },
+8: {
+  district: 'Distrito 8',
+  days: 'Martes, jueves y domingo',
+  time: '12:00',
+  zones: ['Zona Uspha Uspha (SubDistrito 34)'],
+},
   9: { district: 'Distrito 9', days: 'Lunes, miercoles y viernes', time: '13:00' },
   10: { district: 'Distrito 10', days: 'Martes, jueves y sabado', time: '14:00' },
   11: { district: 'Distrito 11', days: 'Lunes y viernes', time: '15:00' },
