@@ -171,6 +171,14 @@ it('deberia devolver la cuarta zona del distrito 5', () => {
   );
 });
 
+it('deberia devolver la quinta zona del distrito 5', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('5').zones).toContain(
+    'Zona Valle Hermoso (SubDistrito 20)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

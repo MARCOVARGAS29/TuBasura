@@ -1026,12 +1026,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c43dd6cca83ebbf30f67689936403cfb5a14adf7",
     "author": "aldair",
     "commit": {
       "date": "2026-04-20T19:27:17.000Z",
       "message": "feat: distrito 5 zona Ticti",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c43dd6cca83ebbf30f67689936403cfb5a14adf7"
     },
     "stats": {
       "total": 9,
@@ -1041,6 +1041,25 @@
     },
     "coverage": 68.38,
     "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-04-20T19:32:05.000Z",
+      "message": "feat: distrito 5 zona Valle Hermoso",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-04-20"
+    },
+    "coverage": 68.38,
+    "test_count": 36,
     "failed_tests": 0,
     "conclusion": "success"
   }
