@@ -239,6 +239,14 @@ it('deberia devolver la cuarta zona del distrito 9', () => {
   );
 });
 
+it('deberia devolver la quinta zona del distrito 9', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('9').zones).toContain(
+    'Zona Pukara Grande Oeste (SubDistrito 36)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

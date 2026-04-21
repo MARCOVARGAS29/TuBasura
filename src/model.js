@@ -70,6 +70,7 @@ const schedulesByDistrict = {
     'Zona 1° de Mayo (SubDistrito 30)',
     'Zona Pukara Grande Norte (SubDistrito 31)',
     'Zona Pukara Grande Sur (SubDistrito 35)',
+    'Zona Pukara Grande Oeste (SubDistrito 36)',
   ],
 },
   10: { district: 'Distrito 10', days: 'Martes, jueves y sabado', time: '14:00' },
