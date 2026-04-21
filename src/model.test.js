@@ -215,6 +215,14 @@ it('deberia devolver la primera zona del distrito 9', () => {
   );
 });
 
+it('deberia devolver la segunda zona del distrito 9', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('9').zones).toContain(
+    'Zona 1° de Mayo (SubDistrito 30)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

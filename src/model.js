@@ -65,7 +65,10 @@ const schedulesByDistrict = {
   district: 'Distrito 9',
   days: 'Lunes, miercoles y viernes',
   time: '13:00',
-  zones: ['Zona Tamborada Pukarita (SubDistrito 29)'],
+  zones: [
+    'Zona Tamborada Pukarita (SubDistrito 29)',
+    'Zona 1° de Mayo (SubDistrito 30)',
+  ],
 },
   10: { district: 'Distrito 10', days: 'Martes, jueves y sabado', time: '14:00' },
   11: { district: 'Distrito 11', days: 'Lunes y viernes', time: '15:00' },
