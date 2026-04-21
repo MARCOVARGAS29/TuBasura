@@ -338,6 +338,15 @@ it('deberia devolver la quinta zona del distrito 12', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 13', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('13').district).toBe('Distrito 13');
+  expect(model.getScheduleByDistrict('13').zones).toContain(
+    'Zona Parque Nacional Tunari',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
