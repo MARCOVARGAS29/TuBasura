@@ -347,6 +347,15 @@ it('deberia devolver la primera zona del distrito 13', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 14', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('14').district).toBe('Distrito 14');
+  expect(model.getScheduleByDistrict('14').zones).toContain(
+    'Zona Distrito 14',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

@@ -111,7 +111,12 @@ const schedulesByDistrict = {
   time: '17:00',
   zones: ['Zona Parque Nacional Tunari'],
 },
-  14: { district: 'Distrito 14', days: 'Lunes, miercoles y viernes', time: '18:00' },
+  14: {
+  district: 'Distrito 14',
+  days: 'Lunes, miercoles y viernes',
+  time: '18:00',
+  zones: ['Zona Distrito 14'],
+},
   15: { district: 'Distrito 15', days: 'Martes, jueves y sabado', time: '19:00' },
 };
 
