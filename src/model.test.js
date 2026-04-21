@@ -297,6 +297,15 @@ it('deberia devolver la segunda zona del distrito 11', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 12', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('12').district).toBe('Distrito 12');
+  expect(model.getScheduleByDistrict('12').zones).toContain(
+    'Zona Sarco (SubDistrito 02)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
