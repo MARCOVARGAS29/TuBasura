@@ -356,6 +356,15 @@ it('deberia devolver la primera zona del distrito 14', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 15', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('15').district).toBe('Distrito 15');
+  expect(model.getScheduleByDistrict('15').zones).toContain(
+    'Zona Valle Hermoso Oeste (SubDistrito 32)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

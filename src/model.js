@@ -117,7 +117,12 @@ const schedulesByDistrict = {
   time: '18:00',
   zones: ['Zona Distrito 14'],
 },
-  15: { district: 'Distrito 15', days: 'Martes, jueves y sabado', time: '19:00' },
+  15: {
+  district: 'Distrito 15',
+  days: 'Martes, jueves y sabado',
+  time: '19:00',
+  zones: ['Zona Valle Hermoso Oeste (SubDistrito 32)'],
+},
 };
 
 const users = [
