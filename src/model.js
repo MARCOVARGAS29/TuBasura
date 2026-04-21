@@ -81,6 +81,7 @@ const schedulesByDistrict = {
     'Zona Noroeste (SubDistrito 07)',
     'Zona Noreste (SubDistrito 08)',
     'Zona Sudoeste (SubDistrito 11)',
+    'Zona Sudeste (SubDistrito 12)',
   ],
 },
   11: { district: 'Distrito 11', days: 'Lunes y viernes', time: '15:00' },
