@@ -760,18 +760,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "634052c441bbd8a7659d5d684269c9e8614c3129",
     "author": "ArielFlowers",
     "commit": {
       "date": "2026-04-20T06:37:53.000Z",
       "message": "refactor: correccion de errores en presenter",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/634052c441bbd8a7659d5d684269c9e8614c3129"
     },
     "stats": {
       "total": 765,
       "additions": 427,
       "deletions": 338,
       "date": "2026-04-20"
+    },
+    "coverage": 68.1,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah",
+    "commit": {
+      "date": "2026-04-21T02:59:38.000Z",
+      "message": "style: aplicar paleta de colores",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 282,
+      "additions": 143,
+      "deletions": 139,
+      "date": "2026-04-21"
     },
     "coverage": 68.1,
     "test_count": 20,
