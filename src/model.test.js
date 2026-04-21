@@ -280,6 +280,15 @@ it('deberia devolver la cuarta zona del distrito 10', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 11', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('11').district).toBe('Distrito 11');
+  expect(model.getScheduleByDistrict('11').zones).toContain(
+    'Zona Muyurina (SubDistrito 09)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
