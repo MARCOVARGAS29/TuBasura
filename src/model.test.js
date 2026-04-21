@@ -264,6 +264,14 @@ it('deberia devolver la segunda zona del distrito 10', () => {
   );
 });
 
+it('deberia devolver la tercera zona del distrito 10', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('10').zones).toContain(
+    'Zona Sudoeste (SubDistrito 11)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
