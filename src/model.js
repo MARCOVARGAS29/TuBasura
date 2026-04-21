@@ -69,6 +69,7 @@ const schedulesByDistrict = {
     'Zona Tamborada Pukarita (SubDistrito 29)',
     'Zona 1° de Mayo (SubDistrito 30)',
     'Zona Pukara Grande Norte (SubDistrito 31)',
+    'Zona Pukara Grande Sur (SubDistrito 35)',
   ],
 },
   10: { district: 'Distrito 10', days: 'Martes, jueves y sabado', time: '14:00' },
