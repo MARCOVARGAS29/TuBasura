@@ -289,6 +289,14 @@ it('deberia devolver la primera zona del distrito 11', () => {
   );
 });
 
+it('deberia devolver la segunda zona del distrito 11', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('11').zones).toContain(
+    'Zona Las Cuadras (SubDistrito 13)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

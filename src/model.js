@@ -88,7 +88,10 @@ const schedulesByDistrict = {
   district: 'Distrito 11',
   days: 'Lunes y viernes',
   time: '15:00',
-  zones: ['Zona Muyurina (SubDistrito 09)'],
+  zones: [
+    'Zona Muyurina (SubDistrito 09)',
+    'Zona Las Cuadras (SubDistrito 13)',
+  ],
 },
   12: { district: 'Distrito 12', days: 'Miercoles y sabado', time: '16:00' },
   13: { district: 'Distrito 13', days: 'Martes, jueves y domingo', time: '17:00' },
