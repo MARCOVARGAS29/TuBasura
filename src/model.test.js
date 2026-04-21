@@ -330,6 +330,14 @@ it('deberia devolver la cuarta zona del distrito 12', () => {
   );
 });
 
+it('deberia devolver la quinta zona del distrito 12', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('12').zones).toContain(
+    'Zona Hipódromo (SubDistrito 06)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
