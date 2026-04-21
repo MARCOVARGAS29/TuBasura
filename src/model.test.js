@@ -306,6 +306,14 @@ it('deberia devolver la primera zona del distrito 12', () => {
   );
 });
 
+it('deberia devolver la segunda zona del distrito 12', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('12').zones).toContain(
+    'Zona Cala Cala (SubDistrito 03)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

@@ -97,7 +97,10 @@ const schedulesByDistrict = {
   district: 'Distrito 12',
   days: 'Miercoles y sabado',
   time: '16:00',
-  zones: ['Zona Sarco (SubDistrito 02)'],
+  zones: [
+    'Zona Sarco (SubDistrito 02)',
+    'Zona Cala Cala (SubDistrito 03)',
+  ],
 },
   13: { district: 'Distrito 13', days: 'Martes, jueves y domingo', time: '17:00' },
   14: { district: 'Distrito 14', days: 'Lunes, miercoles y viernes', time: '18:00' },
