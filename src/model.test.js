@@ -247,6 +247,15 @@ it('deberia devolver la quinta zona del distrito 9', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 10', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('10').district).toBe('Distrito 10');
+  expect(model.getScheduleByDistrict('10').zones).toContain(
+    'Zona Noroeste (SubDistrito 07)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

@@ -73,7 +73,12 @@ const schedulesByDistrict = {
     'Zona Pukara Grande Oeste (SubDistrito 36)',
   ],
 },
-  10: { district: 'Distrito 10', days: 'Martes, jueves y sabado', time: '14:00' },
+  10: {
+  district: 'Distrito 10',
+  days: 'Martes, jueves y sabado',
+  time: '14:00',
+  zones: ['Zona Noroeste (SubDistrito 07)'],
+},
   11: { district: 'Distrito 11', days: 'Lunes y viernes', time: '15:00' },
   12: { district: 'Distrito 12', days: 'Miercoles y sabado', time: '16:00' },
   13: { district: 'Distrito 13', days: 'Martes, jueves y domingo', time: '17:00' },
