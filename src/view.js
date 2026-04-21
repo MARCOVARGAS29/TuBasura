@@ -81,18 +81,20 @@ export default class CollectionScheduleView {
   }
 
   showSchedule(schedule) {
-    this.resultContainer.innerHTML = `
-      <h2>${schedule.district}</h2>
-      <p><strong>Dias:</strong> ${schedule.days}</p>
-      <p><strong>Hora:</strong> ${schedule.time}</p>
-      ${schedule.zones ? `
-        <p><strong>Zonas:</strong></p>
-        <ul>
+  this.resultContainer.innerHTML = `
+    <h2>${schedule.district}</h2>
+    <p><strong>Días:</strong> ${schedule.days}</p>
+    <p><strong>Hora:</strong> ${schedule.time}</p>
+    ${schedule.zones && schedule.zones.length > 0 ? `
+      <div class="zones-container">
+        <p><strong>Zonas que abarca:</strong></p>
+        <ul class="zones-list">
           ${schedule.zones.map(zone => `<li>${zone}</li>`).join('')}
         </ul>
-      ` : ''}
-    `;
-  }
+      </div>
+    ` : ''}
+  `;
+}
 
   showScheduleNotFound() {
     this.resultContainer.innerHTML = `
