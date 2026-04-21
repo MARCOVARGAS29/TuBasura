@@ -365,6 +365,14 @@ it('deberia devolver la primera zona del distrito 15', () => {
   );
 });
 
+it('deberia devolver la segunda zona del distrito 15', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('15').zones).toContain(
+    'Zona Khara Khara Arrumani (SubDistrito 33)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });

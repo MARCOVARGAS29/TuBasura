@@ -121,7 +121,10 @@ const schedulesByDistrict = {
   district: 'Distrito 15',
   days: 'Martes, jueves y sabado',
   time: '19:00',
-  zones: ['Zona Valle Hermoso Oeste (SubDistrito 32)'],
+  zones: [
+    'Zona Valle Hermoso Oeste (SubDistrito 32)',
+    'Zona Khara Khara Arrumani (SubDistrito 33)',
+  ],
 },
 };
 
