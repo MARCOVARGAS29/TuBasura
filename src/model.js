@@ -101,6 +101,7 @@ const schedulesByDistrict = {
     'Zona Sarco (SubDistrito 02)',
     'Zona Cala Cala (SubDistrito 03)',
     'Zona Queru Queru (SubDistrito 04)',
+    'Zona Tupuraya (SubDistrito 05)',
   ],
 },
   13: { district: 'Distrito 13', days: 'Martes, jueves y domingo', time: '17:00' },
