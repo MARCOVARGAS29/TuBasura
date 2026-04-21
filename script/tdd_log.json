@@ -449,9 +449,16 @@
   },
   {
     "commitId": "634052c441bbd8a7659d5d684269c9e8614c3129",
+    "commitId": "634052c441bbd8a7659d5d684269c9e8614c3129",
     "commitName": "refactor: correccion de errores en presenter",
     "commitTimestamp": 1776667075725,
     "testId": 40
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: aplicar paleta de colores",
+    "commitTimestamp": 1776740378991,
+    "testId": 41
   },
   {
     "numPassedTests": 20,
