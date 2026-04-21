@@ -61,7 +61,12 @@ const schedulesByDistrict = {
   time: '12:00',
   zones: ['Zona Uspha Uspha (SubDistrito 34)'],
 },
-  9: { district: 'Distrito 9', days: 'Lunes, miercoles y viernes', time: '13:00' },
+  9: {
+  district: 'Distrito 9',
+  days: 'Lunes, miercoles y viernes',
+  time: '13:00',
+  zones: ['Zona Tamborada Pukarita (SubDistrito 29)'],
+},
   10: { district: 'Distrito 10', days: 'Martes, jueves y sabado', time: '14:00' },
   11: { district: 'Distrito 11', days: 'Lunes y viernes', time: '15:00' },
   12: { district: 'Distrito 12', days: 'Miercoles y sabado', time: '16:00' },

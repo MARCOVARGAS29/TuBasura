@@ -206,6 +206,15 @@ it('deberia devolver la primera zona del distrito 8', () => {
   );
 });
 
+it('deberia devolver la primera zona del distrito 9', () => {
+  const model = new CollectionScheduleModel();
+
+  expect(model.getScheduleByDistrict('9').district).toBe('Distrito 9');
+  expect(model.getScheduleByDistrict('9').zones).toContain(
+    'Zona Tamborada Pukarita (SubDistrito 29)',
+  );
+});
+
   it('deberia tener horarios definidos para todos los distritos', () => {
     expect(Object.keys(schedulesByDistrict)).toHaveLength(15);
   });
