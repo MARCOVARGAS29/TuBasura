@@ -449,13 +449,12 @@
   },
   {
     "commitId": "634052c441bbd8a7659d5d684269c9e8614c3129",
-    "commitId": "634052c441bbd8a7659d5d684269c9e8614c3129",
     "commitName": "refactor: correccion de errores en presenter",
     "commitTimestamp": 1776667075725,
     "testId": 40
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b8686cf154668ff4ae308e60b4bc748f41f758d5",
     "commitName": "style: aplicar paleta de colores",
     "commitTimestamp": 1776740378991,
     "testId": 41
@@ -575,5 +574,11 @@
     "commitName": "feat: distrito 8 zona Uspha Uspha",
     "commitTimestamp": 1776715088480,
     "testId": 58
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: aplicar arquitectura hexagonal",
+    "commitTimestamp": 1778860168521,
+    "testId": 59
   }
 ]

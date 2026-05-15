@@ -777,5 +777,24 @@
     "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "MARCOVARGAS29",
+    "commit": {
+      "date": "2026-05-15T15:49:27.000Z",
+      "message": "refactor: aplicar arquitectura hexagonal",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 1025,
+      "additions": 581,
+      "deletions": 444,
+      "date": "2026-05-15"
+    },
+    "coverage": 73.33,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
