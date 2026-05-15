@@ -12,6 +12,7 @@ export default [
         require: 'readonly',
         module: 'readonly',
         describe: 'readonly',
+        beforeEach: 'readonly',
         it: 'readonly',
         cy: 'readonly',
         expect: 'readonly',

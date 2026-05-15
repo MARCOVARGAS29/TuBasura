@@ -56,7 +56,7 @@ describe('CollectionScheduleModel', () => {
       ],
     });
   });
-  
+
 
   it('deberia devolver null cuando el distrito no existe', () => {
     const model = new CollectionScheduleModel();
