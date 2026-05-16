@@ -449,13 +449,12 @@
   },
   {
     "commitId": "634052c441bbd8a7659d5d684269c9e8614c3129",
-    "commitId": "634052c441bbd8a7659d5d684269c9e8614c3129",
     "commitName": "refactor: correccion de errores en presenter",
     "commitTimestamp": 1776667075725,
     "testId": 40
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b8686cf154668ff4ae308e60b4bc748f41f758d5",
     "commitName": "style: aplicar paleta de colores",
     "commitTimestamp": 1776740378991,
     "testId": 41
@@ -575,5 +574,27 @@
     "commitName": "feat: distrito 8 zona Uspha Uspha",
     "commitTimestamp": 1776715088480,
     "testId": 58
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1776949721957,
+    "success": true,
+    "testId": 59
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1777382235259,
+    "success": true,
+    "testId": 59
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Cambios para el merge",
+    "commitTimestamp": 1778963218687,
+    "testId": 59
   }
 ]

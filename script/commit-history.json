@@ -777,5 +777,24 @@
     "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-16T20:26:56.000Z",
+      "message": "Cambios para el merge",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-05-16"
+    },
+    "coverage": 68.38,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
