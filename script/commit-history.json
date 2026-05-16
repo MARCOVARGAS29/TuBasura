@@ -779,21 +779,40 @@
     "conclusion": "success"
   },
   {
+    "sha": "7e40cb25f122bb6b91f1d42ac5ef565700901ee5",
+    "author": "Sarah",
+    "commit": {
+      "date": "2026-04-21T02:59:38.000Z",
+      "message": "style: aplicar paleta de colores",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7e40cb25f122bb6b91f1d42ac5ef565700901ee5"
+    },
+    "stats": {
+      "total": 282,
+      "additions": 143,
+      "deletions": 139,
+      "date": "2026-04-21"
+    },
+    "coverage": 68.1,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
     "sha": "HEAD",
     "author": "Gabriel Fernandez",
     "commit": {
-      "date": "2026-05-16T20:26:56.000Z",
-      "message": "Cambios para el merge",
+      "date": "2026-05-16T20:31:13.000Z",
+      "message": "Merge branch 'main' of https://github.com/MARCOVARGAS29/TuBasura",
       "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
     },
     "stats": {
-      "total": 0,
-      "additions": 0,
-      "deletions": 0,
+      "total": 1085,
+      "additions": 639,
+      "deletions": 446,
       "date": "2026-05-16"
     },
-    "coverage": 68.38,
-    "test_count": 59,
+    "coverage": 75.69,
+    "test_count": 60,
     "failed_tests": 0,
     "conclusion": "success"
   }

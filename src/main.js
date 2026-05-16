@@ -1,10 +1,10 @@
-import CollectionScheduleModel from './model.js';
-import CollectionSchedulePresenter from './presenter.js';
-import CollectionScheduleView from './view.js';
+import createCollectionScheduleUseCases from './application/createCollectionScheduleUseCases.js';
+import CollectionSchedulePresenter from './adapters/ui/CollectionSchedulePresenter.js';
+import CollectionScheduleView from './adapters/ui/CollectionScheduleView.js';
 import './styles.css';
 
 function initializeApp() {
-  const model = new CollectionScheduleModel();
+  const model = createCollectionScheduleUseCases();
   const view = new CollectionScheduleView({
     loginSection: document.querySelector('#login-screen'),
     homeSection: document.querySelector('#home-screen'),

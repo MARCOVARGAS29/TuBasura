@@ -6,8 +6,21 @@ Aplicacion web base para consultar horarios de recoleccion por distrito.
 
 - Seleccion de distrito mediante `select` con opciones del `1` al `15`.
 - Visualizacion de dias y hora aproximada de recoleccion.
-- Arquitectura MVP con separacion de `model`, `view` y `presenter`.
+- Arquitectura hexagonal con dominio, casos de uso, puertos y adaptadores.
 - Pruebas unitarias en Jest para modelo, presenter y vista.
+
+## Arquitectura hexagonal
+
+- `src/domain`: reglas y datos del negocio, como horarios, usuarios y reportes.
+- `src/application`: casos de uso de la aplicacion y definicion de puertos.
+- `src/infrastructure`: adaptadores de salida, como almacenamiento en `localStorage`
+  y repositorios en memoria.
+- `src/adapters/ui`: adaptadores de entrada para la interfaz web (`view` y
+  `presenter`).
+- `src/main.js`: composicion de dependencias; conecta la UI con los casos de uso.
+
+Los archivos `src/model.js`, `src/presenter.js` y `src/view.js` se mantienen como
+fachadas para compatibilidad con las pruebas existentes.
 
 ## Comandos
 
