@@ -8,7 +8,11 @@ export default class LocalStorageReportRepository {
   }
 
   loadReports() {
-    return JSON.parse(this.storage.getItem('reports')) || [];
+    const stored = this.storage.getItem('reports');
+    if (!stored) {
+      return [];
+    }
+    return JSON.parse(stored);
   }
 
   getReports() {

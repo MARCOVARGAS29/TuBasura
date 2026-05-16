@@ -32,4 +32,8 @@ export default class CollectionScheduleUseCases {
   incrementReportLikes(id) {
     return this.reportRepository.incrementReportLikes(id);
   }
+
+  likeReport(id) {
+    return this.reportRepository.incrementReportLikes(id);
+  }
 }

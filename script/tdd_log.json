@@ -600,7 +600,7 @@
     "testId": 62
   },
   {
-    "commitId": "HEAD",
+    "commitId": "91053e4ff8f4574b6758be6d00fa8fbca87ac909",
     "commitName": "refactor: eliminar guarda redundante en renderReports del presenter",
     "commitTimestamp": 1778935189056,
     "testId": 63
@@ -610,5 +610,11 @@
     "commitName": "refactor: extraer buildZonesHTML para separar la construccion del HTML de zonas",
     "commitTimestamp": 1778936354303,
     "testId": 64
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir actualizacion del contador de likes",
+    "commitTimestamp": 1778938383025,
+    "testId": 65
   }
 ]

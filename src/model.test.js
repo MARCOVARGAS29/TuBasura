@@ -429,3 +429,22 @@ beforeEach(() => {
     },
   };
 });
+
+
+it('deberia persistir el like y encontrar el reporte al recargar', () => {
+  const storage = {
+    store: {},
+    getItem(key) { return this.store[key] || null; },
+    setItem(key, value) { this.store[key] = value; },
+  };
+
+  const repo1 = new CollectionScheduleModel({ storage });
+  const report = repo1.createReport({ description: 'Prueba', image: '' });
+  const id = report.id;
+
+  const repo2 = new CollectionScheduleModel({ storage });
+  const updated = repo2.likeReport(id);
+
+  expect(updated).not.toBeNull();
+  expect(updated.likes).toBe(1);
+});
