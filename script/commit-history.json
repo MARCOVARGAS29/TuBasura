@@ -836,12 +836,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "72d094d9a3914af91e0ed4ae6ffaba4c2eb50e21",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-05-16T12:34:47.000Z",
       "message": "refactor: renombrar StaticScheduleRepository a DistrictScheduleRepository",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/72d094d9a3914af91e0ed4ae6ffaba4c2eb50e21"
     },
     "stats": {
       "total": 6,
@@ -853,5 +853,24 @@
     "test_count": 59,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-05-16T12:39:47.000Z",
+      "message": "refactor: eliminar guarda redundante en renderReports del presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 2,
+      "deletions": 4,
+      "date": "2026-05-16"
+    },
+    "coverage": 74.26,
+    "test_count": 59,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
