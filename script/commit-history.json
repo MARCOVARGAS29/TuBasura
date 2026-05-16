@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "de3f266a86e4719fec7c360ee5ddec9235118435",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-05-16T12:39:47.000Z",
       "message": "refactor: eliminar guarda redundante en renderReports del presenter",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/de3f266a86e4719fec7c360ee5ddec9235118435"
     },
     "stats": {
       "total": 6,
@@ -872,5 +872,24 @@
     "test_count": 59,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-05-16T12:59:12.000Z",
+      "message": "refactor: extraer buildZonesHTML para separar la construccion del HTML de zonas",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 20,
+      "deletions": 15,
+      "date": "2026-05-16"
+    },
+    "coverage": 75,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

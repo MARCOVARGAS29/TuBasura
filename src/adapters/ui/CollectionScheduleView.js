@@ -81,23 +81,27 @@ export default class CollectionScheduleView {
     `;
   }
 
+  buildZonesHTML(zones) {
+    if (!zones || zones.length === 0) {
+      return '';
+    }
+
+    const zoneItems = zones.map((zone) => `<li>${zone}</li>`).join('');
+
+    return `
+      <div class="zones-container">
+        <p><strong>Zonas que abarca:</strong></p>
+        <ul class="zones-list">${zoneItems}</ul>
+      </div>
+    `;
+  }
+
   showSchedule(schedule) {
     this.resultContainer.innerHTML = `
       <h2>${schedule.district}</h2>
-      <p><strong>DÃ­as:</strong> ${schedule.days}</p>
+      <p><strong>Días:</strong> ${schedule.days}</p>
       <p><strong>Hora:</strong> ${schedule.time}</p>
-      ${
-        schedule.zones && schedule.zones.length > 0
-          ? `
-        <div class="zones-container">
-          <p><strong>Zonas que abarca:</strong></p>
-          <ul class="zones-list">
-            ${schedule.zones.map((zone) => `<li>${zone}</li>`).join('')}
-          </ul>
-        </div>
-      `
-          : ''
-      }
+      ${this.buildZonesHTML(schedule.zones)}
     `;
   }
 
@@ -132,7 +136,7 @@ export default class CollectionScheduleView {
         <p>${report.description}</p>
         ${report.image ? `<img src="${report.image}" width="100" />` : ''}
         <p><strong>Likes:</strong> ${report.likes}</p>
-        <button data-id="${report.id}">ðŸ‘ Like</button>
+        <button data-id="${report.id}">👍 Like</button>
       `;
 
       div.querySelector('button').addEventListener('click', () => {

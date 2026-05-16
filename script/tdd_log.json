@@ -594,7 +594,7 @@
     "testId": 61
   },
   {
-    "commitId": "HEAD",
+    "commitId": "de3f266a86e4719fec7c360ee5ddec9235118435",
     "commitName": "refactor: renombrar StaticScheduleRepository a DistrictScheduleRepository",
     "commitTimestamp": 1778934889111,
     "testId": 62
@@ -604,5 +604,11 @@
     "commitName": "refactor: eliminar guarda redundante en renderReports del presenter",
     "commitTimestamp": 1778935189056,
     "testId": 63
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer buildZonesHTML para separar la construccion del HTML de zonas",
+    "commitTimestamp": 1778936354303,
+    "testId": 64
   }
 ]

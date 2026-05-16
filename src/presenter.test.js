@@ -167,10 +167,11 @@ describe('CollectionSchedulePresenter', () => {
     bindGuestAccess: jest.fn(),
     bindDistrictSelection: jest.fn(),
     bindCreateReport: jest.fn(),
-
+    bindLikeReport: jest.fn(),
     showHome: jest.fn(),
     renderDistrictOptions: jest.fn(),
     showInitialMessage: jest.fn(),
+    renderReports: jest.fn(),
   };
 
   const presenter = new CollectionSchedulePresenter({ model, view });
