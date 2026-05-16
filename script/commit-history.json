@@ -817,17 +817,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "96701057e4791cddd86da37d264321992f9f0c76",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-05-16T12:25:54.000Z",
       "message": "refactor: renombrar save a persistReports y extraer loadReports en el repositorio",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/96701057e4791cddd86da37d264321992f9f0c76"
     },
     "stats": {
       "total": 20,
       "additions": 14,
       "deletions": 6,
+      "date": "2026-05-16"
+    },
+    "coverage": 72.99,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-05-16T12:34:47.000Z",
+      "message": "refactor: renombrar StaticScheduleRepository a DistrictScheduleRepository",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
       "date": "2026-05-16"
     },
     "coverage": 72.99,

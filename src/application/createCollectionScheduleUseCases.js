@@ -1,7 +1,7 @@
 import CollectionScheduleUseCases from './CollectionScheduleUseCases.js';
 import InMemoryAuthRepository from '../infrastructure/InMemoryAuthRepository.js';
 import LocalStorageReportRepository from '../infrastructure/LocalStorageReportRepository.js';
-import StaticScheduleRepository from '../infrastructure/StaticScheduleRepository.js';
+import DistrictScheduleRepository from '../infrastructure/StaticScheduleRepository.js';
 
 function createCollectionScheduleUseCases({
   storage = globalThis.localStorage,
@@ -9,7 +9,7 @@ function createCollectionScheduleUseCases({
 } = {}) {
   return new CollectionScheduleUseCases({
     authRepository: new InMemoryAuthRepository(),
-    scheduleRepository: new StaticScheduleRepository(),
+    scheduleRepository: new DistrictScheduleRepository(),
     reportRepository: new LocalStorageReportRepository({ storage, now }),
   });
 }

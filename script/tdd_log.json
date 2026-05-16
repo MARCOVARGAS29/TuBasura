@@ -582,7 +582,7 @@
     "testId": 59
   },
   {
-    "commitId": "HEAD",
+    "commitId": "96701057e4791cddd86da37d264321992f9f0c76",
     "commitName": "refactor: renombrar likeReport a incrementReportLikes en el dominio",
     "commitTimestamp": 1778933888396,
     "testId": 60
@@ -592,5 +592,11 @@
     "commitName": "refactor: renombrar save a persistReports y extraer loadReports en el repositorio",
     "commitTimestamp": 1778934357384,
     "testId": 61
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: renombrar StaticScheduleRepository a DistrictScheduleRepository",
+    "commitTimestamp": 1778934889111,
+    "testId": 62
   }
 ]

@@ -3,7 +3,7 @@ import {
   schedulesByDistrict,
 } from '../domain/schedules.js';
 
-export default class StaticScheduleRepository {
+export default class DistrictScheduleRepository {
   getDistrictOptions() {
     return createDistrictOptions();
   }
