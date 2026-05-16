@@ -798,12 +798,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c60a66eade3616e9a2ac2d322487627e859466dc",
     "author": "Sarah Cazorla",
     "commit": {
       "date": "2026-05-16T12:18:04.000Z",
       "message": "refactor: renombrar likeReport a incrementReportLikes en el dominio",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c60a66eade3616e9a2ac2d322487627e859466dc"
     },
     "stats": {
       "total": 42,
@@ -812,6 +812,25 @@
       "date": "2026-05-16"
     },
     "coverage": 73.33,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-05-16T12:25:54.000Z",
+      "message": "refactor: renombrar save a persistReports y extraer loadReports en el repositorio",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 14,
+      "deletions": 6,
+      "date": "2026-05-16"
+    },
+    "coverage": 72.99,
     "test_count": 59,
     "failed_tests": 0,
     "conclusion": "success"

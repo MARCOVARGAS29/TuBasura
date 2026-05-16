@@ -576,7 +576,7 @@
     "testId": 58
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c60a66eade3616e9a2ac2d322487627e859466dc",
     "commitName": "refactor: aplicar arquitectura hexagonal",
     "commitTimestamp": 1778860168521,
     "testId": 59
@@ -586,5 +586,11 @@
     "commitName": "refactor: renombrar likeReport a incrementReportLikes en el dominio",
     "commitTimestamp": 1778933888396,
     "testId": 60
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: renombrar save a persistReports y extraer loadReports en el repositorio",
+    "commitTimestamp": 1778934357384,
+    "testId": 61
   }
 ]
