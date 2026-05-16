@@ -570,7 +570,7 @@
     "testId": 57
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1bca81882dbafd215fb42e1a81b22442c93111dc",
     "commitName": "feat: distrito 8 zona Uspha Uspha",
     "commitTimestamp": 1776715088480,
     "testId": 58
@@ -580,5 +580,11 @@
     "commitName": "refactor: aplicar arquitectura hexagonal",
     "commitTimestamp": 1778860168521,
     "testId": 59
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: renombrar likeReport a incrementReportLikes en el dominio",
+    "commitTimestamp": 1778933888396,
+    "testId": 60
   }
 ]

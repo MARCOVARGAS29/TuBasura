@@ -7,11 +7,11 @@ function createReport({ description, image, id = Date.now().toString() }) {
   };
 }
 
-function likeReport(report) {
+function incrementReportLikes(report) {
   return {
     ...report,
     likes: report.likes + 1,
   };
 }
 
-export { createReport, likeReport };
+export { createReport, incrementReportLikes };

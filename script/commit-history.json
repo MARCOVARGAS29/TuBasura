@@ -779,18 +779,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1bca81882dbafd215fb42e1a81b22442c93111dc",
     "author": "MARCOVARGAS29",
     "commit": {
       "date": "2026-05-15T15:49:27.000Z",
       "message": "refactor: aplicar arquitectura hexagonal",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/1bca81882dbafd215fb42e1a81b22442c93111dc"
     },
     "stats": {
       "total": 1025,
       "additions": 581,
       "deletions": 444,
       "date": "2026-05-15"
+    },
+    "coverage": 73.33,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Sarah Cazorla",
+    "commit": {
+      "date": "2026-05-16T12:18:04.000Z",
+      "message": "refactor: renombrar likeReport a incrementReportLikes en el dominio",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 42,
+      "additions": 30,
+      "deletions": 12,
+      "date": "2026-05-16"
     },
     "coverage": 73.33,
     "test_count": 59,

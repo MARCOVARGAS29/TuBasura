@@ -412,7 +412,7 @@ describe('reportes', () => {
         image: '',
       });
 
-      const updated = model.likeReport(report.id);
+      const updated = model.incrementReportLikes(report.id);
 
       expect(updated.likes).toBe(1);
     });

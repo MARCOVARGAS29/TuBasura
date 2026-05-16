@@ -29,7 +29,7 @@ export default class CollectionScheduleUseCases {
     return this.reportRepository.createReport(data);
   }
 
-  likeReport(id) {
-    return this.reportRepository.likeReport(id);
+  incrementReportLikes(id) {
+    return this.reportRepository.incrementReportLikes(id);
   }
 }

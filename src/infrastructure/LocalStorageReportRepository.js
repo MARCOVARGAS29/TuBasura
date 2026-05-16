@@ -1,4 +1,4 @@
-import { createReport, likeReport } from '../domain/report.js';
+import { createReport, incrementReportLikes } from '../domain/report.js';
 
 export default class LocalStorageReportRepository {
   constructor({ storage, now = () => Date.now().toString() }) {
@@ -23,13 +23,13 @@ export default class LocalStorageReportRepository {
     return newReport;
   }
 
-  likeReport(id) {
+  incrementReportLikes(id) {
     const reportIndex = this.reports.findIndex((report) => report.id === id);
     if (reportIndex === -1) {
       return null;
     }
 
-    const updatedReport = likeReport(this.reports[reportIndex]);
+    const updatedReport = incrementReportLikes(this.reports[reportIndex]);
     this.reports[reportIndex] = updatedReport;
     this.save();
 
