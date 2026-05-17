@@ -143,6 +143,21 @@ describe('CollectionScheduleView', () => {
     expect(resultContainer.innerHTML).toContain('09:00');
   });
 
+  it('deberia mostrar la ubicacion manual seleccionada en el resultado', () => {
+    const { view, resultContainer } = createView();
+
+    view.showSchedule({
+      district: 'Distrito 1',
+      selectedLocation: 'Zona Aranjuez Alto (SubDistrito 25)',
+      days: 'Lunes, miercoles y viernes',
+      time: '07:00',
+    });
+
+    expect(resultContainer.innerHTML).toContain(
+      'Zona Aranjuez Alto (SubDistrito 25)',
+    );
+  });
+
   it('deberia mostrar las zonas si el distrito las tiene', () => {
     const { view, resultContainer } = createView();
 
