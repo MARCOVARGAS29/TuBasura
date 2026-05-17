@@ -46,6 +46,16 @@ describe('CollectionScheduleModel', () => {
     });
   });
 
+  it('deberia devolver opciones de ubicacion manual desde el modelo', () => {
+    const model = new CollectionScheduleModel();
+
+    expect(model.getLocationOptions()).toContainEqual({
+      value: 'Zona Aranjuez Alto (SubDistrito 25)',
+      label: 'Zona Aranjuez Alto (SubDistrito 25)',
+      districtId: '1',
+    });
+  });
+
   it('deberia devolver el horario del distrito seleccionado', () => {
   const model = new CollectionScheduleModel();
 
