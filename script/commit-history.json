@@ -1026,17 +1026,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "32d25d267211aa9c72af044a153d7762da429046",
     "author": "Gabriel Fernandez",
     "commit": {
       "date": "2026-05-17T07:36:08.000Z",
       "message": "refactor(application): separar CollectionScheduleUseCases en 3 casos de uso independientes",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/32d25d267211aa9c72af044a153d7762da429046"
     },
     "stats": {
       "total": 91,
       "additions": 80,
       "deletions": 11,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.22,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:36:45.000Z",
+      "message": "feat(ports): agregar interfaces abstractas de repositorios e implementar herencia",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 85,
+      "additions": 82,
+      "deletions": 3,
       "date": "2026-05-17"
     },
     "coverage": 81.22,

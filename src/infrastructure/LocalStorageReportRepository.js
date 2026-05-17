@@ -1,7 +1,9 @@
+import ReportRepository from '../application/ports/ReportRepository.js';
 import { createReport, incrementReportLikes } from '../domain/report.js';
 
-export default class LocalStorageReportRepository {
+export default class LocalStorageReportRepository extends ReportRepository {
   constructor({ storage, now = () => Date.now().toString() }) {
+    super();
     this.storage = storage;
     this.generateId = now;
     this.reports = this.loadReports();

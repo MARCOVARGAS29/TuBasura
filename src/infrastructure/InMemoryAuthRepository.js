@@ -1,6 +1,7 @@
+import AuthRepository from '../application/ports/AuthRepository.js';
 import { users } from '../domain/users.js';
 
-export default class InMemoryAuthRepository {
+export default class InMemoryAuthRepository extends AuthRepository {
   login({ username, password }) {
     const user = users.find(
       (candidate) =>
