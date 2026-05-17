@@ -1064,12 +1064,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1e2e11f4eac244e4757a4cff18f648f1159a9d85",
     "author": "Gabriel Fernandez",
     "commit": {
       "date": "2026-05-17T07:36:54.000Z",
       "message": "feat(domain): agregar tests para entidad Report",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/1e2e11f4eac244e4757a4cff18f648f1159a9d85"
     },
     "stats": {
       "total": 237,
@@ -1081,5 +1081,24 @@
     "test_count": 136,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:00:33.000Z",
+      "message": "test: require manual selection nav toggle",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 26,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 80.57,
+    "test_count": 145,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

@@ -696,7 +696,7 @@
     "testId": 78
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1e2e11f4eac244e4757a4cff18f648f1159a9d85",
     "commitName": "feat(ports): agregar interfaces abstractas de repositorios e implementar herencia",
     "commitTimestamp": 1779003407539,
     "testId": 79
@@ -706,5 +706,11 @@
     "commitName": "feat(domain): agregar tests para entidad Report",
     "commitTimestamp": 1779003416989,
     "testId": 80
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: require manual selection nav toggle",
+    "commitTimestamp": 1779030034714,
+    "testId": 81
   }
 ]

@@ -20,6 +20,12 @@ function createView() {
     append: jest.fn(),
     addEventListener: jest.fn(),
   };
+  const manualSelectionPanel = {
+    hidden: false,
+  };
+  const manualSelectionLink = {
+    addEventListener: jest.fn(),
+  };
   const resultContainer = {
     innerHTML: '',
   };
@@ -42,6 +48,8 @@ function createView() {
     welcomeMessage,
     districtSelect,
     manualLocationSelect,
+    manualSelectionPanel,
+    manualSelectionLink,
     resultContainer,
     loginForm,
     guestButton,
@@ -53,6 +61,8 @@ function createView() {
       welcomeMessage,
       districtSelect,
       manualLocationSelect,
+      manualSelectionPanel,
+      manualSelectionLink,
       resultContainer,
       loginForm,
       guestButton,
@@ -128,6 +138,22 @@ describe('CollectionScheduleView', () => {
       'change',
       expect.any(Function),
     );
+  });
+
+  it('deberia ocultar la seleccion manual hasta abrirla desde el navbar', () => {
+    const { view, manualSelectionPanel, manualSelectionLink } = createView();
+    const event = {
+      preventDefault: jest.fn(),
+    };
+
+    view.showHome({ name: 'Invitado', accessType: 'guest' });
+    view.bindManualSelectionNavigation();
+    const openManualSelection = manualSelectionLink.addEventListener.mock
+      .calls[0][1];
+    openManualSelection(event);
+
+    expect(manualSelectionPanel.hidden).toBe(false);
+    expect(event.preventDefault).toHaveBeenCalled();
   });
 
   it('deberia mostrar el horario seleccionado', () => {
