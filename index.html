@@ -55,6 +55,7 @@
           </div>
           <ul class="nav-links">
             <li><a href="#schedule-panel">Horarios de recoleccion</a></li>
+            <li><a href="#manual-selection-panel">Seleccion manual</a></li>
           </ul>
         </nav>
 
@@ -73,11 +74,30 @@
               <option value="">Selecciona un distrito</option>
             </select>
           </div>
+        </section>
 
-          <section id="schedule-result" class="schedule-card" aria-live="polite">
-            <h2>Horarios de recoleccion</h2>
-            <p>Selecciona un distrito para ver su horario disponible.</p>
-          </section>
+        <section id="manual-selection-panel" class="home-panel">
+          <header class="home-header">
+            <h1>Seleccion manual</h1>
+            <p>
+              Elige tu zona o subdistrito para encontrar la ruta de recoleccion
+              asociada.
+            </p>
+          </header>
+
+          <div class="field">
+            <label for="manual-location-select">Ubicacion</label>
+            <select id="manual-location-select" name="manual-location">
+              <option value="">Selecciona una zona</option>
+            </select>
+          </div>
+        </section>
+
+        <section id="schedule-result" class="schedule-card" aria-live="polite">
+          <h2>Horarios de recoleccion</h2>
+          <p>Selecciona un distrito para ver su horario disponible.</p>
+        </section>
+
           <section id="reports-panel" class="home-panel">
             <header class="home-header">
               <h1>Reportes de basura</h1>
@@ -97,7 +117,6 @@
             </form>
             <div id="reports-list"></div>
           </section>
-        </section>
       </section>
     </main>
 

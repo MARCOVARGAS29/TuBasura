@@ -10,6 +10,7 @@ function initializeApp() {
     homeSection: document.querySelector('#home-screen'),
     welcomeMessage: document.querySelector('#welcome-message'),
     districtSelect: document.querySelector('#district-select'),
+    manualLocationSelect: document.querySelector('#manual-location-select'),
     resultContainer: document.querySelector('#schedule-result'),
     loginForm: document.querySelector('#login-form'),
     guestButton: document.querySelector('#guest-access-button'),
