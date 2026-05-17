@@ -1482,12 +1482,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "8113f6901ae04bb822f87639462c105bbac286ca",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:41:29.000Z",
       "message": "feat: add start page and footer",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/8113f6901ae04bb822f87639462c105bbac286ca"
     },
     "stats": {
       "total": 175,
@@ -1497,6 +1497,25 @@
     },
     "coverage": 83.13,
     "test_count": 155,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T16:17:54.000Z",
+      "message": "feat(green): agregar mensaje de ayuda en el footer",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 216,
+      "additions": 124,
+      "deletions": 92,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.13,
+    "test_count": 156,
     "failed_tests": 0,
     "conclusion": "success"
   }

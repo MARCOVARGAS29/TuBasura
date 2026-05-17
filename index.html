@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TuBasura | Ingreso</title>
+    <style>
+      .app-footer {
+        background-color: #1e5631; /* Verde oscuro ecologico */
+        color: #ffffff;
+        padding: 2rem 1rem 1rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+      .app-footer p,
+      .app-footer address {
+        color: #ffffff;
+      }
+      .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .footer-brand strong {
+        font-size: 1.3rem;
+        color: #72c050; /* Verde claro de acento */
+      }
+      .footer-bottom {
+        margin-top: 1.5rem;
+        font-size: 0.85rem;
+        border-top: 1px solid #2c7a4b;
+        padding-top: 1rem;
+      }
+    </style>
   </head>
   <body>
     <main class="app-shell">
@@ -177,15 +207,20 @@
           </section>
 
         <footer class="app-footer">
-          <div>
-            <strong>TuBasura</strong>
-            <p>Informacion de recoleccion y reportes ciudadanos.</p>
+          <div class="footer-content">
+            <div class="footer-brand">
+              <strong>TuBasura</strong>
+              <p>Informacion de recoleccion y reportes ciudadanos.</p>
+              <p>¡Estamos para ayudarte!</p>
+            </div>
+            <address>
+              Contacto: contacto@tubasura.bo<br />
+              Telefono: +591 4 4000000
+            </address>
           </div>
-          <address>
-            Contacto: contacto@tubasura.bo<br />
-            Telefono: +591 4 4000000<br />
-            Atencion: lunes a viernes, 08:00 a 18:00
-          </address>
+          <div class="footer-bottom">
+            <p>&copy; 2026 TuBasura. Todos los derechos reservados.</p>
+          </div>
         </footer>
       </section>
 
