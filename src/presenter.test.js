@@ -305,4 +305,26 @@ describe('CollectionSchedulePresenter', () => {
     expect(view.showReportConfirmation).toHaveBeenCalledWith(report);
   });
 
+  it('deberia mostrar error cuando falla la creacion del reporte', () => {
+    const model = {
+      createReport: jest.fn(() => {
+        throw new Error('storage failed');
+      }),
+      getReports: jest.fn(() => []),
+    };
+    const view = {
+      showReportError: jest.fn(),
+      renderReports: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+
+    presenter.createReport({ description: 'Basura', image: '' });
+
+    expect(view.showReportError).toHaveBeenCalledWith(
+      'Error al enviar el reporte, intente nuevamente',
+    );
+    expect(view.renderReports).not.toHaveBeenCalled();
+  });
+
 });
