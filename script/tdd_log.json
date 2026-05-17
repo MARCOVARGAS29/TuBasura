@@ -738,7 +738,7 @@
     "testId": 85
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8695289dbed565635cef9121f3aa4df79183e7d8",
     "commitName": "feat: confirm created reports",
     "commitTimestamp": 1779030771328,
     "testId": 86
@@ -748,5 +748,11 @@
     "commitName": "test: expect report creation error",
     "commitTimestamp": 1779030814160,
     "testId": 87
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: show report creation errors",
+    "commitTimestamp": 1779030889537,
+    "testId": 88
   }
 ]

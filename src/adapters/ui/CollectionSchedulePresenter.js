@@ -99,14 +99,22 @@ export default class CollectionSchedulePresenter {
   }
 
   createReport(data) {
-    const report = this.model.createReport({
-      ...data,
-      userName: this.currentSession?.name || 'Invitado',
-    });
-    if (this.view.showReportConfirmation) {
-      this.view.showReportConfirmation(report);
+    try {
+      const report = this.model.createReport({
+        ...data,
+        userName: this.currentSession?.name || 'Invitado',
+      });
+      if (this.view.showReportConfirmation) {
+        this.view.showReportConfirmation(report);
+      }
+      this.renderReports();
+    } catch (error) {
+      if (this.view.showReportError) {
+        this.view.showReportError(
+          'Error al enviar el reporte, intente nuevamente',
+        );
+      }
     }
-    this.renderReports();
   }
 
   likeReport(id) {
