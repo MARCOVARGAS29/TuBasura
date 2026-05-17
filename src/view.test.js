@@ -118,6 +118,18 @@ describe('CollectionScheduleView', () => {
     global.document = originalDocument;
   });
 
+  it('deberia enlazar la seleccion de ubicacion manual', () => {
+    const { view, manualLocationSelect } = createView();
+    const handler = jest.fn();
+
+    view.bindManualLocationSelection(handler);
+
+    expect(manualLocationSelect.addEventListener).toHaveBeenCalledWith(
+      'change',
+      expect.any(Function),
+    );
+  });
+
   it('deberia mostrar el horario seleccionado', () => {
     const { view, resultContainer } = createView();
 
