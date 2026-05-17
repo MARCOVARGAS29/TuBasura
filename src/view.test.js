@@ -51,6 +51,26 @@ function createView() {
   const passwordInput = {
     value: '123456',
   };
+  const reportForm = {
+    addEventListener: jest.fn(),
+    reset: jest.fn(),
+  };
+  const reportDescription = {
+    value: 'Basura acumulada',
+  };
+  const reportDistrict = {
+    value: 'Distrito 4',
+  };
+  const reportImage = {
+    value: 'https://example.com/basura.jpg',
+  };
+  const reportsList = {
+    innerHTML: '',
+    append: jest.fn(),
+  };
+  const reportConfirmation = {
+    innerHTML: '',
+  };
 
   return {
     loginSection,
@@ -68,6 +88,12 @@ function createView() {
     guestButton,
     usernameInput,
     passwordInput,
+    reportForm,
+    reportDescription,
+    reportDistrict,
+    reportImage,
+    reportsList,
+    reportConfirmation,
     view: new CollectionScheduleView({
       loginSection,
       homeSection,
@@ -84,6 +110,12 @@ function createView() {
       guestButton,
       usernameInput,
       passwordInput,
+      reportForm,
+      reportDescription,
+      reportDistrict,
+      reportImage,
+      reportsList,
+      reportConfirmation,
     }),
   };
 }
@@ -227,5 +259,42 @@ describe('CollectionScheduleView', () => {
 
     expect(resultContainer.innerHTML).toContain('Zona A');
     expect(resultContainer.innerHTML).toContain('Zona B');
+  });
+
+  it('deberia enviar distrito y mostrar confirmacion clara del reporte', () => {
+    const {
+      view,
+      reportForm,
+      reportConfirmation,
+    } = createView();
+    const event = {
+      preventDefault: jest.fn(),
+    };
+    const handler = jest.fn();
+
+    view.bindCreateReport(handler);
+    const submitReport = reportForm.addEventListener.mock.calls[0][1];
+    submitReport(event);
+
+    expect(handler).toHaveBeenCalledWith({
+      description: 'Basura acumulada',
+      district: 'Distrito 4',
+      image: 'https://example.com/basura.jpg',
+    });
+
+    view.showReportConfirmation({
+      description: 'Basura acumulada',
+      district: 'Distrito 4',
+      userName: 'admin',
+      createdAt: new Date('2026-05-17T10:30:00'),
+    });
+
+    expect(reportConfirmation.innerHTML).toContain(
+      'Reporte enviado correctamente',
+    );
+    expect(reportConfirmation.innerHTML).toContain('Basura acumulada');
+    expect(reportConfirmation.innerHTML).toContain('Distrito 4');
+    expect(reportConfirmation.innerHTML).toContain('admin');
+    expect(reportConfirmation.innerHTML).toContain('2026');
   });
 });
