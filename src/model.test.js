@@ -465,6 +465,22 @@ describe('reportes', () => {
 
       expect(updated.likes).toBe(1);
     });
+
+    it('deberia permitir solo un like por usuario en el mismo reporte', () => {
+      const model = new CollectionScheduleModel();
+
+      const report = model.createReport({
+        description: 'Basura',
+        image: '',
+      });
+
+      const firstLike = model.likeReport(report.id, 'admin');
+      const secondLike = model.likeReport(report.id, 'admin');
+
+      expect(firstLike.likes).toBe(1);
+      expect(secondLike.likes).toBe(1);
+      expect(secondLike.likedBy).toEqual(['admin']);
+    });
 });
 
 beforeEach(() => {

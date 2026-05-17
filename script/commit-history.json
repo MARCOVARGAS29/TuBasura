@@ -1330,12 +1330,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "7362eb29600d530db8205b9912059fc74b39e366",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:26:37.000Z",
       "message": "fix: restore navigation from reports",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7362eb29600d530db8205b9912059fc74b39e366"
     },
     "stats": {
       "total": 38,
@@ -1347,5 +1347,24 @@
     "test_count": 151,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:30:49.000Z",
+      "message": "test: prevent duplicate report likes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 22,
+      "deletions": 6,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.27,
+    "test_count": 152,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
