@@ -1,6 +1,7 @@
 import createCollectionScheduleUseCases from './application/createCollectionScheduleUseCases.js';
 import {
   createDistrictOptions,
+  createLocationOptions,
   schedulesByDistrict,
 } from './domain/schedules.js';
 
@@ -10,4 +11,4 @@ export default class CollectionScheduleModel {
   }
 }
 
-export { createDistrictOptions, schedulesByDistrict };
+export { createDistrictOptions, createLocationOptions, schedulesByDistrict };
