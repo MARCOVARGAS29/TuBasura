@@ -20,6 +20,9 @@ export default class CollectionSchedulePresenter {
         this.showScheduleForManualLocation(location);
       });
     }
+    if (this.view.bindManualSelectionNavigation) {
+      this.view.bindManualSelectionNavigation();
+    }
     this.view.bindCreateReport((data) => this.createReport(data));
   }
 

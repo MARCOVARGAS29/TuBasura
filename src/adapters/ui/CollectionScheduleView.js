@@ -5,6 +5,8 @@ export default class CollectionScheduleView {
     welcomeMessage,
     districtSelect,
     manualLocationSelect,
+    manualSelectionPanel,
+    manualSelectionLink,
     resultContainer,
     loginForm,
     guestButton,
@@ -20,6 +22,8 @@ export default class CollectionScheduleView {
     this.welcomeMessage = welcomeMessage;
     this.districtSelect = districtSelect;
     this.manualLocationSelect = manualLocationSelect;
+    this.manualSelectionPanel = manualSelectionPanel;
+    this.manualSelectionLink = manualSelectionLink;
     this.resultContainer = resultContainer;
     this.loginForm = loginForm;
     this.guestButton = guestButton;
@@ -39,6 +43,9 @@ export default class CollectionScheduleView {
   showHome(session) {
     this.loginSection.hidden = true;
     this.homeSection.hidden = false;
+    if (this.manualSelectionPanel) {
+      this.manualSelectionPanel.hidden = true;
+    }
     this.welcomeMessage.textContent = `Bienvenido, ${session.name}`;
   }
 
@@ -91,6 +98,20 @@ export default class CollectionScheduleView {
   bindManualLocationSelection(handler) {
     this.manualLocationSelect.addEventListener('change', (event) => {
       handler(event.target.value);
+    });
+  }
+
+  bindManualSelectionNavigation() {
+    if (!this.manualSelectionLink || !this.manualSelectionPanel) {
+      return;
+    }
+
+    this.manualSelectionLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.manualSelectionPanel.hidden = false;
+      if (this.manualSelectionPanel.scrollIntoView) {
+        this.manualSelectionPanel.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   }
 

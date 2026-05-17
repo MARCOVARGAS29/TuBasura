@@ -702,7 +702,7 @@
     "testId": 79
   },
   {
-    "commitId": "HEAD",
+    "commitId": "25faa4b6fb556e92e29772f7a9bc077b0561ce3e",
     "commitName": "feat(domain): agregar tests para entidad Report",
     "commitTimestamp": 1779003416989,
     "testId": 80
@@ -712,5 +712,11 @@
     "commitName": "test: require manual selection nav toggle",
     "commitTimestamp": 1779030034714,
     "testId": 81
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: show manual selection only from nav",
+    "commitTimestamp": 1779030134878,
+    "testId": 82
   }
 ]

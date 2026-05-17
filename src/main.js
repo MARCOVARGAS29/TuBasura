@@ -11,6 +11,8 @@ function initializeApp() {
     welcomeMessage: document.querySelector('#welcome-message'),
     districtSelect: document.querySelector('#district-select'),
     manualLocationSelect: document.querySelector('#manual-location-select'),
+    manualSelectionPanel: document.querySelector('#manual-selection-panel'),
+    manualSelectionLink: document.querySelector('#manual-selection-link'),
     resultContainer: document.querySelector('#schedule-result'),
     loginForm: document.querySelector('#login-form'),
     guestButton: document.querySelector('#guest-access-button'),
