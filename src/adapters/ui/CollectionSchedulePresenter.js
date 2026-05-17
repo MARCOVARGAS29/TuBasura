@@ -2,6 +2,7 @@ export default class CollectionSchedulePresenter {
   constructor({ model, view }) {
     this.model = model;
     this.view = view;
+    this.currentSession = null;
   }
 
   initialize() {
@@ -33,12 +34,14 @@ export default class CollectionSchedulePresenter {
       return null;
     }
 
+    this.currentSession = session;
     this.showHome(session);
     return session;
   }
 
   enterAsGuest() {
     const session = this.model.loginAsGuest();
+    this.currentSession = session;
     this.showHome(session);
 
     return session;
@@ -96,7 +99,13 @@ export default class CollectionSchedulePresenter {
   }
 
   createReport(data) {
-    this.model.createReport(data);
+    const report = this.model.createReport({
+      ...data,
+      userName: this.currentSession?.name || 'Invitado',
+    });
+    if (this.view.showReportConfirmation) {
+      this.view.showReportConfirmation(report);
+    }
     this.renderReports();
   }
 
