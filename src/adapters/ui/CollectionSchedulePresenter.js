@@ -38,9 +38,15 @@ export default class CollectionSchedulePresenter {
 
   showHome(session) {
     const options = this.model.getDistrictOptions();
+    const locationOptions = this.model.getLocationOptions
+      ? this.model.getLocationOptions()
+      : [];
 
     this.view.showHome(session);
     this.view.renderDistrictOptions(options);
+    if (this.view.renderLocationOptions) {
+      this.view.renderLocationOptions(locationOptions);
+    }
     this.view.showInitialMessage();
 
     if (this.model.getReports && this.view.renderReports) {
