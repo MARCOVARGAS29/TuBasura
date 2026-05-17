@@ -1,5 +1,6 @@
 import CollectionScheduleModel, {
   createDistrictOptions,
+  createLocationOptions,
   schedulesByDistrict,
 } from './model.js';
 
@@ -33,6 +34,16 @@ describe('CollectionScheduleModel', () => {
     expect(options).toHaveLength(15);
     expect(options[0]).toEqual({ value: '1', label: 'Distrito 1' });
     expect(options[14]).toEqual({ value: '15', label: 'Distrito 15' });
+  });
+
+  it('deberia crear opciones de ubicacion manual desde las zonas', () => {
+    const options = createLocationOptions();
+
+    expect(options).toContainEqual({
+      value: 'Zona Aranjuez Alto (SubDistrito 25)',
+      label: 'Zona Aranjuez Alto (SubDistrito 25)',
+      districtId: '1',
+    });
   });
 
   it('deberia devolver el horario del distrito seleccionado', () => {
