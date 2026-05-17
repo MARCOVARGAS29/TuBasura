@@ -7,6 +7,9 @@ export default class CollectionScheduleView {
     manualLocationSelect,
     manualSelectionPanel,
     manualSelectionLink,
+    reportsPanel,
+    schedulePanel,
+    reportsLink,
     resultContainer,
     loginForm,
     guestButton,
@@ -24,6 +27,9 @@ export default class CollectionScheduleView {
     this.manualLocationSelect = manualLocationSelect;
     this.manualSelectionPanel = manualSelectionPanel;
     this.manualSelectionLink = manualSelectionLink;
+    this.reportsPanel = reportsPanel;
+    this.schedulePanel = schedulePanel;
+    this.reportsLink = reportsLink;
     this.resultContainer = resultContainer;
     this.loginForm = loginForm;
     this.guestButton = guestButton;
@@ -45,6 +51,12 @@ export default class CollectionScheduleView {
     this.homeSection.hidden = false;
     if (this.manualSelectionPanel) {
       this.manualSelectionPanel.hidden = true;
+    }
+    if (this.reportsPanel) {
+      this.reportsPanel.hidden = true;
+    }
+    if (this.schedulePanel) {
+      this.schedulePanel.hidden = false;
     }
     this.welcomeMessage.textContent = `Bienvenido, ${session.name}`;
   }
@@ -111,6 +123,26 @@ export default class CollectionScheduleView {
       this.manualSelectionPanel.hidden = false;
       if (this.manualSelectionPanel.scrollIntoView) {
         this.manualSelectionPanel.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
+  bindReportsNavigation() {
+    if (!this.reportsLink || !this.reportsPanel) {
+      return;
+    }
+
+    this.reportsLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      if (this.schedulePanel) {
+        this.schedulePanel.hidden = true;
+      }
+      if (this.manualSelectionPanel) {
+        this.manualSelectionPanel.hidden = true;
+      }
+      this.reportsPanel.hidden = false;
+      if (this.reportsPanel.scrollIntoView) {
+        this.reportsPanel.scrollIntoView({ behavior: 'smooth' });
       }
     });
   }

@@ -60,49 +60,52 @@
                 Seleccion manual
               </a>
             </li>
+            <li><a id="reports-link" href="#reports-panel">Reportes</a></li>
           </ul>
         </nav>
 
-        <section id="schedule-panel" class="home-panel">
-          <header class="home-header">
-            <h1>Horarios de recoleccion</h1>
-            <p>
-              Consulta los dias y la hora aproximada en la que pasa el camion
-              recolector por tu zona.
-            </p>
-          </header>
+        <div id="schedule-page">
+          <section id="schedule-panel" class="home-panel">
+            <header class="home-header">
+              <h1>Horarios de recoleccion</h1>
+              <p>
+                Consulta los dias y la hora aproximada en la que pasa el camion
+                recolector por tu zona.
+              </p>
+            </header>
 
-          <div class="field">
-            <label for="district-select">Distrito</label>
-            <select id="district-select" name="district">
-              <option value="">Selecciona un distrito</option>
-            </select>
-          </div>
-        </section>
+            <div class="field">
+              <label for="district-select">Distrito</label>
+              <select id="district-select" name="district">
+                <option value="">Selecciona un distrito</option>
+              </select>
+            </div>
+          </section>
 
-        <section id="manual-selection-panel" class="home-panel" hidden>
-          <header class="home-header">
-            <h1>Seleccion manual</h1>
-            <p>
-              Elige tu zona o subdistrito para encontrar la ruta de recoleccion
-              asociada.
-            </p>
-          </header>
+          <section id="manual-selection-panel" class="home-panel" hidden>
+            <header class="home-header">
+              <h1>Seleccion manual</h1>
+              <p>
+                Elige tu zona o subdistrito para encontrar la ruta de
+                recoleccion asociada.
+              </p>
+            </header>
 
-          <div class="field">
-            <label for="manual-location-select">Ubicacion</label>
-            <select id="manual-location-select" name="manual-location">
-              <option value="">Selecciona una zona</option>
-            </select>
-          </div>
-        </section>
+            <div class="field">
+              <label for="manual-location-select">Ubicacion</label>
+              <select id="manual-location-select" name="manual-location">
+                <option value="">Selecciona una zona</option>
+              </select>
+            </div>
+          </section>
 
-        <section id="schedule-result" class="schedule-card" aria-live="polite">
-          <h2>Horarios de recoleccion</h2>
-          <p>Selecciona un distrito para ver su horario disponible.</p>
-        </section>
+          <section id="schedule-result" class="schedule-card" aria-live="polite">
+            <h2>Horarios de recoleccion</h2>
+            <p>Selecciona un distrito para ver su horario disponible.</p>
+          </section>
+        </div>
 
-          <section id="reports-panel" class="home-panel">
+          <section id="reports-panel" class="home-panel" hidden>
             <header class="home-header">
               <h1>Reportes de basura</h1>
               <p>Reporta acumulación de basura en tu zona.</p>

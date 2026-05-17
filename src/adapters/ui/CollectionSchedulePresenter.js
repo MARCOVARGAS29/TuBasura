@@ -24,6 +24,9 @@ export default class CollectionSchedulePresenter {
     if (this.view.bindManualSelectionNavigation) {
       this.view.bindManualSelectionNavigation();
     }
+    if (this.view.bindReportsNavigation) {
+      this.view.bindReportsNavigation();
+    }
     this.view.bindCreateReport((data) => this.createReport(data));
   }
 
