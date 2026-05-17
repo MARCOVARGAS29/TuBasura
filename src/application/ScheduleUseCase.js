@@ -7,6 +7,10 @@ export default class ScheduleUseCase {
     return this.scheduleRepository.getDistrictOptions();
   }
 
+  getLocationOptions() {
+    return this.scheduleRepository.getLocationOptions();
+  }
+
   getScheduleByDistrict(districtId) {
     return this.scheduleRepository.getScheduleByDistrict(districtId);
   }

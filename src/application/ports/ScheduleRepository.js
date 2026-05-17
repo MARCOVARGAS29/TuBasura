@@ -12,6 +12,14 @@ export default class ScheduleRepository {
   }
 
   /**
+   * Get all manual location options
+   * @returns {Array} - Array of { value, label, districtId }
+   */
+  getLocationOptions() {
+    throw new Error('Method getLocationOptions() must be implemented');
+  }
+
+  /**
    * Get schedule for a specific district
    * @param {string} districtId - District identifier
    * @returns {Object|null} - Schedule object or null if not found

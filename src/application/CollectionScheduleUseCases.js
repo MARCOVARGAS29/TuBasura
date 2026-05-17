@@ -39,6 +39,10 @@ export default class CollectionScheduleUseCases {
     return this.#schedule.getDistrictOptions();
   }
 
+  getLocationOptions() {
+    return this.#schedule.getLocationOptions();
+  }
+
   getScheduleByDistrict(districtId) {
     return this.#schedule.getScheduleByDistrict(districtId);
   }
