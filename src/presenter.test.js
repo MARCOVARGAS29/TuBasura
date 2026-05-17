@@ -165,6 +165,33 @@ describe('CollectionSchedulePresenter', () => {
     expect(view.showSchedule).toHaveBeenCalledWith(schedule);
   });
 
+  it('deberia mostrar el horario cuando existe la ubicacion manual', () => {
+    const schedule = {
+      district: 'Distrito 1',
+      selectedLocation: 'Zona Aranjuez Alto (SubDistrito 25)',
+      days: 'Lunes, miercoles y viernes',
+      time: '07:00',
+    };
+    const model = {
+      getScheduleByManualLocation: jest.fn(() => schedule),
+    };
+    const view = {
+      showSchedule: jest.fn(),
+      showInitialMessage: jest.fn(),
+      showScheduleNotFound: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+    presenter.showScheduleForManualLocation(
+      'Zona Aranjuez Alto (SubDistrito 25)',
+    );
+
+    expect(model.getScheduleByManualLocation).toHaveBeenCalledWith(
+      'Zona Aranjuez Alto (SubDistrito 25)',
+    );
+    expect(view.showSchedule).toHaveBeenCalledWith(schedule);
+  });
+
   it('deberia mostrar el mensaje inicial cuando no se selecciona distrito', () => {
     const model = {
       getScheduleByDistrict: jest.fn(),
