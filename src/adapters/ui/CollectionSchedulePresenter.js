@@ -15,6 +15,11 @@ export default class CollectionSchedulePresenter {
     this.view.bindDistrictSelection((districtId) => {
       this.showScheduleForDistrict(districtId);
     });
+    if (this.view.bindManualLocationSelection) {
+      this.view.bindManualLocationSelection((location) => {
+        this.showScheduleForManualLocation(location);
+      });
+    }
     this.view.bindCreateReport((data) => this.createReport(data));
   }
 
