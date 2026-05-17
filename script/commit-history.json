@@ -1463,12 +1463,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "35e4daa07ab2b0143c1d64b746db5d92021a4154",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:38:55.000Z",
       "message": "test: expect start page navigation",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/35e4daa07ab2b0143c1d64b746db5d92021a4154"
     },
     "stats": {
       "total": 33,
@@ -1480,5 +1480,24 @@
     "test_count": 155,
     "failed_tests": 2,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:41:29.000Z",
+      "message": "feat: add start page and footer",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 175,
+      "additions": 171,
+      "deletions": 4,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.13,
+    "test_count": 155,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

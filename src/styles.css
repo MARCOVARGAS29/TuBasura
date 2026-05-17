@@ -166,6 +166,87 @@ h1, h2 { margin: 0; }
 
 .field { margin-bottom: 24px; }
 
+.start-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: grid;
+  align-content: end;
+  gap: 28px;
+  padding: 56px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-image:
+    linear-gradient(rgba(44, 62, 80, 0.52), rgba(44, 62, 80, 0.74)),
+    url('./assets/inicio-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+
+.start-hero-content {
+  width: min(100%, 680px);
+}
+
+.start-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  line-height: 1;
+}
+
+.start-hero p {
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.offer-item {
+  min-height: 138px;
+  padding: 18px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #2C3E50;
+}
+
+.offer-item h2 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.offer-item p {
+  margin: 0;
+  color: #637074;
+  font-size: 0.93rem;
+}
+
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 28px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #dde5e2;
+  color: #2C3E50;
+}
+
+.app-footer p {
+  margin: 6px 0 0;
+  color: #637074;
+}
+
+.app-footer address {
+  font-style: normal;
+  line-height: 1.6;
+  color: #637074;
+}
+
 /* TARJETA HORARIO */
 .schedule-card {
   padding: 28px;
@@ -298,4 +379,7 @@ h1, h2 { margin: 0; }
   .navbar { flex-direction: column; align-items: flex-start; }
   .nav-links { justify-content: flex-start; }
   .home-panel, .brand-panel, .login-card { padding: 24px; }
+  .start-hero { min-height: auto; padding: 28px; }
+  .offer-grid { grid-template-columns: 1fr; }
+  .app-footer { flex-direction: column; }
 }

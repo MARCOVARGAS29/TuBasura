@@ -7,6 +7,8 @@ export default class CollectionScheduleView {
     manualLocationSelect,
     manualSelectionPanel,
     manualSelectionLink,
+    startPanel,
+    startLink,
     reportsPanel,
     schedulePanel,
     reportsLink,
@@ -32,6 +34,8 @@ export default class CollectionScheduleView {
     this.manualLocationSelect = manualLocationSelect;
     this.manualSelectionPanel = manualSelectionPanel;
     this.manualSelectionLink = manualSelectionLink;
+    this.startPanel = startPanel;
+    this.startLink = startLink;
     this.reportsPanel = reportsPanel;
     this.schedulePanel = schedulePanel;
     this.reportsLink = reportsLink;
@@ -65,8 +69,11 @@ export default class CollectionScheduleView {
     if (this.reportsPanel) {
       this.reportsPanel.hidden = true;
     }
+    if (this.startPanel) {
+      this.startPanel.hidden = false;
+    }
     if (this.schedulePanel) {
-      this.schedulePanel.hidden = false;
+      this.schedulePanel.hidden = true;
     }
     this.welcomeMessage.textContent = `Bienvenido, ${session.name}`;
   }
@@ -136,6 +143,9 @@ export default class CollectionScheduleView {
       if (this.reportsPanel) {
         this.reportsPanel.hidden = true;
       }
+      if (this.startPanel) {
+        this.startPanel.hidden = true;
+      }
       this.manualSelectionPanel.hidden = false;
       if (this.manualSelectionPanel.scrollIntoView) {
         this.manualSelectionPanel.scrollIntoView({ behavior: 'smooth' });
@@ -157,8 +167,34 @@ export default class CollectionScheduleView {
       if (this.manualSelectionPanel) {
         this.manualSelectionPanel.hidden = true;
       }
+      if (this.startPanel) {
+        this.startPanel.hidden = true;
+      }
       if (this.schedulePanel.scrollIntoView) {
         this.schedulePanel.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
+  bindStartNavigation() {
+    if (!this.startLink || !this.startPanel) {
+      return;
+    }
+
+    this.startLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.startPanel.hidden = false;
+      if (this.schedulePanel) {
+        this.schedulePanel.hidden = true;
+      }
+      if (this.manualSelectionPanel) {
+        this.manualSelectionPanel.hidden = true;
+      }
+      if (this.reportsPanel) {
+        this.reportsPanel.hidden = true;
+      }
+      if (this.startPanel.scrollIntoView) {
+        this.startPanel.scrollIntoView({ behavior: 'smooth' });
       }
     });
   }
@@ -185,6 +221,9 @@ export default class CollectionScheduleView {
       }
       if (this.manualSelectionPanel) {
         this.manualSelectionPanel.hidden = true;
+      }
+      if (this.startPanel) {
+        this.startPanel.hidden = true;
       }
       this.reportsPanel.hidden = false;
       if (this.reportsPanel.scrollIntoView) {

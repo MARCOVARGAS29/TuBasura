@@ -13,6 +13,8 @@ function initializeApp() {
     manualLocationSelect: document.querySelector('#manual-location-select'),
     manualSelectionPanel: document.querySelector('#manual-selection-panel'),
     manualSelectionLink: document.querySelector('#manual-selection-link'),
+    startPanel: document.querySelector('#start-panel'),
+    startLink: document.querySelector('#start-link'),
     reportsPanel: document.querySelector('#reports-panel'),
     schedulePanel: document.querySelector('#schedule-page'),
     reportsLink: document.querySelector('#reports-link'),

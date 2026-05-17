@@ -822,7 +822,7 @@
     "testId": 99
   },
   {
-    "commitId": "HEAD",
+    "commitId": "35e4daa07ab2b0143c1d64b746db5d92021a4154",
     "commitName": "feat: show report feedback modal",
     "commitTimestamp": 1779032087491,
     "testId": 100
@@ -832,5 +832,11 @@
     "commitName": "test: expect start page navigation",
     "commitTimestamp": 1779032336418,
     "testId": 101
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: add start page and footer",
+    "commitTimestamp": 1779032490173,
+    "testId": 102
   }
 ]
