@@ -4,6 +4,7 @@ export default class CollectionScheduleView {
     homeSection,
     welcomeMessage,
     districtSelect,
+    manualLocationSelect,
     resultContainer,
     loginForm,
     guestButton,
@@ -18,6 +19,7 @@ export default class CollectionScheduleView {
     this.homeSection = homeSection;
     this.welcomeMessage = welcomeMessage;
     this.districtSelect = districtSelect;
+    this.manualLocationSelect = manualLocationSelect;
     this.resultContainer = resultContainer;
     this.loginForm = loginForm;
     this.guestButton = guestButton;
@@ -49,6 +51,18 @@ export default class CollectionScheduleView {
       optionElement.value = option.value;
       optionElement.textContent = option.label;
       this.districtSelect.append(optionElement);
+    });
+  }
+
+  renderLocationOptions(options) {
+    this.manualLocationSelect.innerHTML =
+      '<option value="">Selecciona una zona</option>';
+
+    options.forEach((option) => {
+      const optionElement = document.createElement('option');
+      optionElement.value = option.value;
+      optionElement.textContent = option.label;
+      this.manualLocationSelect.append(optionElement);
     });
   }
 
