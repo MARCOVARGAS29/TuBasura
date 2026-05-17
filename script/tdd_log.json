@@ -678,7 +678,7 @@
     "testId": 75
   },
   {
-    "commitId": "HEAD",
+    "commitId": "81e1575253415757735bd30e9f6eb79fb54a9722",
     "commitName": "feat(domain): agregar entidades District para zonas",
     "commitTimestamp": 1779003340136,
     "testId": 76
@@ -688,5 +688,11 @@
     "commitName": "fix(domain): agregar método getUpdatedAt() a entidad Report",
     "commitTimestamp": 1779003354154,
     "testId": 77
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(application): separar CollectionScheduleUseCases en 3 casos de uso independientes",
+    "commitTimestamp": 1779003371204,
+    "testId": 78
   }
 ]

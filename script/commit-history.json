@@ -1007,17 +1007,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "81e1575253415757735bd30e9f6eb79fb54a9722",
     "author": "Gabriel Fernandez",
     "commit": {
       "date": "2026-05-17T07:35:51.000Z",
       "message": "fix(domain): agregar método getUpdatedAt() a entidad Report",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/81e1575253415757735bd30e9f6eb79fb54a9722"
     },
     "stats": {
       "total": 129,
       "additions": 125,
       "deletions": 4,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.22,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:36:08.000Z",
+      "message": "refactor(application): separar CollectionScheduleUseCases en 3 casos de uso independientes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 91,
+      "additions": 80,
+      "deletions": 11,
       "date": "2026-05-17"
     },
     "coverage": 81.22,
