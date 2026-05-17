@@ -88,6 +88,12 @@ export default class CollectionScheduleView {
     });
   }
 
+  bindManualLocationSelection(handler) {
+    this.manualLocationSelect.addEventListener('change', (event) => {
+      handler(event.target.value);
+    });
+  }
+
   showInitialMessage() {
     this.resultContainer.innerHTML = `
       <h2>Horarios de recoleccion</h2>
