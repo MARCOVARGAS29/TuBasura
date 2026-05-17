@@ -119,6 +119,11 @@ export default class CollectionScheduleView {
   showSchedule(schedule) {
     this.resultContainer.innerHTML = `
       <h2>${schedule.district}</h2>
+      ${
+        schedule.selectedLocation
+          ? `<p><strong>Ubicacion:</strong> ${schedule.selectedLocation}</p>`
+          : ''
+      }
       <p><strong>Días:</strong> ${schedule.days}</p>
       <p><strong>Hora:</strong> ${schedule.time}</p>
       ${this.buildZonesHTML(schedule.zones)}
