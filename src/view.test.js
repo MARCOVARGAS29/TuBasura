@@ -26,6 +26,16 @@ function createView() {
   const manualSelectionLink = {
     addEventListener: jest.fn(),
   };
+  const reportsPanel = {
+    hidden: true,
+    scrollIntoView: jest.fn(),
+  };
+  const schedulePanel = {
+    hidden: false,
+  };
+  const reportsLink = {
+    addEventListener: jest.fn(),
+  };
   const resultContainer = {
     innerHTML: '',
   };
@@ -63,6 +73,9 @@ function createView() {
       manualLocationSelect,
       manualSelectionPanel,
       manualSelectionLink,
+      reportsPanel,
+      schedulePanel,
+      reportsLink,
       resultContainer,
       loginForm,
       guestButton,
@@ -153,6 +166,21 @@ describe('CollectionScheduleView', () => {
     openManualSelection(event);
 
     expect(manualSelectionPanel.hidden).toBe(false);
+    expect(event.preventDefault).toHaveBeenCalled();
+  });
+
+  it('deberia abrir la pagina de reportes desde el navbar', () => {
+    const { view, reportsPanel, schedulePanel, reportsLink } = createView();
+    const event = {
+      preventDefault: jest.fn(),
+    };
+
+    view.bindReportsNavigation();
+    const openReports = reportsLink.addEventListener.mock.calls[0][1];
+    openReports(event);
+
+    expect(reportsPanel.hidden).toBe(false);
+    expect(schedulePanel.hidden).toBe(true);
     expect(event.preventDefault).toHaveBeenCalled();
   });
 

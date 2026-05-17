@@ -1216,12 +1216,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "c54b2c05284d8bd1a677cbbb300e705a555cc02d",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:14:48.000Z",
       "message": "feat: show report creation errors",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c54b2c05284d8bd1a677cbbb300e705a555cc02d"
     },
     "stats": {
       "total": 22,
@@ -1233,5 +1233,24 @@
     "test_count": 148,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:15:40.000Z",
+      "message": "test: expect reports navigation",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 28,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.35,
+    "test_count": 149,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
