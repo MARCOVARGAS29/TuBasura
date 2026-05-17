@@ -1444,12 +1444,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "cd329070bd5d43f665a878cda8d667d58b4ba34a",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:34:46.000Z",
       "message": "feat: show report feedback modal",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/cd329070bd5d43f665a878cda8d667d58b4ba34a"
     },
     "stats": {
       "total": 67,
@@ -1461,5 +1461,24 @@
     "test_count": 154,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:38:55.000Z",
+      "message": "test: expect start page navigation",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 32,
+      "deletions": 1,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.54,
+    "test_count": 155,
+    "failed_tests": 2,
+    "conclusion": "failure"
   }
 ]

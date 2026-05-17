@@ -26,6 +26,13 @@ function createView() {
   const manualSelectionLink = {
     addEventListener: jest.fn(),
   };
+  const startPanel = {
+    hidden: true,
+    scrollIntoView: jest.fn(),
+  };
+  const startLink = {
+    addEventListener: jest.fn(),
+  };
   const reportsPanel = {
     hidden: true,
     scrollIntoView: jest.fn(),
@@ -89,6 +96,8 @@ function createView() {
     manualLocationSelect,
     manualSelectionPanel,
     manualSelectionLink,
+    startPanel,
+    startLink,
     reportsPanel,
     schedulePanel,
     reportsLink,
@@ -114,6 +123,8 @@ function createView() {
       manualLocationSelect,
       manualSelectionPanel,
       manualSelectionLink,
+      startPanel,
+      startLink,
       reportsPanel,
       schedulePanel,
       reportsLink,
@@ -147,13 +158,16 @@ describe('CollectionScheduleView', () => {
   });
 
   it('deberia mostrar el home con el nombre de la sesion', () => {
-    const { view, loginSection, homeSection, welcomeMessage } = createView();
+    const { view, loginSection, homeSection, welcomeMessage, startPanel, schedulePanel } =
+      createView();
 
     view.showHome({ name: 'Invitado', accessType: 'guest' });
 
     expect(loginSection.hidden).toBe(true);
     expect(homeSection.hidden).toBe(false);
     expect(welcomeMessage.textContent).toContain('Invitado');
+    expect(startPanel.hidden).toBe(false);
+    expect(schedulePanel.hidden).toBe(true);
   });
 
   it('deberia renderizar las opciones en el select', () => {
@@ -265,6 +279,23 @@ describe('CollectionScheduleView', () => {
     expect(schedulePanel.hidden).toBe(false);
     expect(reportsPanel.hidden).toBe(true);
     expect(manualSelectionPanel.hidden).toBe(true);
+  });
+
+  it('deberia volver a la pagina de inicio desde el navbar', () => {
+    const { view, startPanel, reportsPanel, schedulePanel, reportsLink, startLink } =
+      createView();
+    const event = {
+      preventDefault: jest.fn(),
+    };
+
+    view.bindReportsNavigation();
+    view.bindStartNavigation();
+    reportsLink.addEventListener.mock.calls[0][1](event);
+    startLink.addEventListener.mock.calls[0][1](event);
+
+    expect(startPanel.hidden).toBe(false);
+    expect(reportsPanel.hidden).toBe(true);
+    expect(schedulePanel.hidden).toBe(true);
   });
 
   it('deberia mostrar el horario seleccionado', () => {

@@ -816,7 +816,7 @@
     "testId": 98
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cd329070bd5d43f665a878cda8d667d58b4ba34a",
     "commitName": "test: show report feedback in modal",
     "commitTimestamp": 1779032029890,
     "testId": 99
@@ -826,5 +826,11 @@
     "commitName": "feat: show report feedback modal",
     "commitTimestamp": 1779032087491,
     "testId": 100
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: expect start page navigation",
+    "commitTimestamp": 1779032336418,
+    "testId": 101
   }
 ]
