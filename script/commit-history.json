@@ -1064,12 +1064,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1e2e11f4eac244e4757a4cff18f648f1159a9d85",
     "author": "Gabriel Fernandez",
     "commit": {
       "date": "2026-05-17T07:36:54.000Z",
       "message": "feat(domain): agregar tests para entidad Report",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/1e2e11f4eac244e4757a4cff18f648f1159a9d85"
     },
     "stats": {
       "total": 237,
@@ -1079,6 +1079,424 @@
     },
     "coverage": 81.22,
     "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "25faa4b6fb556e92e29772f7a9bc077b0561ce3e",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:00:33.000Z",
+      "message": "test: require manual selection nav toggle",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/25faa4b6fb556e92e29772f7a9bc077b0561ce3e"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 26,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 80.57,
+    "test_count": 145,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "a92d5b6f06ca88948b06aeebc071666d041d7914",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:02:13.000Z",
+      "message": "fix: show manual selection only from nav",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/a92d5b6f06ca88948b06aeebc071666d041d7914"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 49,
+      "deletions": 9,
+      "date": "2026-05-17"
+    },
+    "coverage": 80.41,
+    "test_count": 145,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cc992211503e0a56aa10cc9647f1cfbd98abfae8",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:09:56.000Z",
+      "message": "test: add report metadata expectation",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/cc992211503e0a56aa10cc9647f1cfbd98abfae8"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 18,
+      "deletions": 3,
+      "date": "2026-05-17"
+    },
+    "coverage": 80.41,
+    "test_count": 146,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "68a39eaaeeacc1d2a9865bc906988cea796fbc10",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:11:02.000Z",
+      "message": "feat: keep report metadata",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/68a39eaaeeacc1d2a9865bc906988cea796fbc10"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 62,
+      "deletions": 4,
+      "date": "2026-05-17"
+    },
+    "coverage": 80.2,
+    "test_count": 146,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e773617d7c15c947092b98b150319bedc8f2617f",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:12:15.000Z",
+      "message": "test: expect report creation confirmation",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/e773617d7c15c947092b98b150319bedc8f2617f"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 55,
+      "deletions": 5,
+      "date": "2026-05-17"
+    },
+    "coverage": 80.86,
+    "test_count": 147,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "d2ee4e915e6184e1918fda2ce772ac990a8474eb",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:12:50.000Z",
+      "message": "feat: confirm created reports",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/d2ee4e915e6184e1918fda2ce772ac990a8474eb"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.17,
+    "test_count": 147,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8695289dbed565635cef9121f3aa4df79183e7d8",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:13:33.000Z",
+      "message": "test: expect report creation error",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/8695289dbed565635cef9121f3aa4df79183e7d8"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.17,
+    "test_count": 148,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "c54b2c05284d8bd1a677cbbb300e705a555cc02d",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:14:48.000Z",
+      "message": "feat: show report creation errors",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c54b2c05284d8bd1a677cbbb300e705a555cc02d"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 15,
+      "deletions": 7,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.35,
+    "test_count": 148,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2844a1b4378fc831569686d41f30c20d5e6af4a7",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:15:40.000Z",
+      "message": "test: expect reports navigation",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/2844a1b4378fc831569686d41f30c20d5e6af4a7"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 28,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.35,
+    "test_count": 149,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "01cfb3cb2c9a9b04003059b1f78fef597a3957ab",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:18:05.000Z",
+      "message": "feat: add reports navigation page",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/01cfb3cb2c9a9b04003059b1f78fef597a3957ab"
+    },
+    "stats": {
+      "total": 116,
+      "additions": 80,
+      "deletions": 36,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.87,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2b3e167644006e7aaa455908b5450eec4b8d2468",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:19:05.000Z",
+      "message": "test: expect report form confirmation summary",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/2b3e167644006e7aaa455908b5450eec4b8d2468"
+    },
+    "stats": {
+      "total": 69,
+      "additions": 69,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.08,
+    "test_count": 150,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "2f8d1b71d6087ccdec3430bb2f56a05d5fb0e876",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:20:55.000Z",
+      "message": "feat: show report confirmation summary",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/2f8d1b71d6087ccdec3430bb2f56a05d5fb0e876"
+    },
+    "stats": {
+      "total": 135,
+      "additions": 118,
+      "deletions": 17,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.22,
+    "test_count": 150,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "23b6960f6c19b6c087ecc415e923ee86ad3f05b1",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:25:34.000Z",
+      "message": "test: reproduce reports navigation lock",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/23b6960f6c19b6c087ecc415e923ee86ad3f05b1"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 38,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.22,
+    "test_count": 151,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "7362eb29600d530db8205b9912059fc74b39e366",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:26:37.000Z",
+      "message": "fix: restore navigation from reports",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/7362eb29600d530db8205b9912059fc74b39e366"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 37,
+      "deletions": 1,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.27,
+    "test_count": 151,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "33f8c505deefe17f60043c19b713a8e28a61de04",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:30:49.000Z",
+      "message": "test: prevent duplicate report likes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/33f8c505deefe17f60043c19b713a8e28a61de04"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 22,
+      "deletions": 6,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.27,
+    "test_count": 152,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "6ad17cd57884c81f247208d940fbff8c8e62349f",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:31:37.000Z",
+      "message": "feat: limit report likes by user",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/6ad17cd57884c81f247208d940fbff8c8e62349f"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 25,
+      "deletions": 11,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.51,
+    "test_count": 152,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c59e2fe1ebede56635e3f149290be773e7add81b",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:32:15.000Z",
+      "message": "test: pass user when liking reports",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c59e2fe1ebede56635e3f149290be773e7add81b"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.06,
+    "test_count": 153,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "a381818e660a4101ba49a8499d8a9df8440d5ed2",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:33:03.000Z",
+      "message": "feat: like reports as current user",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/a381818e660a4101ba49a8499d8a9df8440d5ed2"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.06,
+    "test_count": 153,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8d2ffa6e49a19e21b97d660959b9232dff5895d3",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:33:48.000Z",
+      "message": "test: show report feedback in modal",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/8d2ffa6e49a19e21b97d660959b9232dff5895d3"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.06,
+    "test_count": 154,
+    "failed_tests": 2,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "cd329070bd5d43f665a878cda8d667d58b4ba34a",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:34:46.000Z",
+      "message": "feat: show report feedback modal",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/cd329070bd5d43f665a878cda8d667d58b4ba34a"
+    },
+    "stats": {
+      "total": 67,
+      "additions": 65,
+      "deletions": 2,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.54,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "35e4daa07ab2b0143c1d64b746db5d92021a4154",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:38:55.000Z",
+      "message": "test: expect start page navigation",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/35e4daa07ab2b0143c1d64b746db5d92021a4154"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 32,
+      "deletions": 1,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.54,
+    "test_count": 155,
+    "failed_tests": 2,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:41:29.000Z",
+      "message": "feat: add start page and footer",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 175,
+      "additions": 171,
+      "deletions": 4,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.13,
+    "test_count": 155,
     "failed_tests": 0,
     "conclusion": "success"
   }

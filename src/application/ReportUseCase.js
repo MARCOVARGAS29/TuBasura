@@ -11,11 +11,11 @@ export default class ReportUseCase {
     return this.reportRepository.createReport(data);
   }
 
-  likeReport(id) {
-    return this.reportRepository.incrementReportLikes(id);
+  likeReport(id, userName = null) {
+    return this.reportRepository.incrementReportLikes(id, userName);
   }
 
-  incrementReportLikes(id) {
-    return this.reportRepository.incrementReportLikes(id);
+  incrementReportLikes(id, userName = null) {
+    return this.reportRepository.incrementReportLikes(id, userName);
   }
 }

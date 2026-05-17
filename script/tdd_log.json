@@ -696,15 +696,147 @@
     "testId": 78
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1e2e11f4eac244e4757a4cff18f648f1159a9d85",
     "commitName": "feat(ports): agregar interfaces abstractas de repositorios e implementar herencia",
     "commitTimestamp": 1779003407539,
     "testId": 79
   },
   {
-    "commitId": "HEAD",
+    "commitId": "25faa4b6fb556e92e29772f7a9bc077b0561ce3e",
     "commitName": "feat(domain): agregar tests para entidad Report",
     "commitTimestamp": 1779003416989,
     "testId": 80
+  },
+  {
+    "commitId": "a92d5b6f06ca88948b06aeebc071666d041d7914",
+    "commitName": "test: require manual selection nav toggle",
+    "commitTimestamp": 1779030034714,
+    "testId": 81
+  },
+  {
+    "commitId": "cc992211503e0a56aa10cc9647f1cfbd98abfae8",
+    "commitName": "fix: show manual selection only from nav",
+    "commitTimestamp": 1779030134878,
+    "testId": 82
+  },
+  {
+    "commitId": "68a39eaaeeacc1d2a9865bc906988cea796fbc10",
+    "commitName": "test: add report metadata expectation",
+    "commitTimestamp": 1779030597632,
+    "testId": 83
+  },
+  {
+    "commitId": "e773617d7c15c947092b98b150319bedc8f2617f",
+    "commitName": "feat: keep report metadata",
+    "commitTimestamp": 1779030663436,
+    "testId": 84
+  },
+  {
+    "commitId": "d2ee4e915e6184e1918fda2ce772ac990a8474eb",
+    "commitName": "test: expect report creation confirmation",
+    "commitTimestamp": 1779030736500,
+    "testId": 85
+  },
+  {
+    "commitId": "8695289dbed565635cef9121f3aa4df79183e7d8",
+    "commitName": "feat: confirm created reports",
+    "commitTimestamp": 1779030771328,
+    "testId": 86
+  },
+  {
+    "commitId": "c54b2c05284d8bd1a677cbbb300e705a555cc02d",
+    "commitName": "test: expect report creation error",
+    "commitTimestamp": 1779030814160,
+    "testId": 87
+  },
+  {
+    "commitId": "2844a1b4378fc831569686d41f30c20d5e6af4a7",
+    "commitName": "feat: show report creation errors",
+    "commitTimestamp": 1779030889537,
+    "testId": 88
+  },
+  {
+    "commitId": "01cfb3cb2c9a9b04003059b1f78fef597a3957ab",
+    "commitName": "test: expect reports navigation",
+    "commitTimestamp": 1779030941319,
+    "testId": 89
+  },
+  {
+    "commitId": "2b3e167644006e7aaa455908b5450eec4b8d2468",
+    "commitName": "feat: add reports navigation page",
+    "commitTimestamp": 1779031086714,
+    "testId": 90
+  },
+  {
+    "commitId": "2f8d1b71d6087ccdec3430bb2f56a05d5fb0e876",
+    "commitName": "test: expect report form confirmation summary",
+    "commitTimestamp": 1779031145921,
+    "testId": 91
+  },
+  {
+    "commitId": "23b6960f6c19b6c087ecc415e923ee86ad3f05b1",
+    "commitName": "feat: show report confirmation summary",
+    "commitTimestamp": 1779031256335,
+    "testId": 92
+  },
+  {
+    "commitId": "7362eb29600d530db8205b9912059fc74b39e366",
+    "commitName": "test: reproduce reports navigation lock",
+    "commitTimestamp": 1779031535633,
+    "testId": 93
+  },
+  {
+    "commitId": "33f8c505deefe17f60043c19b713a8e28a61de04",
+    "commitName": "fix: restore navigation from reports",
+    "commitTimestamp": 1779031598293,
+    "testId": 94
+  },
+  {
+    "commitId": "6ad17cd57884c81f247208d940fbff8c8e62349f",
+    "commitName": "test: prevent duplicate report likes",
+    "commitTimestamp": 1779031850447,
+    "testId": 95
+  },
+  {
+    "commitId": "c59e2fe1ebede56635e3f149290be773e7add81b",
+    "commitName": "feat: limit report likes by user",
+    "commitTimestamp": 1779031898229,
+    "testId": 96
+  },
+  {
+    "commitId": "a381818e660a4101ba49a8499d8a9df8440d5ed2",
+    "commitName": "test: pass user when liking reports",
+    "commitTimestamp": 1779031936956,
+    "testId": 97
+  },
+  {
+    "commitId": "8d2ffa6e49a19e21b97d660959b9232dff5895d3",
+    "commitName": "feat: like reports as current user",
+    "commitTimestamp": 1779031984770,
+    "testId": 98
+  },
+  {
+    "commitId": "cd329070bd5d43f665a878cda8d667d58b4ba34a",
+    "commitName": "test: show report feedback in modal",
+    "commitTimestamp": 1779032029890,
+    "testId": 99
+  },
+  {
+    "commitId": "35e4daa07ab2b0143c1d64b746db5d92021a4154",
+    "commitName": "feat: show report feedback modal",
+    "commitTimestamp": 1779032087491,
+    "testId": 100
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: expect start page navigation",
+    "commitTimestamp": 1779032336418,
+    "testId": 101
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: add start page and footer",
+    "commitTimestamp": 1779032490173,
+    "testId": 102
   }
 ]

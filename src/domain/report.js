@@ -1,14 +1,25 @@
 class Report {
   #id;
   #userId;
+  #userName;
   #scheduleId;
+  #district;
   #description;
   #image;
   #likeCount;
   #createdAt;
   #updatedAt;
 
-  constructor({ description, image, id = null, userId = null, scheduleId = null } = {}) {
+  constructor({
+    description,
+    image,
+    id = null,
+    userId = null,
+    userName = null,
+    scheduleId = null,
+    district = null,
+    createdAt = null,
+  } = {}) {
     if (!userId || userId.trim() === '') {
       this.#userId = null;
     } else {
@@ -26,10 +37,12 @@ class Report {
     }
 
     this.#id = id || this.#generateUUID();
+    this.#userName = userName || null;
+    this.#district = district || null;
     this.#description = description;
     this.#image = image || null;
     this.#likeCount = 0;
-    this.#createdAt = new Date();
+    this.#createdAt = createdAt ? new Date(createdAt) : new Date();
     this.#updatedAt = null;
   }
 
@@ -44,6 +57,18 @@ class Report {
 
   get image() {
     return this.#image;
+  }
+
+  get userName() {
+    return this.#userName;
+  }
+
+  get district() {
+    return this.#district;
+  }
+
+  get createdAt() {
+    return this.#createdAt;
   }
 
   get likes() {
@@ -61,6 +86,14 @@ class Report {
 
   getScheduleId() {
     return this.#scheduleId;
+  }
+
+  getUserName() {
+    return this.#userName;
+  }
+
+  getDistrict() {
+    return this.#district;
   }
 
   getDescription() {
@@ -100,7 +133,9 @@ class Report {
     return {
       id: this.#id,
       userId: this.#userId,
+      userName: this.#userName,
       scheduleId: this.#scheduleId,
+      district: this.#district,
       description: this.#description,
       image: this.#image,
       likes: this.#likeCount,
@@ -116,18 +151,55 @@ class Report {
 }
 
 // Factory functions for backward compatibility
-function createReport({ description, image, id = Date.now().toString() }) {
-  const report = new Report({ description, image, id });
+function createReport({
+  description,
+  image,
+  id = Date.now().toString(),
+  userId,
+  userName,
+  scheduleId,
+  district,
+  createdAt,
+}) {
+  const report = new Report({
+    description,
+    image,
+    id,
+    userId,
+    userName,
+    scheduleId,
+    district,
+    createdAt,
+  });
   // Return object-like interface for backward compatibility
   return {
     id: report.id,
+    userId: report.getUserId(),
+    userName: report.userName,
+    scheduleId: report.getScheduleId(),
+    district: report.district,
     description: report.description,
     image: report.image,
     likes: report.likes,
+    createdAt: report.createdAt,
   };
 }
 
-function incrementReportLikes(report) {
+function incrementReportLikes(report, userName = null) {
+  if (userName) {
+    const likedBy = report.likedBy || [];
+
+    if (likedBy.includes(userName)) {
+      return report;
+    }
+
+    return {
+      ...report,
+      likes: report.likes + 1,
+      likedBy: [...likedBy, userName],
+    };
+  }
+
   return {
     ...report,
     likes: report.likes + 1,

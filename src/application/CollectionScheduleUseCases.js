@@ -39,8 +39,16 @@ export default class CollectionScheduleUseCases {
     return this.#schedule.getDistrictOptions();
   }
 
+  getLocationOptions() {
+    return this.#schedule.getLocationOptions();
+  }
+
   getScheduleByDistrict(districtId) {
     return this.#schedule.getScheduleByDistrict(districtId);
+  }
+
+  getScheduleByManualLocation(location) {
+    return this.#schedule.getScheduleByManualLocation(location);
   }
 
   getReports() {
@@ -51,11 +59,11 @@ export default class CollectionScheduleUseCases {
     return this.#report.createReport(data);
   }
 
-  incrementReportLikes(id) {
-    return this.#report.incrementReportLikes(id);
+  incrementReportLikes(id, userName = null) {
+    return this.#report.incrementReportLikes(id, userName);
   }
 
-  likeReport(id) {
-    return this.#report.likeReport(id);
+  likeReport(id, userName = null) {
+    return this.#report.likeReport(id, userName);
   }
 }

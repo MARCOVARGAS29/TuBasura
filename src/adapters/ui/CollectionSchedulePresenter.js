@@ -2,6 +2,7 @@ export default class CollectionSchedulePresenter {
   constructor({ model, view }) {
     this.model = model;
     this.view = view;
+    this.currentSession = null;
   }
 
   initialize() {
@@ -15,6 +16,26 @@ export default class CollectionSchedulePresenter {
     this.view.bindDistrictSelection((districtId) => {
       this.showScheduleForDistrict(districtId);
     });
+    if (this.view.bindManualLocationSelection) {
+      this.view.bindManualLocationSelection((location) => {
+        this.showScheduleForManualLocation(location);
+      });
+    }
+    if (this.view.bindManualSelectionNavigation) {
+      this.view.bindManualSelectionNavigation();
+    }
+    if (this.view.bindReportsNavigation) {
+      this.view.bindReportsNavigation();
+    }
+    if (this.view.bindScheduleNavigation) {
+      this.view.bindScheduleNavigation();
+    }
+    if (this.view.bindStartNavigation) {
+      this.view.bindStartNavigation();
+    }
+    if (this.view.bindReportModalDismiss) {
+      this.view.bindReportModalDismiss();
+    }
     this.view.bindCreateReport((data) => this.createReport(data));
   }
 
@@ -25,12 +46,14 @@ export default class CollectionSchedulePresenter {
       return null;
     }
 
+    this.currentSession = session;
     this.showHome(session);
     return session;
   }
 
   enterAsGuest() {
     const session = this.model.loginAsGuest();
+    this.currentSession = session;
     this.showHome(session);
 
     return session;
@@ -38,9 +61,15 @@ export default class CollectionSchedulePresenter {
 
   showHome(session) {
     const options = this.model.getDistrictOptions();
+    const locationOptions = this.model.getLocationOptions
+      ? this.model.getLocationOptions()
+      : [];
 
     this.view.showHome(session);
     this.view.renderDistrictOptions(options);
+    if (this.view.renderLocationOptions) {
+      this.view.renderLocationOptions(locationOptions);
+    }
     this.view.showInitialMessage();
 
     if (this.model.getReports && this.view.renderReports) {
@@ -65,13 +94,43 @@ export default class CollectionSchedulePresenter {
     this.view.showSchedule(schedule);
   }
 
+  showScheduleForManualLocation(location) {
+    if (!location) {
+      this.view.showInitialMessage();
+      return;
+    }
+
+    const schedule = this.model.getScheduleByManualLocation(location);
+
+    if (!schedule) {
+      this.view.showScheduleNotFound();
+      return;
+    }
+
+    this.view.showSchedule(schedule);
+  }
+
   createReport(data) {
-    this.model.createReport(data);
-    this.renderReports();
+    try {
+      const report = this.model.createReport({
+        ...data,
+        userName: this.currentSession?.name || 'Invitado',
+      });
+      if (this.view.showReportConfirmation) {
+        this.view.showReportConfirmation(report);
+      }
+      this.renderReports();
+    } catch (error) {
+      if (this.view.showReportError) {
+        this.view.showReportError(
+          'Error al enviar el reporte, intente nuevamente',
+        );
+      }
+    }
   }
 
   likeReport(id) {
-    this.model.likeReport(id);
+    this.model.likeReport(id, this.currentSession?.name || 'Invitado');
     this.renderReports();
   }
 

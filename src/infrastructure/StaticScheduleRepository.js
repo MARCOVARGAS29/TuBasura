@@ -1,6 +1,7 @@
 import ScheduleRepository from '../application/ports/ScheduleRepository.js';
 import {
   createDistrictOptions,
+  createLocationOptions,
   schedulesByDistrict,
 } from '../domain/schedules.js';
 
@@ -9,7 +10,19 @@ export default class DistrictScheduleRepository extends ScheduleRepository {
     return createDistrictOptions();
   }
 
+  getLocationOptions() {
+    return createLocationOptions();
+  }
+
   getScheduleByDistrict(districtId) {
     return schedulesByDistrict[districtId] || null;
+  }
+
+  getScheduleByManualLocation(location) {
+    return (
+      Object.values(schedulesByDistrict).find((schedule) =>
+        schedule.zones.includes(location),
+      ) || null
+    );
   }
 }

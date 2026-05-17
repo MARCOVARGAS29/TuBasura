@@ -142,4 +142,14 @@ function createDistrictOptions() {
   }));
 }
 
-export { createDistrictOptions, schedulesByDistrict };
+function createLocationOptions() {
+  return Object.entries(schedulesByDistrict).flatMap(([districtId, schedule]) =>
+    schedule.zones.map((zone) => ({
+      value: zone,
+      label: zone,
+      districtId,
+    })),
+  );
+}
+
+export { createDistrictOptions, createLocationOptions, schedulesByDistrict };

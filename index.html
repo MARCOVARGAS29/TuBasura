@@ -54,31 +54,89 @@
             <h2 id="welcome-message">Bienvenido</h2>
           </div>
           <ul class="nav-links">
-            <li><a href="#schedule-panel">Horarios de recoleccion</a></li>
+            <li><a id="start-link" href="#start-panel">Inicio</a></li>
+            <li>
+              <a id="schedule-link" href="#schedule-panel">
+                Horarios de recoleccion
+              </a>
+            </li>
+            <li>
+              <a id="manual-selection-link" href="#manual-selection-panel">
+                Seleccion manual
+              </a>
+            </li>
+            <li><a id="reports-link" href="#reports-panel">Reportes</a></li>
           </ul>
         </nav>
 
-        <section id="schedule-panel" class="home-panel">
-          <header class="home-header">
-            <h1>Horarios de recoleccion</h1>
+        <section id="start-panel" class="start-hero">
+          <div class="start-hero-content">
+            <p class="eyebrow">TuBasura</p>
+            <h1>Gestion ciudadana para una recoleccion mas clara</h1>
             <p>
-              Consulta los dias y la hora aproximada en la que pasa el camion
-              recolector por tu zona.
+              Consultamos horarios por distrito, ayudamos a ubicar rutas por
+              zona y permitimos reportar acumulacion de basura con evidencia.
             </p>
-          </header>
-
-          <div class="field">
-            <label for="district-select">Distrito</label>
-            <select id="district-select" name="district">
-              <option value="">Selecciona un distrito</option>
-            </select>
           </div>
+
+          <div class="offer-grid">
+            <article class="offer-item">
+              <h2>Horarios por distrito</h2>
+              <p>Consulta dias y horas aproximadas de recoleccion.</p>
+            </article>
+            <article class="offer-item">
+              <h2>Seleccion manual</h2>
+              <p>Encuentra la ruta asociada a tu zona o subdistrito.</p>
+            </article>
+            <article class="offer-item">
+              <h2>Reportes ciudadanos</h2>
+              <p>Registra reportes con distrito, usuario, fecha e imagen.</p>
+            </article>
+          </div>
+        </section>
+
+        <div id="schedule-page">
+          <section id="schedule-panel" class="home-panel">
+            <header class="home-header">
+              <h1>Horarios de recoleccion</h1>
+              <p>
+                Consulta los dias y la hora aproximada en la que pasa el camion
+                recolector por tu zona.
+              </p>
+            </header>
+
+            <div class="field">
+              <label for="district-select">Distrito</label>
+              <select id="district-select" name="district">
+                <option value="">Selecciona un distrito</option>
+              </select>
+            </div>
+          </section>
+
+          <section id="manual-selection-panel" class="home-panel" hidden>
+            <header class="home-header">
+              <h1>Seleccion manual</h1>
+              <p>
+                Elige tu zona o subdistrito para encontrar la ruta de
+                recoleccion asociada.
+              </p>
+            </header>
+
+            <div class="field">
+              <label for="manual-location-select">Ubicacion</label>
+              <select id="manual-location-select" name="manual-location">
+                <option value="">Selecciona una zona</option>
+              </select>
+            </div>
+          </section>
 
           <section id="schedule-result" class="schedule-card" aria-live="polite">
             <h2>Horarios de recoleccion</h2>
             <p>Selecciona un distrito para ver su horario disponible.</p>
           </section>
-          <section id="reports-panel" class="home-panel">
+        </div>
+
+          <section id="reports-panel" class="home-panel" hidden>
             <header class="home-header">
               <h1>Reportes de basura</h1>
               <p>Reporta acumulación de basura en tu zona.</p>
@@ -87,6 +145,26 @@
             <form id="report-form" class="login-form">
               <label>Descripción</label>
               <input type="text" id="report-description" required />
+
+              <label for="report-district">Distrito</label>
+              <select id="report-district" required>
+                <option value="">Selecciona un distrito</option>
+                <option value="Distrito 1">Distrito 1</option>
+                <option value="Distrito 2">Distrito 2</option>
+                <option value="Distrito 3">Distrito 3</option>
+                <option value="Distrito 4">Distrito 4</option>
+                <option value="Distrito 5">Distrito 5</option>
+                <option value="Distrito 6">Distrito 6</option>
+                <option value="Distrito 7">Distrito 7</option>
+                <option value="Distrito 8">Distrito 8</option>
+                <option value="Distrito 9">Distrito 9</option>
+                <option value="Distrito 10">Distrito 10</option>
+                <option value="Distrito 11">Distrito 11</option>
+                <option value="Distrito 12">Distrito 12</option>
+                <option value="Distrito 13">Distrito 13</option>
+                <option value="Distrito 14">Distrito 14</option>
+                <option value="Distrito 15">Distrito 15</option>
+              </select>
 
               <label>Imagen (URL opcional)</label>
               <input type="text" id="report-image" />
@@ -97,8 +175,35 @@
             </form>
             <div id="reports-list"></div>
           </section>
-        </section>
+
+        <footer class="app-footer">
+          <div>
+            <strong>TuBasura</strong>
+            <p>Informacion de recoleccion y reportes ciudadanos.</p>
+          </div>
+          <address>
+            Contacto: contacto@tubasura.bo<br />
+            Telefono: +591 4 4000000<br />
+            Atencion: lunes a viernes, 08:00 a 18:00
+          </address>
+        </footer>
       </section>
+
+      <div
+        id="report-modal"
+        class="modal-backdrop"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="report-modal-title"
+        hidden
+      >
+        <div class="modal-window">
+          <div id="report-confirmation" aria-live="polite"></div>
+          <button id="report-modal-ok" type="button" class="primary-action">
+            OK
+          </button>
+        </div>
+      </div>
     </main>
 
     <script type="module" src="./src/main.js"></script>

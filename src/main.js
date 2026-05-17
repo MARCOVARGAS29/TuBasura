@@ -10,6 +10,15 @@ function initializeApp() {
     homeSection: document.querySelector('#home-screen'),
     welcomeMessage: document.querySelector('#welcome-message'),
     districtSelect: document.querySelector('#district-select'),
+    manualLocationSelect: document.querySelector('#manual-location-select'),
+    manualSelectionPanel: document.querySelector('#manual-selection-panel'),
+    manualSelectionLink: document.querySelector('#manual-selection-link'),
+    startPanel: document.querySelector('#start-panel'),
+    startLink: document.querySelector('#start-link'),
+    reportsPanel: document.querySelector('#reports-panel'),
+    schedulePanel: document.querySelector('#schedule-page'),
+    reportsLink: document.querySelector('#reports-link'),
+    scheduleLink: document.querySelector('#schedule-link'),
     resultContainer: document.querySelector('#schedule-result'),
     loginForm: document.querySelector('#login-form'),
     guestButton: document.querySelector('#guest-access-button'),
@@ -17,8 +26,12 @@ function initializeApp() {
     passwordInput: document.querySelector('#password'),
     reportForm: document.querySelector('#report-form'),
     reportDescription: document.querySelector('#report-description'),
+    reportDistrict: document.querySelector('#report-district'),
     reportImage: document.querySelector('#report-image'),
     reportsList: document.querySelector('#reports-list'),
+    reportConfirmation: document.querySelector('#report-confirmation'),
+    reportModal: document.querySelector('#report-modal'),
+    reportModalOkButton: document.querySelector('#report-modal-ok'),
   });
   const presenter = new CollectionSchedulePresenter({ model, view });
 

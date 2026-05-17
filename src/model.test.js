@@ -1,5 +1,6 @@
 import CollectionScheduleModel, {
   createDistrictOptions,
+  createLocationOptions,
   schedulesByDistrict,
 } from './model.js';
 
@@ -35,6 +36,26 @@ describe('CollectionScheduleModel', () => {
     expect(options[14]).toEqual({ value: '15', label: 'Distrito 15' });
   });
 
+  it('deberia crear opciones de ubicacion manual desde las zonas', () => {
+    const options = createLocationOptions();
+
+    expect(options).toContainEqual({
+      value: 'Zona Aranjuez Alto (SubDistrito 25)',
+      label: 'Zona Aranjuez Alto (SubDistrito 25)',
+      districtId: '1',
+    });
+  });
+
+  it('deberia devolver opciones de ubicacion manual desde el modelo', () => {
+    const model = new CollectionScheduleModel();
+
+    expect(model.getLocationOptions()).toContainEqual({
+      value: 'Zona Aranjuez Alto (SubDistrito 25)',
+      label: 'Zona Aranjuez Alto (SubDistrito 25)',
+      districtId: '1',
+    });
+  });
+
   it('deberia devolver el horario del distrito seleccionado', () => {
   const model = new CollectionScheduleModel();
 
@@ -44,6 +65,19 @@ describe('CollectionScheduleModel', () => {
     time: '10:00',
   });
 });
+
+  it('deberia devolver el horario desde una ubicacion manual', () => {
+    const model = new CollectionScheduleModel();
+
+    expect(
+      model.getScheduleByManualLocation('Zona Aranjuez Alto (SubDistrito 25)'),
+    ).toMatchObject({
+      district: 'Distrito 1',
+      selectedLocation: 'Zona Aranjuez Alto (SubDistrito 25)',
+      days: 'Lunes, miercoles y viernes',
+      time: '07:00',
+    });
+  });
 
   it('deberia devolver las zonas del distrito 1', () => {
     const model = new CollectionScheduleModel();
@@ -379,6 +413,21 @@ it('deberia devolver la segunda zona del distrito 15', () => {
 });
 
 describe('reportes', () => {
+    it('deberia crear un reporte con usuario, distrito, fecha y hora', () => {
+      const model = new CollectionScheduleModel();
+
+      const report = model.createReport({
+        description: 'Basura en la calle',
+        image: '',
+        userName: 'admin',
+        district: 'Distrito 3',
+      });
+
+      expect(report.userName).toBe('admin');
+      expect(report.district).toBe('Distrito 3');
+      expect(report.createdAt).toBeDefined();
+    });
+
     it('deberia crear un reporte con likes en 0', () => {
       const model = new CollectionScheduleModel();
 
@@ -415,6 +464,22 @@ describe('reportes', () => {
       const updated = model.incrementReportLikes(report.id);
 
       expect(updated.likes).toBe(1);
+    });
+
+    it('deberia permitir solo un like por usuario en el mismo reporte', () => {
+      const model = new CollectionScheduleModel();
+
+      const report = model.createReport({
+        description: 'Basura',
+        image: '',
+      });
+
+      const firstLike = model.likeReport(report.id, 'admin');
+      const secondLike = model.likeReport(report.id, 'admin');
+
+      expect(firstLike.likes).toBe(1);
+      expect(secondLike.likes).toBe(1);
+      expect(secondLike.likedBy).toEqual(['admin']);
     });
 });
 
