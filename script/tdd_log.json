@@ -720,7 +720,7 @@
     "testId": 82
   },
   {
-    "commitId": "HEAD",
+    "commitId": "68a39eaaeeacc1d2a9865bc906988cea796fbc10",
     "commitName": "test: add report metadata expectation",
     "commitTimestamp": 1779030597632,
     "testId": 83
@@ -730,5 +730,11 @@
     "commitName": "feat: keep report metadata",
     "commitTimestamp": 1779030663436,
     "testId": 84
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: expect report creation confirmation",
+    "commitTimestamp": 1779030736500,
+    "testId": 85
   }
 ]

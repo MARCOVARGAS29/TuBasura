@@ -1140,12 +1140,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "68a39eaaeeacc1d2a9865bc906988cea796fbc10",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:11:02.000Z",
       "message": "feat: keep report metadata",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/68a39eaaeeacc1d2a9865bc906988cea796fbc10"
     },
     "stats": {
       "total": 66,
@@ -1157,5 +1157,24 @@
     "test_count": 146,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:12:15.000Z",
+      "message": "test: expect report creation confirmation",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 55,
+      "deletions": 5,
+      "date": "2026-05-17"
+    },
+    "coverage": 80.86,
+    "test_count": 147,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

@@ -255,4 +255,54 @@ describe('CollectionSchedulePresenter', () => {
   expect(model.createReport).toHaveBeenCalled();
   });
 
+  it('deberia confirmar el reporte creado con el usuario de la sesion', () => {
+    const session = {
+      name: 'admin',
+      accessType: 'registered',
+    };
+    const report = {
+      description: 'Basura',
+      district: 'Distrito 2',
+      userName: 'admin',
+      createdAt: new Date('2026-05-17T10:30:00'),
+    };
+    const model = {
+      login: jest.fn(() => session),
+      getDistrictOptions: jest.fn(() => []),
+      getReports: jest.fn(() => []),
+      createReport: jest.fn(() => report),
+      likeReport: jest.fn(),
+    };
+    const view = {
+      showLogin: jest.fn(),
+      bindLogin: jest.fn(),
+      bindGuestAccess: jest.fn(),
+      bindDistrictSelection: jest.fn(),
+      bindCreateReport: jest.fn(),
+      bindLikeReport: jest.fn(),
+      showHome: jest.fn(),
+      renderDistrictOptions: jest.fn(),
+      showInitialMessage: jest.fn(),
+      renderReports: jest.fn(),
+      showReportConfirmation: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+    presenter.initialize();
+    view.bindLogin.mock.calls[0][0]({ username: 'admin', password: '123456' });
+    view.bindCreateReport.mock.calls[0][0]({
+      description: 'Basura',
+      image: '',
+      district: 'Distrito 2',
+    });
+
+    expect(model.createReport).toHaveBeenCalledWith({
+      description: 'Basura',
+      image: '',
+      district: 'Distrito 2',
+      userName: 'admin',
+    });
+    expect(view.showReportConfirmation).toHaveBeenCalledWith(report);
+  });
+
 });
