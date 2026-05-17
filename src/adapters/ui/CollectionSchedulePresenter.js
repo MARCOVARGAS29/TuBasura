@@ -76,6 +76,22 @@ export default class CollectionSchedulePresenter {
     this.view.showSchedule(schedule);
   }
 
+  showScheduleForManualLocation(location) {
+    if (!location) {
+      this.view.showInitialMessage();
+      return;
+    }
+
+    const schedule = this.model.getScheduleByManualLocation(location);
+
+    if (!schedule) {
+      this.view.showScheduleNotFound();
+      return;
+    }
+
+    this.view.showSchedule(schedule);
+  }
+
   createReport(data) {
     this.model.createReport(data);
     this.renderReports();
