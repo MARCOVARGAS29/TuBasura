@@ -792,7 +792,7 @@
     "testId": 94
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6ad17cd57884c81f247208d940fbff8c8e62349f",
     "commitName": "test: prevent duplicate report likes",
     "commitTimestamp": 1779031850447,
     "testId": 95
@@ -802,5 +802,11 @@
     "commitName": "feat: limit report likes by user",
     "commitTimestamp": 1779031898229,
     "testId": 96
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: pass user when liking reports",
+    "commitTimestamp": 1779031936956,
+    "testId": 97
   }
 ]

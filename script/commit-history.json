@@ -1368,12 +1368,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "6ad17cd57884c81f247208d940fbff8c8e62349f",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:31:37.000Z",
       "message": "feat: limit report likes by user",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/6ad17cd57884c81f247208d940fbff8c8e62349f"
     },
     "stats": {
       "total": 36,
@@ -1385,5 +1385,24 @@
     "test_count": 152,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:32:15.000Z",
+      "message": "test: pass user when liking reports",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.06,
+    "test_count": 153,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

@@ -327,4 +327,36 @@ describe('CollectionSchedulePresenter', () => {
     expect(view.renderReports).not.toHaveBeenCalled();
   });
 
+  it('deberia enviar el usuario actual al dar like a un reporte', () => {
+    const session = {
+      name: 'admin',
+      accessType: 'registered',
+    };
+    const model = {
+      login: jest.fn(() => session),
+      getDistrictOptions: jest.fn(() => []),
+      getReports: jest.fn(() => []),
+      likeReport: jest.fn(),
+    };
+    const view = {
+      showLogin: jest.fn(),
+      bindLogin: jest.fn(),
+      bindGuestAccess: jest.fn(),
+      bindDistrictSelection: jest.fn(),
+      bindCreateReport: jest.fn(),
+      showHome: jest.fn(),
+      renderDistrictOptions: jest.fn(),
+      showInitialMessage: jest.fn(),
+      renderReports: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+    presenter.initialize();
+    view.bindLogin.mock.calls[0][0]({ username: 'admin', password: '123456' });
+
+    presenter.likeReport('report-1');
+
+    expect(model.likeReport).toHaveBeenCalledWith('report-1', 'admin');
+  });
+
 });
