@@ -12,6 +12,7 @@ describe('CollectionSchedulePresenter', () => {
       bindLogin: jest.fn(),
       bindGuestAccess: jest.fn(),
       bindDistrictSelection: jest.fn(),
+      bindManualLocationSelection: jest.fn(),
       bindCreateReport: jest.fn(),
       bindLikeReport: jest.fn(),
     };
@@ -23,6 +24,9 @@ describe('CollectionSchedulePresenter', () => {
     expect(view.bindLogin).toHaveBeenCalledWith(expect.any(Function));
     expect(view.bindGuestAccess).toHaveBeenCalledWith(expect.any(Function));
     expect(view.bindDistrictSelection).toHaveBeenCalledWith(expect.any(Function));
+    expect(view.bindManualLocationSelection).toHaveBeenCalledWith(
+      expect.any(Function),
+    );
   });
 
   it('deberia mostrar el home al iniciar sesion', () => {
