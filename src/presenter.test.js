@@ -65,6 +65,45 @@ describe('CollectionSchedulePresenter', () => {
     expect(view.showInitialMessage).toHaveBeenCalled();
   });
 
+  it('deberia renderizar ubicaciones manuales al mostrar el home', () => {
+    const session = {
+      name: 'Invitado',
+      accessType: 'guest',
+    };
+    const locationOptions = [
+      {
+        value: 'Zona Aranjuez Alto (SubDistrito 25)',
+        label: 'Zona Aranjuez Alto (SubDistrito 25)',
+        districtId: '1',
+      },
+    ];
+    const model = {
+      loginAsGuest: jest.fn(() => session),
+      getDistrictOptions: jest.fn(() => []),
+      getLocationOptions: jest.fn(() => locationOptions),
+      getReports: jest.fn(() => []),
+    };
+    const view = {
+      showLogin: jest.fn(),
+      bindLogin: jest.fn(),
+      bindGuestAccess: jest.fn(),
+      bindDistrictSelection: jest.fn(),
+      bindCreateReport: jest.fn(),
+      showHome: jest.fn(),
+      renderDistrictOptions: jest.fn(),
+      renderLocationOptions: jest.fn(),
+      showInitialMessage: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+    presenter.initialize();
+
+    const guestHandler = view.bindGuestAccess.mock.calls[0][0];
+    guestHandler();
+
+    expect(view.renderLocationOptions).toHaveBeenCalledWith(locationOptions);
+  });
+
   it('deberia mostrar el home al entrar como invitado', () => {
     const session = {
       name: 'Invitado',
