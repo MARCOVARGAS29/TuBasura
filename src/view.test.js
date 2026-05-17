@@ -1,4 +1,6 @@
 import CollectionScheduleView from './view.js';
+import fs from 'fs';
+import path from 'path';
 
 function createView() {
   const loginSection = {
@@ -387,5 +389,18 @@ describe('CollectionScheduleView', () => {
     reportModalOkButton.addEventListener.mock.calls[0][1]();
 
     expect(reportModal.hidden).toBe(true);
+  });
+
+  describe('HTML Footer', () => {
+    it('deberia tener la nueva estructura de paleta de colores y no mostrar horario de atencion', () => {
+      const htmlPath = path.join(process.cwd(), 'index.html');
+      const html = fs.readFileSync(htmlPath, 'utf-8');
+
+      expect(html).not.toMatch(/Atencion: lunes a viernes/i);
+      expect(html).toMatch(/footer-content/);
+      expect(html).toMatch(/footer-brand/);
+      expect(html).toMatch(/color:\s*#ffffff;/i);
+      expect(html).toMatch(/Estamos para ayudarte/i);
+    });
   });
 });
