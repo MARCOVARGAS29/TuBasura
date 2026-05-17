@@ -672,7 +672,7 @@
     "testId": 74
   },
   {
-    "commitId": "HEAD",
+    "commitId": "10310db53d2f4c98acb722f36beda1e434a74443",
     "commitName": "feat(domain): crear entidad Schedule con validación y getters",
     "commitTimestamp": 1779003326204,
     "testId": 75
@@ -682,5 +682,11 @@
     "commitName": "feat(domain): agregar entidades District para zonas",
     "commitTimestamp": 1779003340136,
     "testId": 76
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix(domain): agregar método getUpdatedAt() a entidad Report",
+    "commitTimestamp": 1779003354154,
+    "testId": 77
   }
 ]

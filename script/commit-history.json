@@ -988,17 +988,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "10310db53d2f4c98acb722f36beda1e434a74443",
     "author": "Gabriel Fernandez",
     "commit": {
       "date": "2026-05-17T07:35:37.000Z",
       "message": "feat(domain): agregar entidades District para zonas",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/10310db53d2f4c98acb722f36beda1e434a74443"
     },
     "stats": {
       "total": 164,
       "additions": 164,
       "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.22,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:35:51.000Z",
+      "message": "fix(domain): agregar método getUpdatedAt() a entidad Report",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 129,
+      "additions": 125,
+      "deletions": 4,
       "date": "2026-05-17"
     },
     "coverage": 81.22,
