@@ -660,7 +660,7 @@
     "testId": 72
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f4d93a674787da733fadcea524ecf669b9eabed9",
     "commitName": "feat(domain): add District and Report test entities",
     "commitTimestamp": 1779003044493,
     "testId": 73
@@ -670,5 +670,11 @@
     "commitName": "feat(domain): crear entidad User con constructor y accessors",
     "commitTimestamp": 1779003310939,
     "testId": 74
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(domain): crear entidad Schedule con validación y getters",
+    "commitTimestamp": 1779003326204,
+    "testId": 75
   }
 ]

@@ -950,16 +950,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f4d93a674787da733fadcea524ecf669b9eabed9",
     "author": "Gabriel Fernandez",
     "commit": {
       "date": "2026-05-17T07:35:08.000Z",
       "message": "feat(domain): crear entidad User con constructor y accessors",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/f4d93a674787da733fadcea524ecf669b9eabed9"
     },
     "stats": {
       "total": 169,
       "additions": 169,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.22,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:35:23.000Z",
+      "message": "feat(domain): crear entidad Schedule con validación y getters",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 157,
+      "additions": 157,
       "deletions": 0,
       "date": "2026-05-17"
     },
