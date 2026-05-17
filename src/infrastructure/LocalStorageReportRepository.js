@@ -33,13 +33,13 @@ export default class LocalStorageReportRepository extends ReportRepository {
     return newReport;
   }
 
-  incrementReportLikes(id) {
+  incrementReportLikes(id, userName = null) {
     const reportIndex = this.reports.findIndex((report) => report.id === id);
     if (reportIndex === -1) {
       return null;
     }
 
-    const updatedReport = incrementReportLikes(this.reports[reportIndex]);
+    const updatedReport = incrementReportLikes(this.reports[reportIndex], userName);
     this.reports[reportIndex] = updatedReport;
     this.persistReports();
 

@@ -786,7 +786,7 @@
     "testId": 93
   },
   {
-    "commitId": "HEAD",
+    "commitId": "33f8c505deefe17f60043c19b713a8e28a61de04",
     "commitName": "fix: restore navigation from reports",
     "commitTimestamp": 1779031598293,
     "testId": 94
@@ -796,5 +796,11 @@
     "commitName": "test: prevent duplicate report likes",
     "commitTimestamp": 1779031850447,
     "testId": 95
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: limit report likes by user",
+    "commitTimestamp": 1779031898229,
+    "testId": 96
   }
 ]

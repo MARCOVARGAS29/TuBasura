@@ -185,7 +185,21 @@ function createReport({
   };
 }
 
-function incrementReportLikes(report) {
+function incrementReportLikes(report, userName = null) {
+  if (userName) {
+    const likedBy = report.likedBy || [];
+
+    if (likedBy.includes(userName)) {
+      return report;
+    }
+
+    return {
+      ...report,
+      likes: report.likes + 1,
+      likedBy: [...likedBy, userName],
+    };
+  }
+
   return {
     ...report,
     likes: report.likes + 1,

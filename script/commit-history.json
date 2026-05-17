@@ -1349,12 +1349,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "33f8c505deefe17f60043c19b713a8e28a61de04",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:30:49.000Z",
       "message": "test: prevent duplicate report likes",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/33f8c505deefe17f60043c19b713a8e28a61de04"
     },
     "stats": {
       "total": 28,
@@ -1366,5 +1366,24 @@
     "test_count": 152,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:31:37.000Z",
+      "message": "feat: limit report likes by user",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 25,
+      "deletions": 11,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.51,
+    "test_count": 152,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

@@ -59,11 +59,11 @@ export default class CollectionScheduleUseCases {
     return this.#report.createReport(data);
   }
 
-  incrementReportLikes(id) {
-    return this.#report.incrementReportLikes(id);
+  incrementReportLikes(id, userName = null) {
+    return this.#report.incrementReportLikes(id, userName);
   }
 
-  likeReport(id) {
-    return this.#report.likeReport(id);
+  likeReport(id, userName = null) {
+    return this.#report.likeReport(id, userName);
   }
 }
