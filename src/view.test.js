@@ -15,6 +15,11 @@ function createView() {
     append: jest.fn(),
     addEventListener: jest.fn(),
   };
+  const manualLocationSelect = {
+    innerHTML: '',
+    append: jest.fn(),
+    addEventListener: jest.fn(),
+  };
   const resultContainer = {
     innerHTML: '',
   };
@@ -36,6 +41,7 @@ function createView() {
     homeSection,
     welcomeMessage,
     districtSelect,
+    manualLocationSelect,
     resultContainer,
     loginForm,
     guestButton,
@@ -46,6 +52,7 @@ function createView() {
       homeSection,
       welcomeMessage,
       districtSelect,
+      manualLocationSelect,
       resultContainer,
       loginForm,
       guestButton,
@@ -87,6 +94,26 @@ describe('CollectionScheduleView', () => {
 
     expect(global.document.createElement).toHaveBeenCalledWith('option');
     expect(districtSelect.append).toHaveBeenCalled();
+
+    global.document = originalDocument;
+  });
+
+  it('deberia renderizar opciones de ubicacion manual', () => {
+    const { view, manualLocationSelect } = createView();
+    const originalDocument = global.document;
+    global.document = {
+      createElement: jest.fn(() => ({ value: '', textContent: '' })),
+    };
+
+    view.renderLocationOptions([
+      {
+        value: 'Zona Aranjuez Alto (SubDistrito 25)',
+        label: 'Zona Aranjuez Alto (SubDistrito 25)',
+      },
+    ]);
+
+    expect(global.document.createElement).toHaveBeenCalledWith('option');
+    expect(manualLocationSelect.append).toHaveBeenCalled();
 
     global.document = originalDocument;
   });
