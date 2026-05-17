@@ -708,7 +708,7 @@
     "testId": 80
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a92d5b6f06ca88948b06aeebc071666d041d7914",
     "commitName": "test: require manual selection nav toggle",
     "commitTimestamp": 1779030034714,
     "testId": 81
@@ -718,5 +718,11 @@
     "commitName": "fix: show manual selection only from nav",
     "commitTimestamp": 1779030134878,
     "testId": 82
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: add report metadata expectation",
+    "commitTimestamp": 1779030597632,
+    "testId": 83
   }
 ]

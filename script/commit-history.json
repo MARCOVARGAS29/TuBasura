@@ -1102,12 +1102,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a92d5b6f06ca88948b06aeebc071666d041d7914",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:02:13.000Z",
       "message": "fix: show manual selection only from nav",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/a92d5b6f06ca88948b06aeebc071666d041d7914"
     },
     "stats": {
       "total": 58,
@@ -1119,5 +1119,24 @@
     "test_count": 145,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:09:56.000Z",
+      "message": "test: add report metadata expectation",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 18,
+      "deletions": 3,
+      "date": "2026-05-17"
+    },
+    "coverage": 80.41,
+    "test_count": 146,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

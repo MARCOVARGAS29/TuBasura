@@ -413,6 +413,21 @@ it('deberia devolver la segunda zona del distrito 15', () => {
 });
 
 describe('reportes', () => {
+    it('deberia crear un reporte con usuario, distrito, fecha y hora', () => {
+      const model = new CollectionScheduleModel();
+
+      const report = model.createReport({
+        description: 'Basura en la calle',
+        image: '',
+        userName: 'admin',
+        district: 'Distrito 3',
+      });
+
+      expect(report.userName).toBe('admin');
+      expect(report.district).toBe('Distrito 3');
+      expect(report.createdAt).toBeDefined();
+    });
+
     it('deberia crear un reporte con likes en 0', () => {
       const model = new CollectionScheduleModel();
 
