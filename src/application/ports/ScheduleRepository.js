@@ -24,7 +24,7 @@ export default class ScheduleRepository {
    * @param {string} districtId - District identifier
    * @returns {Object|null} - Schedule object or null if not found
    */
-  getScheduleByDistrict(districtId) {
+  getScheduleByDistrict(_districtId) {
     throw new Error('Method getScheduleByDistrict() must be implemented');
   }
 
@@ -33,7 +33,7 @@ export default class ScheduleRepository {
    * @param {string} location - Location name
    * @returns {Object|null} - Schedule object or null if not found
    */
-  getScheduleByManualLocation(location) {
+  getScheduleByManualLocation(_location) {
     throw new Error('Method getScheduleByManualLocation() must be implemented');
   }
 }
