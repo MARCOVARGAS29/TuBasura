@@ -690,7 +690,7 @@
     "testId": 77
   },
   {
-    "commitId": "HEAD",
+    "commitId": "571c1a7428294a55b444b50b32ad6e0bd71d03cf",
     "commitName": "refactor(application): separar CollectionScheduleUseCases en 3 casos de uso independientes",
     "commitTimestamp": 1779003371204,
     "testId": 78
@@ -700,5 +700,11 @@
     "commitName": "feat(ports): agregar interfaces abstractas de repositorios e implementar herencia",
     "commitTimestamp": 1779003407539,
     "testId": 79
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(domain): agregar tests para entidad Report",
+    "commitTimestamp": 1779003416989,
+    "testId": 80
   }
 ]
