@@ -612,15 +612,63 @@
     "testId": 64
   },
   {
-    "commitId": "HEAD",
+    "commitId": "61c883a62d7ffd72667601bfb36b9bd10135284a",
     "commitName": "fix: corregir actualizacion del contador de likes",
     "commitTimestamp": 1778938383025,
     "testId": 65
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cddcbc0e803427d97bab5af9492727f78a3ed457",
     "commitName": "Merge branch 'main' of https://github.com/MARCOVARGAS29/TuBasura",
     "commitTimestamp": 1778963475411,
     "testId": 66
+  },
+  {
+    "commitId": "1fc23263b32f466db550d9c269ee7c6e4538d177",
+    "commitName": "feat(domain): add User entity with constructor and accessors",
+    "commitTimestamp": 1778964281505,
+    "testId": 67
+  },
+  {
+    "commitId": "a6efa47e7a8d089d92f06e57e034e50531e581fa",
+    "commitName": "feat(domain): add User.isRegistered() and isGuest() methods",
+    "commitTimestamp": 1778964374910,
+    "testId": 68
+  },
+  {
+    "commitId": "cd9e62e5244393956f1d9b900039c6501be3a8d5",
+    "commitName": "feat(domain): add Schedule entity with validation and getters",
+    "commitTimestamp": 1778964446734,
+    "testId": 69
+  },
+  {
+    "commitId": "39ca298455c5872128b92b83ecc0abd0f5659a03",
+    "commitName": "fix(domain): add getUpdatedAt() method to Report entity",
+    "commitTimestamp": 1779002670610,
+    "testId": 70
+  },
+  {
+    "commitId": "80f0009ef6291b2efa202fab3404c19c409ac0a7",
+    "commitName": "refactor(application): split CollectionScheduleUseCases into 3 separate use cases with backward compatibility",
+    "commitTimestamp": 1779002777196,
+    "testId": 71
+  },
+  {
+    "commitId": "61c883a62d7ffd72667601bfb36b9bd10135284a",
+    "commitName": "feat(ports): add abstract repository interfaces and update infrastructure to extend them",
+    "commitTimestamp": 1779002855472,
+    "testId": 72
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(domain): add District and Report test entities",
+    "commitTimestamp": 1779003044493,
+    "testId": 73
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(domain): crear entidad User con constructor y accessors",
+    "commitTimestamp": 1779003310939,
+    "testId": 74
   }
 ]

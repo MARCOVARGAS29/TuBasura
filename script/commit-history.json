@@ -798,12 +798,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "61c883a62d7ffd72667601bfb36b9bd10135284a",
     "author": "Gabriel Fernandez",
     "commit": {
       "date": "2026-05-16T20:31:13.000Z",
       "message": "Merge branch 'main' of https://github.com/MARCOVARGAS29/TuBasura",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/61c883a62d7ffd72667601bfb36b9bd10135284a"
     },
     "stats": {
       "total": 1085,
@@ -813,6 +813,158 @@
     },
     "coverage": 75.69,
     "test_count": 60,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cddcbc0e803427d97bab5af9492727f78a3ed457",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-16T20:44:40.000Z",
+      "message": "feat(domain): add User entity with constructor and accessors",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/cddcbc0e803427d97bab5af9492727f78a3ed457"
+    },
+    "stats": {
+      "total": 169,
+      "additions": 169,
+      "deletions": 0,
+      "date": "2026-05-16"
+    },
+    "coverage": 77.85,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1fc23263b32f466db550d9c269ee7c6e4538d177",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-16T20:46:12.000Z",
+      "message": "feat(domain): add User.isRegistered() and isGuest() methods",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/1fc23263b32f466db550d9c269ee7c6e4538d177"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-05-16"
+    },
+    "coverage": 77.85,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a6efa47e7a8d089d92f06e57e034e50531e581fa",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-16T20:47:25.000Z",
+      "message": "feat(domain): add Schedule entity with validation and getters",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/a6efa47e7a8d089d92f06e57e034e50531e581fa"
+    },
+    "stats": {
+      "total": 157,
+      "additions": 157,
+      "deletions": 0,
+      "date": "2026-05-16"
+    },
+    "coverage": 80.11,
+    "test_count": 94,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cd9e62e5244393956f1d9b900039c6501be3a8d5",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:24:28.000Z",
+      "message": "fix(domain): add getUpdatedAt() method to Report entity",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/cd9e62e5244393956f1d9b900039c6501be3a8d5"
+    },
+    "stats": {
+      "total": 129,
+      "additions": 125,
+      "deletions": 4,
+      "date": "2026-05-17"
+    },
+    "coverage": 84.3,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "39ca298455c5872128b92b83ecc0abd0f5659a03",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:26:15.000Z",
+      "message": "refactor(application): split CollectionScheduleUseCases into 3 separate use cases with backward compatibility",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/39ca298455c5872128b92b83ecc0abd0f5659a03"
+    },
+    "stats": {
+      "total": 91,
+      "additions": 80,
+      "deletions": 11,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.54,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "80f0009ef6291b2efa202fab3404c19c409ac0a7",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:27:33.000Z",
+      "message": "feat(ports): add abstract repository interfaces and update infrastructure to extend them",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/80f0009ef6291b2efa202fab3404c19c409ac0a7"
+    },
+    "stats": {
+      "total": 85,
+      "additions": 82,
+      "deletions": 3,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.22,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "61c883a62d7ffd72667601bfb36b9bd10135284a",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:30:42.000Z",
+      "message": "feat(domain): add District and Report test entities",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/61c883a62d7ffd72667601bfb36b9bd10135284a"
+    },
+    "stats": {
+      "total": 401,
+      "additions": 401,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.22,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:35:08.000Z",
+      "message": "feat(domain): crear entidad User con constructor y accessors",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 169,
+      "additions": 169,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.22,
+    "test_count": 136,
     "failed_tests": 0,
     "conclusion": "success"
   }
