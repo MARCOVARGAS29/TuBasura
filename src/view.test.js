@@ -74,6 +74,12 @@ function createView() {
   const reportConfirmation = {
     innerHTML: '',
   };
+  const reportModal = {
+    hidden: true,
+  };
+  const reportModalOkButton = {
+    addEventListener: jest.fn(),
+  };
 
   return {
     loginSection,
@@ -98,6 +104,8 @@ function createView() {
     reportImage,
     reportsList,
     reportConfirmation,
+    reportModal,
+    reportModalOkButton,
     view: new CollectionScheduleView({
       loginSection,
       homeSection,
@@ -121,6 +129,8 @@ function createView() {
       reportImage,
       reportsList,
       reportConfirmation,
+      reportModal,
+      reportModalOkButton,
     }),
   };
 }
@@ -304,6 +314,7 @@ describe('CollectionScheduleView', () => {
       view,
       reportForm,
       reportConfirmation,
+      reportModal,
     } = createView();
     const event = {
       preventDefault: jest.fn(),
@@ -334,5 +345,16 @@ describe('CollectionScheduleView', () => {
     expect(reportConfirmation.innerHTML).toContain('Distrito 4');
     expect(reportConfirmation.innerHTML).toContain('admin');
     expect(reportConfirmation.innerHTML).toContain('2026');
+    expect(reportModal.hidden).toBe(false);
+  });
+
+  it('deberia cerrar el modal de reporte al apretar ok', () => {
+    const { view, reportModal, reportModalOkButton } = createView();
+
+    view.bindReportModalDismiss();
+    reportModal.hidden = false;
+    reportModalOkButton.addEventListener.mock.calls[0][1]();
+
+    expect(reportModal.hidden).toBe(true);
   });
 });

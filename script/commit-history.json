@@ -1406,12 +1406,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a381818e660a4101ba49a8499d8a9df8440d5ed2",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:33:03.000Z",
       "message": "feat: like reports as current user",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/a381818e660a4101ba49a8499d8a9df8440d5ed2"
     },
     "stats": {
       "total": 2,
@@ -1423,5 +1423,24 @@
     "test_count": 153,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:33:48.000Z",
+      "message": "test: show report feedback in modal",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.06,
+    "test_count": 154,
+    "failed_tests": 2,
+    "conclusion": "failure"
   }
 ]
