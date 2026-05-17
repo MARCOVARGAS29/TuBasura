@@ -47,6 +47,10 @@ export default class CollectionScheduleUseCases {
     return this.#schedule.getScheduleByDistrict(districtId);
   }
 
+  getScheduleByManualLocation(location) {
+    return this.#schedule.getScheduleByManualLocation(location);
+  }
+
   getReports() {
     return this.#report.getReports();
   }

@@ -14,4 +14,17 @@ export default class ScheduleUseCase {
   getScheduleByDistrict(districtId) {
     return this.scheduleRepository.getScheduleByDistrict(districtId);
   }
+
+  getScheduleByManualLocation(location) {
+    const schedule = this.scheduleRepository.getScheduleByManualLocation(location);
+
+    if (!schedule) {
+      return null;
+    }
+
+    return {
+      ...schedule,
+      selectedLocation: location,
+    };
+  }
 }

@@ -27,4 +27,13 @@ export default class ScheduleRepository {
   getScheduleByDistrict(districtId) {
     throw new Error('Method getScheduleByDistrict() must be implemented');
   }
+
+  /**
+   * Get schedule for a manually selected location
+   * @param {string} location - Location name
+   * @returns {Object|null} - Schedule object or null if not found
+   */
+  getScheduleByManualLocation(location) {
+    throw new Error('Method getScheduleByManualLocation() must be implemented');
+  }
 }

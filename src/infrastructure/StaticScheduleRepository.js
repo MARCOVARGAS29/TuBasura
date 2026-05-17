@@ -17,4 +17,12 @@ export default class DistrictScheduleRepository extends ScheduleRepository {
   getScheduleByDistrict(districtId) {
     return schedulesByDistrict[districtId] || null;
   }
+
+  getScheduleByManualLocation(location) {
+    return (
+      Object.values(schedulesByDistrict).find((schedule) =>
+        schedule.zones.includes(location),
+      ) || null
+    );
+  }
 }
