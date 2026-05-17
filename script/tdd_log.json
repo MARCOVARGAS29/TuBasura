@@ -768,7 +768,7 @@
     "testId": 90
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2f8d1b71d6087ccdec3430bb2f56a05d5fb0e876",
     "commitName": "test: expect report form confirmation summary",
     "commitTimestamp": 1779031145921,
     "testId": 91
@@ -778,5 +778,11 @@
     "commitName": "feat: show report confirmation summary",
     "commitTimestamp": 1779031256335,
     "testId": 92
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: reproduce reports navigation lock",
+    "commitTimestamp": 1779031535633,
+    "testId": 93
   }
 ]

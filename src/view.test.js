@@ -36,6 +36,9 @@ function createView() {
   const reportsLink = {
     addEventListener: jest.fn(),
   };
+  const scheduleLink = {
+    addEventListener: jest.fn(),
+  };
   const resultContainer = {
     innerHTML: '',
   };
@@ -83,6 +86,7 @@ function createView() {
     reportsPanel,
     schedulePanel,
     reportsLink,
+    scheduleLink,
     resultContainer,
     loginForm,
     guestButton,
@@ -105,6 +109,7 @@ function createView() {
       reportsPanel,
       schedulePanel,
       reportsLink,
+      scheduleLink,
       resultContainer,
       loginForm,
       guestButton,
@@ -217,6 +222,39 @@ describe('CollectionScheduleView', () => {
     expect(reportsPanel.hidden).toBe(false);
     expect(schedulePanel.hidden).toBe(true);
     expect(event.preventDefault).toHaveBeenCalled();
+  });
+
+  it('deberia volver desde reportes a seleccion manual y horarios', () => {
+    const {
+      view,
+      manualSelectionPanel,
+      reportsPanel,
+      schedulePanel,
+      manualSelectionLink,
+      reportsLink,
+      scheduleLink,
+    } = createView();
+    const event = {
+      preventDefault: jest.fn(),
+    };
+
+    view.bindReportsNavigation();
+    view.bindManualSelectionNavigation();
+    view.bindScheduleNavigation();
+
+    reportsLink.addEventListener.mock.calls[0][1](event);
+    manualSelectionLink.addEventListener.mock.calls[0][1](event);
+
+    expect(schedulePanel.hidden).toBe(false);
+    expect(reportsPanel.hidden).toBe(true);
+    expect(manualSelectionPanel.hidden).toBe(false);
+
+    reportsLink.addEventListener.mock.calls[0][1](event);
+    scheduleLink.addEventListener.mock.calls[0][1](event);
+
+    expect(schedulePanel.hidden).toBe(false);
+    expect(reportsPanel.hidden).toBe(true);
+    expect(manualSelectionPanel.hidden).toBe(true);
   });
 
   it('deberia mostrar el horario seleccionado', () => {

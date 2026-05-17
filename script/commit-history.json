@@ -1292,12 +1292,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "2f8d1b71d6087ccdec3430bb2f56a05d5fb0e876",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:20:55.000Z",
       "message": "feat: show report confirmation summary",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/2f8d1b71d6087ccdec3430bb2f56a05d5fb0e876"
     },
     "stats": {
       "total": 135,
@@ -1309,5 +1309,24 @@
     "test_count": 150,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:25:34.000Z",
+      "message": "test: reproduce reports navigation lock",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 38,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.22,
+    "test_count": 151,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
