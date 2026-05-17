@@ -28,6 +28,8 @@ function initializeApp() {
     reportImage: document.querySelector('#report-image'),
     reportsList: document.querySelector('#reports-list'),
     reportConfirmation: document.querySelector('#report-confirmation'),
+    reportModal: document.querySelector('#report-modal'),
+    reportModalOkButton: document.querySelector('#report-modal-ok'),
   });
   const presenter = new CollectionSchedulePresenter({ model, view });
 

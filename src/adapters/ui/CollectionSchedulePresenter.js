@@ -30,6 +30,9 @@ export default class CollectionSchedulePresenter {
     if (this.view.bindScheduleNavigation) {
       this.view.bindScheduleNavigation();
     }
+    if (this.view.bindReportModalDismiss) {
+      this.view.bindReportModalDismiss();
+    }
     this.view.bindCreateReport((data) => this.createReport(data));
   }
 

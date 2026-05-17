@@ -22,6 +22,8 @@ export default class CollectionScheduleView {
     reportImage,
     reportsList,
     reportConfirmation,
+    reportModal,
+    reportModalOkButton,
   }) {
     this.loginSection = loginSection;
     this.homeSection = homeSection;
@@ -45,6 +47,8 @@ export default class CollectionScheduleView {
     this.reportImage = reportImage;
     this.reportsList = reportsList;
     this.reportConfirmation = reportConfirmation;
+    this.reportModal = reportModal;
+    this.reportModalOkButton = reportModalOkButton;
   }
 
   showLogin() {
@@ -159,6 +163,16 @@ export default class CollectionScheduleView {
     });
   }
 
+  bindReportModalDismiss() {
+    if (!this.reportModalOkButton || !this.reportModal) {
+      return;
+    }
+
+    this.reportModalOkButton.addEventListener('click', () => {
+      this.reportModal.hidden = true;
+    });
+  }
+
   bindReportsNavigation() {
     if (!this.reportsLink || !this.reportsPanel) {
       return;
@@ -268,6 +282,9 @@ export default class CollectionScheduleView {
         <p><strong>Usuario:</strong> ${report.userName}</p>
       </div>
     `;
+    if (this.reportModal) {
+      this.reportModal.hidden = false;
+    }
   }
 
   showReportError(message) {
@@ -280,6 +297,9 @@ export default class CollectionScheduleView {
         <p>${message}</p>
       </div>
     `;
+    if (this.reportModal) {
+      this.reportModal.hidden = false;
+    }
   }
 
   renderReports(reports, likeHandler) {

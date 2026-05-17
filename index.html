@@ -146,10 +146,25 @@
                 Crear reporte
               </button>
             </form>
-            <div id="report-confirmation" aria-live="polite"></div>
             <div id="reports-list"></div>
           </section>
       </section>
+
+      <div
+        id="report-modal"
+        class="modal-backdrop"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="report-modal-title"
+        hidden
+      >
+        <div class="modal-window">
+          <div id="report-confirmation" aria-live="polite"></div>
+          <button id="report-modal-ok" type="button" class="primary-action">
+            OK
+          </button>
+        </div>
+      </div>
     </main>
 
     <script type="module" src="./src/main.js"></script>

@@ -237,6 +237,29 @@ h1, h2 { margin: 0; }
   background: #FDF3E7;
 }
 
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(44, 62, 80, 0.45);
+}
+
+.modal-window {
+  width: min(100%, 440px);
+  padding: 22px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #dde5e2;
+  box-shadow: 0 20px 70px rgba(44, 62, 80, 0.22);
+}
+
+.modal-window .confirmation-card {
+  margin-top: 0;
+}
+
 .report-item button {
   padding: 7px 16px;
   border-radius: 999px;
