@@ -798,7 +798,7 @@
     "testId": 95
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c59e2fe1ebede56635e3f149290be773e7add81b",
     "commitName": "feat: limit report likes by user",
     "commitTimestamp": 1779031898229,
     "testId": 96
@@ -808,5 +808,11 @@
     "commitName": "test: pass user when liking reports",
     "commitTimestamp": 1779031936956,
     "testId": 97
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: like reports as current user",
+    "commitTimestamp": 1779031984770,
+    "testId": 98
   }
 ]

@@ -124,7 +124,7 @@ export default class CollectionSchedulePresenter {
   }
 
   likeReport(id) {
-    this.model.likeReport(id);
+    this.model.likeReport(id, this.currentSession?.name || 'Invitado');
     this.renderReports();
   }
 

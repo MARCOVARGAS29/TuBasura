@@ -1387,12 +1387,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c59e2fe1ebede56635e3f149290be773e7add81b",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:32:15.000Z",
       "message": "test: pass user when liking reports",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c59e2fe1ebede56635e3f149290be773e7add81b"
     },
     "stats": {
       "total": 32,
@@ -1404,5 +1404,24 @@
     "test_count": 153,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:33:03.000Z",
+      "message": "feat: like reports as current user",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-05-17"
+    },
+    "coverage": 83.06,
+    "test_count": 153,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
