@@ -16,6 +16,7 @@ function initializeApp() {
     reportsPanel: document.querySelector('#reports-panel'),
     schedulePanel: document.querySelector('#schedule-page'),
     reportsLink: document.querySelector('#reports-link'),
+    scheduleLink: document.querySelector('#schedule-link'),
     resultContainer: document.querySelector('#schedule-result'),
     loginForm: document.querySelector('#login-form'),
     guestButton: document.querySelector('#guest-access-button'),

@@ -774,7 +774,7 @@
     "testId": 91
   },
   {
-    "commitId": "HEAD",
+    "commitId": "23b6960f6c19b6c087ecc415e923ee86ad3f05b1",
     "commitName": "feat: show report confirmation summary",
     "commitTimestamp": 1779031256335,
     "testId": 92
@@ -784,5 +784,11 @@
     "commitName": "test: reproduce reports navigation lock",
     "commitTimestamp": 1779031535633,
     "testId": 93
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: restore navigation from reports",
+    "commitTimestamp": 1779031598293,
+    "testId": 94
   }
 ]

@@ -10,6 +10,7 @@ export default class CollectionScheduleView {
     reportsPanel,
     schedulePanel,
     reportsLink,
+    scheduleLink,
     resultContainer,
     loginForm,
     guestButton,
@@ -32,6 +33,7 @@ export default class CollectionScheduleView {
     this.reportsPanel = reportsPanel;
     this.schedulePanel = schedulePanel;
     this.reportsLink = reportsLink;
+    this.scheduleLink = scheduleLink;
     this.resultContainer = resultContainer;
     this.loginForm = loginForm;
     this.guestButton = guestButton;
@@ -124,9 +126,35 @@ export default class CollectionScheduleView {
 
     this.manualSelectionLink.addEventListener('click', (event) => {
       event.preventDefault();
+      if (this.schedulePanel) {
+        this.schedulePanel.hidden = false;
+      }
+      if (this.reportsPanel) {
+        this.reportsPanel.hidden = true;
+      }
       this.manualSelectionPanel.hidden = false;
       if (this.manualSelectionPanel.scrollIntoView) {
         this.manualSelectionPanel.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
+  bindScheduleNavigation() {
+    if (!this.scheduleLink || !this.schedulePanel) {
+      return;
+    }
+
+    this.scheduleLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.schedulePanel.hidden = false;
+      if (this.reportsPanel) {
+        this.reportsPanel.hidden = true;
+      }
+      if (this.manualSelectionPanel) {
+        this.manualSelectionPanel.hidden = true;
+      }
+      if (this.schedulePanel.scrollIntoView) {
+        this.schedulePanel.scrollIntoView({ behavior: 'smooth' });
       }
     });
   }
