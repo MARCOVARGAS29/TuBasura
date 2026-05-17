@@ -714,7 +714,7 @@
     "testId": 81
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cc992211503e0a56aa10cc9647f1cfbd98abfae8",
     "commitName": "fix: show manual selection only from nav",
     "commitTimestamp": 1779030134878,
     "testId": 82
@@ -724,5 +724,11 @@
     "commitName": "test: add report metadata expectation",
     "commitTimestamp": 1779030597632,
     "testId": 83
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: keep report metadata",
+    "commitTimestamp": 1779030663436,
+    "testId": 84
   }
 ]
