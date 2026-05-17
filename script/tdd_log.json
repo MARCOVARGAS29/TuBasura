@@ -762,7 +762,7 @@
     "testId": 89
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2b3e167644006e7aaa455908b5450eec4b8d2468",
     "commitName": "feat: add reports navigation page",
     "commitTimestamp": 1779031086714,
     "testId": 90
@@ -772,5 +772,11 @@
     "commitName": "test: expect report form confirmation summary",
     "commitTimestamp": 1779031145921,
     "testId": 91
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: show report confirmation summary",
+    "commitTimestamp": 1779031256335,
+    "testId": 92
   }
 ]

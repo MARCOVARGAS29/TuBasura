@@ -65,7 +65,7 @@ h1, h2 { margin: 0; }
   letter-spacing: 0.05em;
 }
 
-.login-form input, .field select {
+.login-form input, .login-form select, .field select {
   width: 100%;
   padding: 13px 16px;
   border-radius: 12px;
@@ -75,7 +75,7 @@ h1, h2 { margin: 0; }
   transition: border-color 180ms;
 }
 
-.login-form input:focus, .field select:focus {
+.login-form input:focus, .login-form select:focus, .field select:focus {
   outline: none;
   border-color: #2ECC71;
 }
@@ -214,6 +214,28 @@ h1, h2 { margin: 0; }
 }
 
 .report-item p { margin: 0 0 8px; color: #2C3E50; }
+.report-item img { display: block; max-width: 180px; border-radius: 8px; margin: 10px 0; }
+
+.confirmation-card {
+  margin: 16px 0;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1.5px solid #2ECC71;
+  background: #eafaf1;
+}
+
+.confirmation-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #2C3E50;
+}
+
+.confirmation-card p { margin: 0 0 8px; }
+
+.confirmation-card-error {
+  border-color: #E67E22;
+  background: #FDF3E7;
+}
 
 .report-item button {
   padding: 7px 16px;

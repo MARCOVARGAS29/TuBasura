@@ -17,8 +17,10 @@ export default class CollectionScheduleView {
     passwordInput,
     reportForm,
     reportDescription,
+    reportDistrict,
     reportImage,
     reportsList,
+    reportConfirmation,
   }) {
     this.loginSection = loginSection;
     this.homeSection = homeSection;
@@ -37,8 +39,10 @@ export default class CollectionScheduleView {
     this.passwordInput = passwordInput;
     this.reportForm = reportForm;
     this.reportDescription = reportDescription;
+    this.reportDistrict = reportDistrict;
     this.reportImage = reportImage;
     this.reportsList = reportsList;
+    this.reportConfirmation = reportConfirmation;
   }
 
   showLogin() {
@@ -196,11 +200,58 @@ export default class CollectionScheduleView {
 
       handler({
         description: this.reportDescription.value,
+        district: this.reportDistrict.value,
         image: this.reportImage.value,
       });
 
       this.reportForm.reset();
     });
+  }
+
+  formatReportDateTime(createdAt) {
+    if (!createdAt) {
+      return 'Sin fecha';
+    }
+
+    const date = createdAt instanceof Date ? createdAt : new Date(createdAt);
+
+    return date.toLocaleString('es-BO', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+  }
+
+  showReportConfirmation(report) {
+    if (!this.reportConfirmation) {
+      return;
+    }
+
+    this.reportConfirmation.innerHTML = `
+      <div class="confirmation-card">
+        <h2>Reporte enviado correctamente</h2>
+        <p><strong>Descripcion:</strong> ${report.description}</p>
+        <p><strong>Ubicacion:</strong> ${report.district}</p>
+        <p><strong>Fecha y hora:</strong> ${this.formatReportDateTime(
+          report.createdAt,
+        )}</p>
+        <p><strong>Usuario:</strong> ${report.userName}</p>
+      </div>
+    `;
+  }
+
+  showReportError(message) {
+    if (!this.reportConfirmation) {
+      return;
+    }
+
+    this.reportConfirmation.innerHTML = `
+      <div class="confirmation-card confirmation-card-error">
+        <p>${message}</p>
+      </div>
+    `;
   }
 
   renderReports(reports, likeHandler) {
@@ -212,6 +263,11 @@ export default class CollectionScheduleView {
 
       div.innerHTML = `
         <p>${report.description}</p>
+        <p><strong>Usuario:</strong> ${report.userName || 'Invitado'}</p>
+        <p><strong>Distrito:</strong> ${report.district || 'Sin distrito'}</p>
+        <p><strong>Fecha y hora:</strong> ${this.formatReportDateTime(
+          report.createdAt,
+        )}</p>
         ${report.image ? `<img src="${report.image}" width="100" />` : ''}
         <p><strong>Likes:</strong> ${report.likes}</p>
         <button data-id="${report.id}">👍 Like</button>

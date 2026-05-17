@@ -1273,12 +1273,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2b3e167644006e7aaa455908b5450eec4b8d2468",
     "author": "marco",
     "commit": {
       "date": "2026-05-17T15:19:05.000Z",
       "message": "test: expect report form confirmation summary",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/2b3e167644006e7aaa455908b5450eec4b8d2468"
     },
     "stats": {
       "total": 69,
@@ -1290,5 +1290,24 @@
     "test_count": 150,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "marco",
+    "commit": {
+      "date": "2026-05-17T15:20:55.000Z",
+      "message": "feat: show report confirmation summary",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 135,
+      "additions": 118,
+      "deletions": 17,
+      "date": "2026-05-17"
+    },
+    "coverage": 82.22,
+    "test_count": 150,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

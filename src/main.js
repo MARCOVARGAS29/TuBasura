@@ -23,8 +23,10 @@ function initializeApp() {
     passwordInput: document.querySelector('#password'),
     reportForm: document.querySelector('#report-form'),
     reportDescription: document.querySelector('#report-description'),
+    reportDistrict: document.querySelector('#report-district'),
     reportImage: document.querySelector('#report-image'),
     reportsList: document.querySelector('#reports-list'),
+    reportConfirmation: document.querySelector('#report-confirmation'),
   });
   const presenter = new CollectionSchedulePresenter({ model, view });
 
