@@ -969,16 +969,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ab22603ef46f1d2efb221ba81e56663f17de5335",
     "author": "Gabriel Fernandez",
     "commit": {
       "date": "2026-05-17T07:35:23.000Z",
       "message": "feat(domain): crear entidad Schedule con validación y getters",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/ab22603ef46f1d2efb221ba81e56663f17de5335"
     },
     "stats": {
       "total": 157,
       "additions": 157,
+      "deletions": 0,
+      "date": "2026-05-17"
+    },
+    "coverage": 81.22,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Fernandez",
+    "commit": {
+      "date": "2026-05-17T07:35:37.000Z",
+      "message": "feat(domain): agregar entidades District para zonas",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 164,
+      "additions": 164,
       "deletions": 0,
       "date": "2026-05-17"
     },
