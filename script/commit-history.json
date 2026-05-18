@@ -1615,17 +1615,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ef80398cadd1f166846ba0ec6cd71ad75412f81b",
     "author": "aldair",
     "commit": {
       "date": "2026-05-18T02:38:24.000Z",
       "message": "feat: agregar controles de filtro en reportes",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/ef80398cadd1f166846ba0ec6cd71ad75412f81b"
     },
     "stats": {
       "total": 125,
       "additions": 85,
       "deletions": 40,
+      "date": "2026-05-18"
+    },
+    "coverage": 83.65,
+    "test_count": 162,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-05-18T02:43:13.000Z",
+      "message": "style: ordenar controles de filtros de reportes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 316,
+      "additions": 165,
+      "deletions": 151,
       "date": "2026-05-18"
     },
     "coverage": 83.65,

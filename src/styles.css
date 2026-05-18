@@ -286,6 +286,19 @@ h1, h2 { margin: 0; }
 /* REPORTES */
 #reports-panel { margin-top: 28px; border-top: 1.5px solid #eaeef0; padding-top: 28px; }
 
+.report-filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+  padding-top: 18px;
+  border-top: 1.5px solid #eaeef0;
+}
+
+.report-filters .field {
+  margin-bottom: 0;
+}
+
 .report-item {
   background: #F4F7F6;
   border: 1px solid #dde5e2;
@@ -381,5 +394,6 @@ h1, h2 { margin: 0; }
   .home-panel, .brand-panel, .login-card { padding: 24px; }
   .start-hero { min-height: auto; padding: 28px; }
   .offer-grid { grid-template-columns: 1fr; }
+  .report-filters { grid-template-columns: 1fr; }
   .app-footer { flex-direction: column; }
 }
