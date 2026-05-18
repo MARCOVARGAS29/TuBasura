@@ -135,6 +135,10 @@ export default class CollectionSchedulePresenter {
   }
 
   renderReports() {
+    if (!this.model.getReports || !this.view.renderReports) {
+      return;
+    }
+
     const reports = this.model.getReports();
     this.view.renderReports(reports, (id) => this.likeReport(id));
   }

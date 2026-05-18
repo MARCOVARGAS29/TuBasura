@@ -2,7 +2,10 @@ node_modules
 .cache
 dist
 .parcel-cache
+.npm-cache
+.cypress-cache
 /coverage
+*.log
 .DS_Store
 report.json
 ./.husky/_
