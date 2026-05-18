@@ -440,6 +440,32 @@ describe('reportes', () => {
       expect(report.likes).toBe(0);
     });
 
+    it('deberia ordenar reportes por mas likes', () => {
+  const model = new CollectionScheduleModel();
+
+  const reportWithOneLike = model.createReport({
+    description: 'Reporte con un like',
+    image: '',
+    district: 'Distrito 1',
+  });
+
+  const reportWithTwoLikes = model.createReport({
+    description: 'Reporte con dos likes',
+    image: '',
+    district: 'Distrito 2',
+  });
+
+  model.likeReport(reportWithOneLike.id, 'usuario-1');
+
+  model.likeReport(reportWithTwoLikes.id, 'usuario-1');
+  model.likeReport(reportWithTwoLikes.id, 'usuario-2');
+
+  const reports = model.getReports({ sortBy: 'likes' });
+
+  expect(reports[0].description).toBe('Reporte con dos likes');
+  expect(reports[1].description).toBe('Reporte con un like');
+});
+
     it('deberia guardar el reporte en memoria', () => {
       const model = new CollectionScheduleModel();
 

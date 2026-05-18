@@ -1520,12 +1520,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "efce18529419455fd247e6b52def4ce677864d6f",
     "author": "aldair",
     "commit": {
       "date": "2026-05-18T01:42:16.000Z",
       "message": "feat: ordenar reportes por mas recientes",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/efce18529419455fd247e6b52def4ce677864d6f"
     },
     "stats": {
       "total": 237,
@@ -1537,5 +1537,24 @@
     "test_count": 157,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-05-18T01:48:13.000Z",
+      "message": "feat: ordenar reportes por mas likes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2026-05-18"
+    },
+    "coverage": 83.41,
+    "test_count": 158,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

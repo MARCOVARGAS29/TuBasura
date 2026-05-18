@@ -13,6 +13,12 @@ export default class ReportUseCase {
       );
     }
 
+    if (options.sortBy === 'likes') {
+      return [...reports].sort(
+        (firstReport, secondReport) => secondReport.likes - firstReport.likes,
+      );
+    }
+
     return reports;
   }
 
