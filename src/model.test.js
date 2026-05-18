@@ -481,6 +481,28 @@ describe('reportes', () => {
       expect(secondLike.likes).toBe(1);
       expect(secondLike.likedBy).toEqual(['admin']);
     });
+    it('deberia ordenar reportes por mas recientes', () => {
+  const model = new CollectionScheduleModel();
+
+  model.createReport({
+    description: 'Reporte antiguo',
+    image: '',
+    district: 'Distrito 1',
+    createdAt: '2026-05-16T10:00:00',
+  });
+
+  model.createReport({
+    description: 'Reporte reciente',
+    image: '',
+    district: 'Distrito 2',
+    createdAt: '2026-05-17T10:00:00',
+  });
+
+  const reports = model.getReports({ sortBy: 'recent' });
+
+  expect(reports[0].description).toBe('Reporte reciente');
+  expect(reports[1].description).toBe('Reporte antiguo');
+});
 });
 
 beforeEach(() => {

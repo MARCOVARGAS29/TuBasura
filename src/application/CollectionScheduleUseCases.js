@@ -51,8 +51,8 @@ export default class CollectionScheduleUseCases {
     return this.#schedule.getScheduleByManualLocation(location);
   }
 
-  getReports() {
-    return this.#report.getReports();
+  getReports(options = {}) {
+    return this.#report.getReports(options);
   }
 
   createReport(data) {

@@ -3,8 +3,17 @@ export default class ReportUseCase {
     this.reportRepository = reportRepository;
   }
 
-  getReports() {
-    return this.reportRepository.getReports();
+  getReports(options = {}) {
+    const reports = this.reportRepository.getReports();
+
+    if (options.sortBy === 'recent') {
+      return [...reports].sort(
+        (firstReport, secondReport) =>
+          new Date(secondReport.createdAt) - new Date(firstReport.createdAt),
+      );
+    }
+
+    return reports;
   }
 
   createReport(data) {
