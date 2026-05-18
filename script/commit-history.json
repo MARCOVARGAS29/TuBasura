@@ -1634,17 +1634,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e118ab557c39640cc7719edeebe181200ae448e0",
     "author": "aldair",
     "commit": {
       "date": "2026-05-18T02:43:13.000Z",
       "message": "style: ordenar controles de filtros de reportes",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/e118ab557c39640cc7719edeebe181200ae448e0"
     },
     "stats": {
       "total": 316,
       "additions": 165,
       "deletions": 151,
+      "date": "2026-05-18"
+    },
+    "coverage": 83.65,
+    "test_count": 162,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-05-18T02:49:22.000Z",
+      "message": "chore: limpiar catch sin uso en presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
       "date": "2026-05-18"
     },
     "coverage": 83.65,

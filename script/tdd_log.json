@@ -876,7 +876,7 @@
     "testId": 108
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e118ab557c39640cc7719edeebe181200ae448e0",
     "commitName": "feat: agregar controles de filtro en reportes",
     "commitTimestamp": 1779071906832,
     "testId": 109
@@ -886,5 +886,11 @@
     "commitName": "style: ordenar controles de filtros de reportes",
     "commitTimestamp": 1779072196716,
     "testId": 110
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore: limpiar catch sin uso en presenter",
+    "commitTimestamp": 1779072564801,
+    "testId": 111
   }
 ]

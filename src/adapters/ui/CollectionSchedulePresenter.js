@@ -125,7 +125,7 @@ export default class CollectionSchedulePresenter {
         this.view.showReportConfirmation(report);
       }
       this.renderReports();
-    } catch (error) {
+    } catch {
       if (this.view.showReportError) {
         this.view.showReportError(
           'Error al enviar el reporte, intente nuevamente',
