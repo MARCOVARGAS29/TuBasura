@@ -413,122 +413,153 @@ it('deberia devolver la segunda zona del distrito 15', () => {
 });
 
 describe('reportes', () => {
-    it('deberia crear un reporte con usuario, distrito, fecha y hora', () => {
-      const model = new CollectionScheduleModel();
+  it('deberia crear un reporte con usuario, distrito, fecha y hora', () => {
+    const model = new CollectionScheduleModel();
 
-      const report = model.createReport({
-        description: 'Basura en la calle',
-        image: '',
-        userName: 'admin',
-        district: 'Distrito 3',
-      });
-
-      expect(report.userName).toBe('admin');
-      expect(report.district).toBe('Distrito 3');
-      expect(report.createdAt).toBeDefined();
+    const report = model.createReport({
+      description: 'Basura en la calle',
+      image: '',
+      userName: 'admin',
+      district: 'Distrito 3',
     });
 
-    it('deberia crear un reporte con likes en 0', () => {
-      const model = new CollectionScheduleModel();
-
-      const report = model.createReport({
-        description: 'Basura en la calle',
-        image: '',
-      });
-
-      expect(report.description).toBe('Basura en la calle');
-      expect(report.likes).toBe(0);
-    });
-
-    it('deberia ordenar reportes por mas likes', () => {
-  const model = new CollectionScheduleModel();
-
-  const reportWithOneLike = model.createReport({
-    description: 'Reporte con un like',
-    image: '',
-    district: 'Distrito 1',
+    expect(report.userName).toBe('admin');
+    expect(report.district).toBe('Distrito 3');
+    expect(report.createdAt).toBeDefined();
   });
 
-  const reportWithTwoLikes = model.createReport({
-    description: 'Reporte con dos likes',
-    image: '',
-    district: 'Distrito 2',
-  });
+  it('deberia crear un reporte con likes en 0', () => {
+    const model = new CollectionScheduleModel();
 
-  model.likeReport(reportWithOneLike.id, 'usuario-1');
-
-  model.likeReport(reportWithTwoLikes.id, 'usuario-1');
-  model.likeReport(reportWithTwoLikes.id, 'usuario-2');
-
-  const reports = model.getReports({ sortBy: 'likes' });
-
-  expect(reports[0].description).toBe('Reporte con dos likes');
-  expect(reports[1].description).toBe('Reporte con un like');
-});
-
-    it('deberia guardar el reporte en memoria', () => {
-      const model = new CollectionScheduleModel();
-
-      model.createReport({
-        description: 'Basura',
-        image: '',
-      });
-
-      const reports = model.getReports();
-
-      expect(reports.length).toBe(1);
+    const report = model.createReport({
+      description: 'Basura en la calle',
+      image: '',
     });
 
-    it('deberia incrementar likes', () => {
-      const model = new CollectionScheduleModel();
-
-      const report = model.createReport({
-        description: 'Basura',
-        image: '',
-      });
-
-      const updated = model.incrementReportLikes(report.id);
-
-      expect(updated.likes).toBe(1);
-    });
-
-    it('deberia permitir solo un like por usuario en el mismo reporte', () => {
-      const model = new CollectionScheduleModel();
-
-      const report = model.createReport({
-        description: 'Basura',
-        image: '',
-      });
-
-      const firstLike = model.likeReport(report.id, 'admin');
-      const secondLike = model.likeReport(report.id, 'admin');
-
-      expect(firstLike.likes).toBe(1);
-      expect(secondLike.likes).toBe(1);
-      expect(secondLike.likedBy).toEqual(['admin']);
-    });
-    it('deberia ordenar reportes por mas recientes', () => {
-  const model = new CollectionScheduleModel();
-
-  model.createReport({
-    description: 'Reporte antiguo',
-    image: '',
-    district: 'Distrito 1',
-    createdAt: '2026-05-16T10:00:00',
+    expect(report.description).toBe('Basura en la calle');
+    expect(report.likes).toBe(0);
   });
 
-  model.createReport({
-    description: 'Reporte reciente',
-    image: '',
-    district: 'Distrito 2',
-    createdAt: '2026-05-17T10:00:00',
+  it('deberia ordenar reportes por mas likes', () => {
+    const ids = ['reporte-1', 'reporte-2'];
+    const model = new CollectionScheduleModel({
+      now: () => ids.shift(),
+    });
+
+    const reportWithOneLike = model.createReport({
+      description: 'Reporte con un like',
+      image: '',
+      district: 'Distrito 1',
+    });
+
+    const reportWithTwoLikes = model.createReport({
+      description: 'Reporte con dos likes',
+      image: '',
+      district: 'Distrito 2',
+    });
+
+    model.likeReport(reportWithOneLike.id, 'usuario-1');
+
+    model.likeReport(reportWithTwoLikes.id, 'usuario-1');
+    model.likeReport(reportWithTwoLikes.id, 'usuario-2');
+
+    const reports = model.getReports({ sortBy: 'likes' });
+
+    expect(reports[0].description).toBe('Reporte con dos likes');
+    expect(reports[1].description).toBe('Reporte con un like');
   });
 
-  const reports = model.getReports({ sortBy: 'recent' });
+  it('deberia filtrar reportes por distrito', () => {
+    const ids = ['reporte-1', 'reporte-2'];
+    const model = new CollectionScheduleModel({
+      now: () => ids.shift(),
+    });
 
-  expect(reports[0].description).toBe('Reporte reciente');
-  expect(reports[1].description).toBe('Reporte antiguo');
-});
+    model.createReport({
+      description: 'Basura en distrito 1',
+      image: '',
+      district: 'Distrito 1',
+    });
+
+    model.createReport({
+      description: 'Basura en distrito 2',
+      image: '',
+      district: 'Distrito 2',
+    });
+
+    const reports = model.getReports({ district: 'Distrito 2' });
+
+    expect(reports).toHaveLength(1);
+    expect(reports[0].description).toBe('Basura en distrito 2');
+  });
+
+  it('deberia guardar el reporte en memoria', () => {
+    const model = new CollectionScheduleModel();
+
+    model.createReport({
+      description: 'Basura',
+      image: '',
+    });
+
+    const reports = model.getReports();
+
+    expect(reports.length).toBe(1);
+  });
+
+  it('deberia incrementar likes', () => {
+    const model = new CollectionScheduleModel();
+
+    const report = model.createReport({
+      description: 'Basura',
+      image: '',
+    });
+
+    const updated = model.incrementReportLikes(report.id);
+
+    expect(updated.likes).toBe(1);
+  });
+
+  it('deberia permitir solo un like por usuario en el mismo reporte', () => {
+    const model = new CollectionScheduleModel();
+
+    const report = model.createReport({
+      description: 'Basura',
+      image: '',
+    });
+
+    const firstLike = model.likeReport(report.id, 'admin');
+    const secondLike = model.likeReport(report.id, 'admin');
+
+    expect(firstLike.likes).toBe(1);
+    expect(secondLike.likes).toBe(1);
+    expect(secondLike.likedBy).toEqual(['admin']);
+  });
+
+  it('deberia ordenar reportes por mas recientes', () => {
+    const ids = ['reporte-1', 'reporte-2'];
+    const model = new CollectionScheduleModel({
+      now: () => ids.shift(),
+    });
+
+    model.createReport({
+      description: 'Reporte antiguo',
+      image: '',
+      district: 'Distrito 1',
+      createdAt: '2026-05-16T10:00:00',
+    });
+
+    model.createReport({
+      description: 'Reporte reciente',
+      image: '',
+      district: 'Distrito 2',
+      createdAt: '2026-05-17T10:00:00',
+    });
+
+    const reports = model.getReports({ sortBy: 'recent' });
+
+    expect(reports[0].description).toBe('Reporte reciente');
+    expect(reports[1].description).toBe('Reporte antiguo');
+  });
 });
 
 beforeEach(() => {

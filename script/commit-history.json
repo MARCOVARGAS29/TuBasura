@@ -1539,12 +1539,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b309ac9a1a3a5b38a446bdb39ca5379668301c43",
     "author": "aldair",
     "commit": {
       "date": "2026-05-18T01:48:13.000Z",
       "message": "feat: ordenar reportes por mas likes",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/b309ac9a1a3a5b38a446bdb39ca5379668301c43"
     },
     "stats": {
       "total": 32,
@@ -1556,5 +1556,24 @@
     "test_count": 158,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-05-18T02:01:47.000Z",
+      "message": "feat: filtrar reportes por distrito",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 203,
+      "additions": 119,
+      "deletions": 84,
+      "date": "2026-05-18"
+    },
+    "coverage": 83.54,
+    "test_count": 159,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

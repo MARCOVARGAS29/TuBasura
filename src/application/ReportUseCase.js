@@ -4,7 +4,11 @@ export default class ReportUseCase {
   }
 
   getReports(options = {}) {
-    const reports = this.reportRepository.getReports();
+    let reports = this.reportRepository.getReports();
+
+    if (options.district) {
+      reports = reports.filter((report) => report.district === options.district);
+    }
 
     if (options.sortBy === 'recent') {
       return [...reports].sort(

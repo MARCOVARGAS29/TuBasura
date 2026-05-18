@@ -846,7 +846,7 @@
     "testId": 103
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b309ac9a1a3a5b38a446bdb39ca5379668301c43",
     "commitName": "feat: ordenar reportes por mas recientes",
     "commitTimestamp": 1779068539665,
     "testId": 104
@@ -856,5 +856,11 @@
     "commitName": "feat: ordenar reportes por mas likes",
     "commitTimestamp": 1779068896042,
     "testId": 105
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: filtrar reportes por distrito",
+    "commitTimestamp": 1779069710058,
+    "testId": 106
   }
 ]
