@@ -22,6 +22,8 @@ export default class CollectionScheduleView {
     reportDescription,
     reportDistrict,
     reportImage,
+    reportSortSelect,
+    reportDistrictFilter,
     reportsList,
     reportConfirmation,
     reportModal,
@@ -49,6 +51,8 @@ export default class CollectionScheduleView {
     this.reportDescription = reportDescription;
     this.reportDistrict = reportDistrict;
     this.reportImage = reportImage;
+    this.reportSortSelect = reportSortSelect;
+    this.reportDistrictFilter = reportDistrictFilter;
     this.reportsList = reportsList;
     this.reportConfirmation = reportConfirmation;
     this.reportModal = reportModal;
@@ -287,6 +291,18 @@ export default class CollectionScheduleView {
 
       this.reportForm.reset();
     });
+  }
+
+  bindReportFilters(handler) {
+    const notifyFiltersChanged = () => {
+      handler({
+        sortBy: this.reportSortSelect.value,
+        district: this.reportDistrictFilter.value,
+      });
+    };
+
+    this.reportSortSelect.addEventListener('change', notifyFiltersChanged);
+    this.reportDistrictFilter.addEventListener('change', notifyFiltersChanged);
   }
 
   formatReportDateTime(createdAt) {

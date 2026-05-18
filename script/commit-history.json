@@ -1558,12 +1558,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "c20db14cab61acdaf8faf8068cb50a0a3cea350c",
     "author": "aldair",
     "commit": {
       "date": "2026-05-18T02:01:47.000Z",
       "message": "feat: filtrar reportes por distrito",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/c20db14cab61acdaf8faf8068cb50a0a3cea350c"
     },
     "stats": {
       "total": 203,
@@ -1573,6 +1573,25 @@
     },
     "coverage": 83.54,
     "test_count": 159,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-05-18T02:14:03.000Z",
+      "message": "feat: enlazar filtros de reportes en vista",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 75,
+      "additions": 63,
+      "deletions": 12,
+      "date": "2026-05-18"
+    },
+    "coverage": 83.53,
+    "test_count": 160,
     "failed_tests": 0,
     "conclusion": "success"
   }

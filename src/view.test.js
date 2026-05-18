@@ -76,6 +76,14 @@ function createView() {
   const reportImage = {
     value: 'https://example.com/basura.jpg',
   };
+  const reportSortSelect = {
+    value: 'recent',
+    addEventListener: jest.fn(),
+  };
+  const reportDistrictFilter = {
+    value: 'Distrito 2',
+    addEventListener: jest.fn(),
+  };
   const reportsList = {
     innerHTML: '',
     append: jest.fn(),
@@ -113,6 +121,8 @@ function createView() {
     reportDescription,
     reportDistrict,
     reportImage,
+    reportSortSelect,
+    reportDistrictFilter,
     reportsList,
     reportConfirmation,
     reportModal,
@@ -140,6 +150,8 @@ function createView() {
       reportDescription,
       reportDistrict,
       reportImage,
+      reportSortSelect,
+      reportDistrictFilter,
       reportsList,
       reportConfirmation,
       reportModal,
@@ -160,8 +172,14 @@ describe('CollectionScheduleView', () => {
   });
 
   it('deberia mostrar el home con el nombre de la sesion', () => {
-    const { view, loginSection, homeSection, welcomeMessage, startPanel, schedulePanel } =
-      createView();
+    const {
+      view,
+      loginSection,
+      homeSection,
+      welcomeMessage,
+      startPanel,
+      schedulePanel,
+    } = createView();
 
     view.showHome({ name: 'Invitado', accessType: 'guest' });
 
@@ -214,6 +232,22 @@ describe('CollectionScheduleView', () => {
     view.bindManualLocationSelection(handler);
 
     expect(manualLocationSelect.addEventListener).toHaveBeenCalledWith(
+      'change',
+      expect.any(Function),
+    );
+  });
+
+  it('deberia enlazar los filtros de reportes', () => {
+    const { view, reportSortSelect, reportDistrictFilter } = createView();
+    const handler = jest.fn();
+
+    view.bindReportFilters(handler);
+
+    expect(reportSortSelect.addEventListener).toHaveBeenCalledWith(
+      'change',
+      expect.any(Function),
+    );
+    expect(reportDistrictFilter.addEventListener).toHaveBeenCalledWith(
       'change',
       expect.any(Function),
     );
@@ -284,8 +318,14 @@ describe('CollectionScheduleView', () => {
   });
 
   it('deberia volver a la pagina de inicio desde el navbar', () => {
-    const { view, startPanel, reportsPanel, schedulePanel, reportsLink, startLink } =
-      createView();
+    const {
+      view,
+      startPanel,
+      reportsPanel,
+      schedulePanel,
+      reportsLink,
+      startLink,
+    } = createView();
     const event = {
       preventDefault: jest.fn(),
     };
@@ -343,12 +383,7 @@ describe('CollectionScheduleView', () => {
   });
 
   it('deberia enviar distrito y mostrar confirmacion clara del reporte', () => {
-    const {
-      view,
-      reportForm,
-      reportConfirmation,
-      reportModal,
-    } = createView();
+    const { view, reportForm, reportConfirmation, reportModal } = createView();
     const event = {
       preventDefault: jest.fn(),
     };
