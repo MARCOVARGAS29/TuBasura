@@ -864,7 +864,7 @@
     "testId": 106
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e2ef0470fa192cc4901874d54bc3f6b836eacb79",
     "commitName": "feat: enlazar filtros de reportes en vista",
     "commitTimestamp": 1779070446828,
     "testId": 107
@@ -874,5 +874,11 @@
     "commitName": "feat: aplicar filtros de reportes desde presenter",
     "commitTimestamp": 1779071005052,
     "testId": 108
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar controles de filtro en reportes",
+    "commitTimestamp": 1779071906832,
+    "testId": 109
   }
 ]

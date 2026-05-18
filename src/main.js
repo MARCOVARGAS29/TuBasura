@@ -28,6 +28,8 @@ function initializeApp() {
     reportDescription: document.querySelector('#report-description'),
     reportDistrict: document.querySelector('#report-district'),
     reportImage: document.querySelector('#report-image'),
+    reportSortSelect: document.querySelector('#report-sort-select'),
+    reportDistrictFilter: document.querySelector('#report-district-filter'),
     reportsList: document.querySelector('#reports-list'),
     reportConfirmation: document.querySelector('#report-confirmation'),
     reportModal: document.querySelector('#report-modal'),

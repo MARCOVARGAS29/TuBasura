@@ -1596,12 +1596,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e2ef0470fa192cc4901874d54bc3f6b836eacb79",
     "author": "aldair",
     "commit": {
       "date": "2026-05-18T02:23:21.000Z",
       "message": "feat: aplicar filtros de reportes desde presenter",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/e2ef0470fa192cc4901874d54bc3f6b836eacb79"
     },
     "stats": {
       "total": 383,
@@ -1611,6 +1611,25 @@
     },
     "coverage": 83.65,
     "test_count": 161,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-05-18T02:38:24.000Z",
+      "message": "feat: agregar controles de filtro en reportes",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 125,
+      "additions": 85,
+      "deletions": 40,
+      "date": "2026-05-18"
+    },
+    "coverage": 83.65,
+    "test_count": 162,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -426,6 +426,16 @@ describe('CollectionScheduleView', () => {
     expect(reportModal.hidden).toBe(true);
   });
 
+  it('deberia tener controles de ordenamiento y filtro en reportes', () => {
+    const htmlPath = path.join(process.cwd(), 'index.html');
+    const html = fs.readFileSync(htmlPath, 'utf-8');
+
+    expect(html).toMatch(/id="report-sort-select"/);
+    expect(html).toMatch(/id="report-district-filter"/);
+    expect(html).toMatch(/Mas recientes/);
+    expect(html).toMatch(/Con mas likes/);
+  });
+
   describe('HTML Footer', () => {
     it('deberia tener la nueva estructura de paleta de colores y no mostrar horario de atencion', () => {
       const htmlPath = path.join(process.cwd(), 'index.html');
