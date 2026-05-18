@@ -36,6 +36,11 @@ export default class CollectionSchedulePresenter {
     if (this.view.bindReportModalDismiss) {
       this.view.bindReportModalDismiss();
     }
+    if (this.view.bindReportFilters) {
+      this.view.bindReportFilters((filters) => {
+        this.renderReports(filters);
+      });
+    }
     this.view.bindCreateReport((data) => this.createReport(data));
   }
 
@@ -134,8 +139,8 @@ export default class CollectionSchedulePresenter {
     this.renderReports();
   }
 
-  renderReports() {
-    const reports = this.model.getReports();
+  renderReports(filters = {}) {
+    const reports = this.model.getReports(filters);
     this.view.renderReports(reports, (id) => this.likeReport(id));
   }
 }

@@ -129,7 +129,7 @@ describe('CollectionSchedulePresenter', () => {
       showHome: jest.fn(),
       renderDistrictOptions: jest.fn(),
       showInitialMessage: jest.fn(),
-};
+    };
 
     const presenter = new CollectionSchedulePresenter({ model, view });
     presenter.initialize();
@@ -209,6 +209,53 @@ describe('CollectionSchedulePresenter', () => {
     expect(view.showInitialMessage).toHaveBeenCalled();
   });
 
+  it('deberia renderizar reportes con filtros cuando cambian los filtros', () => {
+    const filteredReports = [
+      {
+        id: 'report-1',
+        description: 'Basura filtrada',
+        district: 'Distrito 2',
+        likes: 3,
+      },
+    ];
+    const model = {
+      getDistrictOptions: jest.fn(() => []),
+      getReports: jest.fn(() => filteredReports),
+    };
+    const view = {
+      showLogin: jest.fn(),
+      bindLogin: jest.fn(),
+      bindGuestAccess: jest.fn(),
+      bindDistrictSelection: jest.fn(),
+      bindCreateReport: jest.fn(),
+      bindReportFilters: jest.fn(),
+      showHome: jest.fn(),
+      renderDistrictOptions: jest.fn(),
+      showInitialMessage: jest.fn(),
+      renderReports: jest.fn(),
+    };
+
+    const presenter = new CollectionSchedulePresenter({ model, view });
+
+    presenter.initialize();
+
+    const filtersHandler = view.bindReportFilters.mock.calls[0][0];
+
+    filtersHandler({
+      sortBy: 'likes',
+      district: 'Distrito 2',
+    });
+
+    expect(model.getReports).toHaveBeenCalledWith({
+      sortBy: 'likes',
+      district: 'Distrito 2',
+    });
+    expect(view.renderReports).toHaveBeenCalledWith(
+      filteredReports,
+      expect.any(Function),
+    );
+  });
+
   it('deberia mostrar un mensaje de no encontrado cuando no hay horario', () => {
     const model = {
       getScheduleByDistrict: jest.fn(() => null),
@@ -226,33 +273,33 @@ describe('CollectionSchedulePresenter', () => {
   });
 
   it('deberia crear reporte desde presenter', () => {
-  const model = {
-    createReport: jest.fn(),
-    getReports: jest.fn(() => []),
-  };
+    const model = {
+      createReport: jest.fn(),
+      getReports: jest.fn(() => []),
+    };
 
-  const view = {
-    showLogin: jest.fn(),
-    bindLogin: jest.fn(),
-    bindGuestAccess: jest.fn(),
-    bindDistrictSelection: jest.fn(),
-    bindCreateReport: jest.fn(),
-    bindLikeReport: jest.fn(),
-    showHome: jest.fn(),
-    renderDistrictOptions: jest.fn(),
-    showInitialMessage: jest.fn(),
-    renderReports: jest.fn(),
-  };
+    const view = {
+      showLogin: jest.fn(),
+      bindLogin: jest.fn(),
+      bindGuestAccess: jest.fn(),
+      bindDistrictSelection: jest.fn(),
+      bindCreateReport: jest.fn(),
+      bindLikeReport: jest.fn(),
+      showHome: jest.fn(),
+      renderDistrictOptions: jest.fn(),
+      showInitialMessage: jest.fn(),
+      renderReports: jest.fn(),
+    };
 
-  const presenter = new CollectionSchedulePresenter({ model, view });
+    const presenter = new CollectionSchedulePresenter({ model, view });
 
-  presenter.initialize();
+    presenter.initialize();
 
-  const handler = view.bindCreateReport.mock.calls[0][0];
+    const handler = view.bindCreateReport.mock.calls[0][0];
 
-  handler({ description: 'Basura', image: '' });
+    handler({ description: 'Basura', image: '' });
 
-  expect(model.createReport).toHaveBeenCalled();
+    expect(model.createReport).toHaveBeenCalled();
   });
 
   it('deberia confirmar el reporte creado con el usuario de la sesion', () => {
@@ -358,5 +405,4 @@ describe('CollectionSchedulePresenter', () => {
 
     expect(model.likeReport).toHaveBeenCalledWith('report-1', 'admin');
   });
-
 });

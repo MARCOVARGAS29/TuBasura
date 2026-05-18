@@ -858,7 +858,7 @@
     "testId": 105
   },
   {
-    "commitId": "HEAD",
+    "commitId": "78be534cb93aa4542e3de54e1953f319e9b95839",
     "commitName": "feat: filtrar reportes por distrito",
     "commitTimestamp": 1779069710058,
     "testId": 106
@@ -868,5 +868,11 @@
     "commitName": "feat: enlazar filtros de reportes en vista",
     "commitTimestamp": 1779070446828,
     "testId": 107
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar filtros de reportes desde presenter",
+    "commitTimestamp": 1779071005052,
+    "testId": 108
   }
 ]

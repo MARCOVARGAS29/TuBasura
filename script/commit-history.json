@@ -1577,12 +1577,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "78be534cb93aa4542e3de54e1953f319e9b95839",
     "author": "aldair",
     "commit": {
       "date": "2026-05-18T02:14:03.000Z",
       "message": "feat: enlazar filtros de reportes en vista",
-      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/78be534cb93aa4542e3de54e1953f319e9b95839"
     },
     "stats": {
       "total": 75,
@@ -1592,6 +1592,25 @@
     },
     "coverage": 83.53,
     "test_count": 160,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "aldair",
+    "commit": {
+      "date": "2026-05-18T02:23:21.000Z",
+      "message": "feat: aplicar filtros de reportes desde presenter",
+      "url": "https://github.com/MARCOVARGAS29/TuBasura/commit/HEAD"
+    },
+    "stats": {
+      "total": 383,
+      "additions": 217,
+      "deletions": 166,
+      "date": "2026-05-18"
+    },
+    "coverage": 83.65,
+    "test_count": 161,
     "failed_tests": 0,
     "conclusion": "success"
   }
